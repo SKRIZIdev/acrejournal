@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script>
+(function () {
+  var d = document.documentElement;
+  d.className += ' js';
+  try {
+    var th = localStorage.getItem('aj-theme');
+    d.setAttribute('data-theme', th === 'dark' ? 'dark' : 'light');
+    var pal = localStorage.getItem('aj-palette');
+    if (pal) d.setAttribute('data-palette', pal);
+  } catch (e) {}
+  if (location.hash && location.hash.length > 1) d.classList.add('anchor-landing');
+})();
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
+<meta name="x-apple-disable-message-reformatting">
+<title>Greenhouse sizing calculator — Acre Journal</title>
+<meta name="description" content="Enter size and local snow load — get a covering that actually holds it, truss spacing and a materials budget.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://acrejournal.com/greenhouses/greenhouse-calculator/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Greenhouse sizing calculator">
+<meta property="og:description" content="Enter size and local snow load — get a covering that actually holds it, truss spacing and a materials budget.">
+<meta property="og:url" content="https://acrejournal.com/greenhouses/greenhouse-calculator/">
+<meta property="og:site_name" content="Acre Journal">
+<link rel="icon" href="/acrejournal/favicon.svg?v=40b724f3" type="image/svg+xml">
+<link rel="stylesheet" href="/acrejournal/css/site.css?v=b44cc107"><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "CollectionPage", "name": "Greenhouse sizing calculator", "description": "Enter size and local snow load — get a covering that actually holds it, truss spacing and a materials budget.", "url": "https://acrejournal.com/greenhouses/greenhouse-calculator/"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://acrejournal.com/"}, {"@type": "ListItem", "position": 2, "name": "Greenhouses", "item": "https://acrejournal.com/greenhouses/"}, {"@type": "ListItem", "position": 3, "name": "Greenhouse sizing calculator", "item": "https://acrejournal.com/greenhouses/greenhouse-calculator/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Polycarbonate or film?", "acceptedAnswer": {"@type": "Answer", "text": "Film is cheapest and gets replaced every few seasons; twin-wall holds snow and heat far better."}}, {"@type": "Question", "name": "Does the kit include a foundation?", "acceptedAnswer": {"@type": "Answer", "text": "Almost never — budget for ground anchors or a base separately, along with end walls and a door."}}]}]}</script>
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="logo" href="/acrejournal/" aria-label="Acre Journal — home">
+      <svg class="mark" width="30" height="30" viewBox="0 0 32 32" aria-hidden="true">
+        <rect width="32" height="32" rx="8" fill="currentColor"></rect>
+        <rect x="7.4" y="7.4" width="17.2" height="17.2" rx="1.6" stroke="var(--ground)" stroke-width="2.6" fill="none"></rect>
+        <path d="M15.4 8.7v14.6M8.7 15.2h14.6" stroke="var(--ground)" stroke-width="1.9"></path>
+        <path d="M16.7 16.5h6.9v6.8h-6.9z" fill="var(--mark-crop)"></path>
+      </svg>
+      <span class="wordmark"><i>Acre</i><i>Journal</i></span>
+    </a>
+    <nav class="site" id="site-nav" aria-label="Main">
+      <a href="/acrejournal/compact-tractors/">Compact tractors</a>
+      <a href="/acrejournal/used-tractors/">Used</a>
+      <a href="/acrejournal/irrigation/">Irrigation</a>
+      <a href="/acrejournal/greenhouses/" aria-current="page">Greenhouses</a>
+
+      <div class="more">
+        <button class="more-toggle" type="button" aria-expanded="false" aria-controls="nav-more"
+>
+          More
+          <svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <path d="M2.5 4.5 6 8l3.5-3.5" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <div class="more-sheet" id="nav-more">
+          <span class="more-cap">Sections</span>
+          <a href="/acrejournal/parts/">Parts</a>
+          <a href="/acrejournal/attachments/">Attachments &amp; PTO</a>
+          <a href="/acrejournal/lawn-mowers/">Mowing</a>
+          <a href="/acrejournal/hydroponics/">Hydroponics</a>
+          <span class="more-cap">Read</span>
+          <a href="/acrejournal/reviews/">Owner reports</a>
+          <a href="/acrejournal/learn/">Learn</a>
+          <a href="/acrejournal/glossary/">Glossary</a>
+          <a href="/acrejournal/compare/">Compare</a>
+          <a href="/acrejournal/faq/">FAQ</a>
+        </div>
+      </div>
+
+      <a class="btn cta in-drawer" href="/acrejournal/reviews/">Owner reports</a>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Switch theme" title="Theme: system">
+      <svg class="i-sun" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+        <circle cx="10" cy="10" r="4"></circle>
+        <path d="M10 1.5v2M10 16.5v2M1.5 10h2M16.5 10h2M4 4l1.4 1.4M14.6 14.6L16 16M16 4l-1.4 1.4M5.4 14.6L4 16" stroke-linecap="round"></path>
+      </svg>
+      <svg class="i-moon" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+        <path d="M16.5 12.4A7 7 0 0 1 7.6 3.5a7 7 0 1 0 8.9 8.9z" stroke-linejoin="round"></path>
+      </svg>
+      <svg class="i-auto" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+        <circle cx="10" cy="10" r="7"></circle>
+        <path d="M10 3v14a7 7 0 0 0 0-14z" fill="currentColor" stroke="none"></path>
+      </svg>
+    </button>
+    <a class="btn cta on-bar" href="/acrejournal/reviews/">Owner reports</a>
+    <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="nav-scrim" hidden></div>
+
+<main id="main">
+
+<div class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb">
+<a href="/acrejournal/">Home</a> / <a href="/acrejournal/greenhouses/">Greenhouses</a> / <span aria-current="page">Greenhouse sizing calculator</span></nav>
+
+  <div class="hero-top">
+    <h1 class="rise-lines">
+      <span class="line"><span>WHAT GREENHOUSE</span></span>
+      <span class="line dim"><span>SURVIVES YOUR WINTER</span></span>
+    </h1>
+    <div class="hero-aside">
+      <span class="pill reveal" data-delay="200">Interactive</span>
+      <p class="lede reveal" data-delay="280">Enter size and local snow load — get a covering that actually holds it, truss spacing and a materials budget.</p>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="tool reveal" data-tool="greenhouse">
+      <script type="application/json" id="greenhouse-data">{"coverings": [{"id": "film", "label": "Poly film", "life": "3-4 years", "price_sqft": 0.35, "r": 0.83, "max_snow": 20}, {"id": "twinwall", "label": "Twin-wall polycarbonate", "life": "10-15 years", "price_sqft": 2.1, "r": 1.6, "max_snow": 45}, {"id": "triplewall", "label": "Triple-wall polycarbonate", "life": "15-20 years", "price_sqft": 3.4, "r": 2.1, "max_snow": 60}, {"id": "glass", "label": "Glass", "life": "20+ years", "price_sqft": 6.5, "r": 0.95, "max_snow": 30}], "spacing": [{"max_snow": 20, "feet": 6}, {"max_snow": 40, "feet": 4}, {"max_snow": 70, "feet": 2}], "frame_per_sqft": 3.2, "door_kit": 240, "vent_kit": 320, "outlets": [{"label": "Greenhouse kits by span", "note": "Match the package to the snow load, not to the picture", "url": "https://growerssolution.com/collections/greenhouses"}, {"label": "Covering, film and shade", "note": "Film, poly repair tape and shade cloth", "url": "https://growerssolution.com/collections/film-shade"}, {"label": "How to build one without a kit", "note": "Our own build guide, with the cost breakdown", "url": "/greenhouses/how-to-build-a-greenhouse/"}], "disclosure": "We only cover gear we have researched, and our reports are built on documented owner experience, not on brand copy — the method is stated on every report page. Links to sellers are plain links: we are not in their affiliate programmes yet, and nothing on this site is paid placement."}</script>
+
+      <form class="tool-form">
+        <label class="field">
+          <span class="field-label">Length, ft</span>
+          <input type="number" name="length" value="24" min="6" max="300" step="2" inputmode="decimal">
+        </label>
+        <label class="field">
+          <span class="field-label">Width, ft</span>
+          <input type="number" name="width" value="12" min="6" max="60" step="2" inputmode="decimal">
+        </label>
+        <label class="field">
+          <span class="field-label">Sidewall height, ft</span>
+          <input type="number" name="height" value="7" min="4" max="16" step="1" inputmode="decimal">
+        </label>
+        <label class="field">
+          <span class="field-label">Snow load, psf</span>
+          <input type="number" name="snow" value="25" min="0" max="90" step="5" inputmode="decimal">
+<span class="field-hint">Local building code sets this — roughly 20 lb/sq ft in mild zones, 60+ in snow country.</span>        </label>
+        <label class="field">
+          <span class="field-label">Covering you had in mind</span>
+          <select name="covering">
+<option value="film">Poly film</option><option value="twinwall">Twin-wall polycarbonate</option><option value="triplewall">Triple-wall polycarbonate</option><option value="glass">Glass</option>          </select>
+        </label>
+
+        <div class="tool-actions">
+          <button class="btn" type="submit">Size my greenhouse</button>
+          <button class="btn ghost" type="reset">Reset</button>
+        </div>
+      </form>
+
+      <div class="tool-result" data-result hidden></div>
+    </div>
+  </div>
+</section>
+
+<section class="pt-0">
+  <div class="wrap">
+    <div class="layout">
+      <article class="prose reveal">
+        <p>Below we explain where the numbers come from — covering areas, <a class="glossary-link" href="/acrejournal/glossary/#snow-load" title="Weight of snow a greenhouse frame is rated to carry, in pounds per square foot.">snow load</a>
+ratings and why truss spacing shrinks as the load grows.</p>
+<h2 id="assumptions">What the numbers assume</h2>
+<p>The tool checks one thing catalogues never flag: whether the covering you picked can carry
+the snow you specified over the span you chose. That combination is where tunnels fail,
+and it is a combination — not any single choice.</p>
+<p>Local ground snow load governs, and it comes from your county's building code rather than
+from a manufacturer's brochure. Commercial designs are commonly rated to around 35 lb per
+square foot, but that is a manufacturing convention, not a statement about your site.</p>
+
+        <section class="facts reveal" aria-labelledby="facts-heading">
+  <div class="facts-top">
+    <span class="kick">Method</span>
+    <h2 id="facts-heading">What this tool assumes</h2>
+  </div>
+  <div class="table-wrap">
+    <table class="facts-table" role="table">
+      <thead role="rowgroup">
+        <tr role="row">
+          <th scope="col" role="columnheader">What</th>
+          <th scope="col" role="columnheader">Figure</th>
+          <th scope="col" role="columnheader">Source</th>
+        </tr>
+      </thead>
+      <tbody role="rowgroup">
+        <tr role="row">
+          <th scope="row" role="rowheader">Snow load input</th>
+          <td role="cell">
+            <span class="facts-value">Yours to supply</span>
+<span class="facts-hint">Local code governs; we do not guess your county</span>          </td><td class="facts-src" role="cell"><a href="/acrejournal/about/" rel="nofollow noopener">Acre Journal method</a></td>
+        </tr>
+        <tr role="row">
+          <th scope="row" role="rowheader">Covering upgrade</th>
+          <td role="cell">
+            <span class="facts-value">Automatic</span>
+<span class="facts-hint">If the chosen glazing cannot carry the load, the tool raises it</span>          </td><td class="facts-src" role="cell"><a class="facts-same" href="/acrejournal/about/" rel="nofollow noopener"
+                 title="Acre Journal method">same source</a></td>
+        </tr>
+        <tr role="row">
+          <th scope="row" role="rowheader">Frame kit, 20 ft high tunnel</th>
+          <td role="cell">
+            <span class="facts-value"><span translate="no">$2,390.95</span></span>
+<span class="facts-hint">Seller list price on 16 Aug 2026, frame only — covering and ground work extra</span>          </td><td class="facts-src" role="cell"><a href="https://growerssolution.com/products/20fthighpkg" rel="nofollow noopener">Growers Solution, 20 ft high sidewall</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+        <div class="disclosure">We only cover gear we have researched, and our reports are built on documented owner experience, not on brand copy — the method is stated on every report page. Links to sellers are plain links: we are not in their affiliate programmes yet, and nothing on this site is paid placement.
+</div>
+        
+      </article>
+      <aside class="rail reveal" data-delay="140">
+        <div class="toc toc-related">
+          <b>Related</b>
+          <ul>
+<li><a href="/acrejournal/greenhouses/">Greenhouses</a></li>          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<script src="/acrejournal/js/tool-greenhouse.js?v=abac6f52" defer></script>
+
+<section class="faq-band">
+  <div class="wrap">
+    <section class="faq" aria-label="Questions and answers">
+  <div class="faq-side">
+    <span class="pill">FAQ</span>
+<h2 id="faq">Questions &amp; Answers</h2>    <p class="faq-lede">Answered from the same sources as the tables above — each figure is
+      linked on the page it comes from.</p>
+  </div>
+  <div class="faq-list">
+    <details open>
+      <summary><h3 class="faq-q">Polycarbonate or film?</h3></summary>
+      <div class="faq-a"><div class="faq-a-in"><p>Film is cheapest and gets replaced every few seasons; twin-wall holds snow and heat far better.</p></div></div>
+    </details>
+    <details>
+      <summary><h3 class="faq-q">Does the kit include a foundation?</h3></summary>
+      <div class="faq-a"><div class="faq-a-in"><p>Almost never — budget for ground anchors or a base separately, along with end walls and a door.</p></div></div>
+    </details>
+  </div>
+</section>
+
+  </div>
+</section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="footer-logo" href="/acrejournal/" aria-label="Acre Journal — home">
+          <svg class="mark" width="38" height="38" viewBox="0 0 32 32" aria-hidden="true">
+            <rect width="32" height="32" rx="8" fill="currentColor"></rect>
+            <rect x="7.4" y="7.4" width="17.2" height="17.2" rx="1.6" stroke="var(--dark)" stroke-width="2.6" fill="none"></rect>
+            <path d="M15.4 8.7v14.6M8.7 15.2h14.6" stroke="var(--dark)" stroke-width="1.9"></path>
+            <path d="M16.7 16.5h6.9v6.8h-6.9z" fill="var(--accent)"></path>
+          </svg>
+          <span class="wordmark"><i>Acre</i><i>Journal</i></span>
+        </a>
+        <p class="footer-about">Independent coverage of compact tractors, used equipment, irrigation and greenhouses. Every figure on the site carries a source, and a place in a shortlist is never for sale.
+</p>
+      </div>
+
+      <div class="cols">
+        <div>
+          <b>Sections</b>
+<a href="/acrejournal/compact-tractors/">Compact tractors</a><a href="/acrejournal/used-tractors/">Used equipment</a><a href="/acrejournal/irrigation/">Irrigation</a><a href="/acrejournal/greenhouses/">Greenhouses</a><a href="/acrejournal/parts/">Parts</a><a href="/acrejournal/attachments/">Attachments &amp; PTO</a>        </div>
+        <div>
+          <b>Read</b>
+<a href="/acrejournal/reviews/">Owner reports</a><a href="/acrejournal/compare/">Comparisons</a><a href="/acrejournal/learn/">Learn</a><a href="/acrejournal/glossary/">Glossary</a><a href="/acrejournal/faq/">FAQ</a>        </div>
+        <div>
+          <b>About</b>
+<a href="/acrejournal/about/#method">How we check</a><a href="/acrejournal/about/">About us</a><a href="/acrejournal/disclosure/">Affiliate disclosure</a><a href="/acrejournal/privacy/">Privacy policy</a>        </div>
+      </div>
+    </div>
+
+    <div class="fine">
+      <p>We only cover gear we have researched, and our reports are built on documented owner experience, not on brand copy — the method is stated on every report page. Links to sellers are plain links: we are not in their affiliate programmes yet, and nothing on this site is paid placement.
+</p>
+      <p>&copy; 2026 Acre Journal. Figures carry their source and check date. Photography is illustrative.</p>
+    </div>
+  </div>
+  <span class="footer-word" aria-hidden="true">ACRE JOURNAL</span>
+</footer>
+
+<div class="palette-dock" hidden>
+  <b>Palette</b>
+  <div class="palette-list">
+    <button type="button" data-palette-pick="clay"><i style="--a:#B4571A;--g:#F5F3EF"></i>Clay</button>
+    <button type="button" data-palette-pick="paper"><i style="--a:#1F7A4C;--g:#FFFFFF"></i>Paper</button>
+    <button type="button" data-palette-pick="field"><i style="--a:#2E7D32;--g:#F7F9F5"></i>Field</button>
+    <button type="button" data-palette-pick="journal"><i style="--a:#17507A;--g:#FBFBFC"></i>Journal</button>
+  </div>
+</div>
+
+<script src="/acrejournal/js/app.js?v=1b2739c8" defer></script>
+</body>
+</html>

@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script>
+(function () {
+  var d = document.documentElement;
+  d.className += ' js';
+  try {
+    var th = localStorage.getItem('aj-theme');
+    d.setAttribute('data-theme', th === 'dark' ? 'dark' : 'light');
+    var pal = localStorage.getItem('aj-palette');
+    if (pal) d.setAttribute('data-palette', pal);
+  } catch (e) {}
+  if (location.hash && location.hash.length > 1) d.classList.add('anchor-landing');
+})();
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
+<meta name="x-apple-disable-message-reformatting">
+<title>About Acre Journal — Acre Journal</title>
+<meta name="description" content="How Acre Journal is built: where the numbers come from, how owner reports are assembled, what we refuse to publish, and how the site makes money.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://acrejournal.com/about/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="About Acre Journal">
+<meta property="og:description" content="How Acre Journal is built: where the numbers come from, how owner reports are assembled, what we refuse to publish, and how the site makes money.">
+<meta property="og:url" content="https://acrejournal.com/about/">
+<meta property="og:site_name" content="Acre Journal">
+<link rel="icon" href="/acrejournal/favicon.svg?v=40b724f3" type="image/svg+xml">
+<link rel="stylesheet" href="/acrejournal/css/site.css?v=b44cc107"><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "CollectionPage", "name": "About Acre Journal", "description": "How Acre Journal is built: where the numbers come from, how owner reports are assembled, what we refuse to publish, and how the site makes money.", "url": "https://acrejournal.com/about/"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://acrejournal.com/"}, {"@type": "ListItem", "position": 2, "name": "About Acre Journal", "item": "https://acrejournal.com/about/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Do you test the machines you write about?", "acceptedAnswer": {"@type": "Answer", "text": "Not all of them, and we say which. Where we have hands-on experience we write in the first person and describe the conditions. Where we do not, the page is built from owner reports and published specifications, and it says so at the top."}}, {"@type": "Question", "name": "Where do the owner reports come from?", "acceptedAnswer": {"@type": "Answer", "text": "Public owner threads, forum histories and direct interviews with owners and technicians. Each report states how many owners it covers, what period, and what we could not verify."}}, {"@type": "Question", "name": "How does Acre Journal make money?", "acceptedAnswer": {"@type": "Answer", "text": "Affiliate links and, on financing pages, referral fees. Links that pay us are marked. We do not sell placement inside a verdict or a shortlist."}}, {"@type": "Question", "name": "Why are some figures marked as pending a source?", "acceptedAnswer": {"@type": "Answer", "text": "Because they are not sourced yet. Marking them is deliberate: the alternative is a confident number nobody can check, which is exactly what this niche is already full of."}}]}]}</script>
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="logo" href="/acrejournal/" aria-label="Acre Journal — home">
+      <svg class="mark" width="30" height="30" viewBox="0 0 32 32" aria-hidden="true">
+        <rect width="32" height="32" rx="8" fill="currentColor"></rect>
+        <rect x="7.4" y="7.4" width="17.2" height="17.2" rx="1.6" stroke="var(--ground)" stroke-width="2.6" fill="none"></rect>
+        <path d="M15.4 8.7v14.6M8.7 15.2h14.6" stroke="var(--ground)" stroke-width="1.9"></path>
+        <path d="M16.7 16.5h6.9v6.8h-6.9z" fill="var(--mark-crop)"></path>
+      </svg>
+      <span class="wordmark"><i>Acre</i><i>Journal</i></span>
+    </a>
+    <nav class="site" id="site-nav" aria-label="Main">
+      <a href="/acrejournal/compact-tractors/">Compact tractors</a>
+      <a href="/acrejournal/used-tractors/">Used</a>
+      <a href="/acrejournal/irrigation/">Irrigation</a>
+      <a href="/acrejournal/greenhouses/">Greenhouses</a>
+
+      <div class="more">
+        <button class="more-toggle" type="button" aria-expanded="false" aria-controls="nav-more"
+>
+          More
+          <svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <path d="M2.5 4.5 6 8l3.5-3.5" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <div class="more-sheet" id="nav-more">
+          <span class="more-cap">Sections</span>
+          <a href="/acrejournal/parts/">Parts</a>
+          <a href="/acrejournal/attachments/">Attachments &amp; PTO</a>
+          <a href="/acrejournal/lawn-mowers/">Mowing</a>
+          <a href="/acrejournal/hydroponics/">Hydroponics</a>
+          <span class="more-cap">Read</span>
+          <a href="/acrejournal/reviews/">Owner reports</a>
+          <a href="/acrejournal/learn/">Learn</a>
+          <a href="/acrejournal/glossary/">Glossary</a>
+          <a href="/acrejournal/compare/">Compare</a>
+          <a href="/acrejournal/faq/">FAQ</a>
+        </div>
+      </div>
+
+      <a class="btn cta in-drawer" href="/acrejournal/reviews/">Owner reports</a>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Switch theme" title="Theme: system">
+      <svg class="i-sun" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+        <circle cx="10" cy="10" r="4"></circle>
+        <path d="M10 1.5v2M10 16.5v2M1.5 10h2M16.5 10h2M4 4l1.4 1.4M14.6 14.6L16 16M16 4l-1.4 1.4M5.4 14.6L4 16" stroke-linecap="round"></path>
+      </svg>
+      <svg class="i-moon" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+        <path d="M16.5 12.4A7 7 0 0 1 7.6 3.5a7 7 0 1 0 8.9 8.9z" stroke-linejoin="round"></path>
+      </svg>
+      <svg class="i-auto" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+        <circle cx="10" cy="10" r="7"></circle>
+        <path d="M10 3v14a7 7 0 0 0 0-14z" fill="currentColor" stroke="none"></path>
+      </svg>
+    </button>
+    <a class="btn cta on-bar" href="/acrejournal/reviews/">Owner reports</a>
+    <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="nav-scrim" hidden></div>
+
+<main id="main">
+
+<div class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb">
+<a href="/acrejournal/">Home</a> / <span aria-current="page">About Acre Journal</span></nav>
+
+  <div class="layout">
+    <article class="prose reveal">
+      <h1>About Acre Journal</h1>
+<div class="meta"><span>Updated 15 Aug 2026</span></div>      <section class="facts reveal" aria-labelledby="facts-heading">
+  <div class="facts-top">
+    <span class="kick">Standard</span>
+    <h2 id="facts-heading">Editorial standard</h2>
+  </div>
+  <div class="table-wrap">
+    <table class="facts-table" role="table">
+      <thead role="rowgroup">
+        <tr role="row">
+          <th scope="col" role="columnheader">What</th>
+          <th scope="col" role="columnheader">Figure</th>
+          <th scope="col" role="columnheader">Source</th>
+        </tr>
+      </thead>
+      <tbody role="rowgroup">
+        <tr role="row">
+          <th scope="row" role="rowheader">Every figure carries a source</th>
+          <td role="cell">
+            <span class="facts-value">Enforced at build time</span>
+<span class="facts-hint">Rows without a source are listed in the build output, not quietly published</span>          </td><td class="facts-src" role="cell"><a href="/acrejournal/about/" rel="nofollow noopener">Acre Journal method</a></td>
+        </tr>
+        <tr role="row">
+          <th scope="row" role="rowheader">First-person testing</th>
+          <td role="cell">
+            <span class="facts-value">Only where we actually tested</span>
+<span class="facts-hint">We do not write we drove it about machines we have not driven</span>          </td><td class="facts-src" role="cell"><a class="facts-same" href="/acrejournal/about/" rel="nofollow noopener"
+                 title="Acre Journal method">same source</a></td>
+        </tr>
+        <tr role="row">
+          <th scope="row" role="rowheader">Owner reports</th>
+          <td role="cell">
+            <span class="facts-value">Aggregated, with the sample stated</span>
+<span class="facts-hint">A report built on four owners says four</span>          </td><td class="facts-src" role="cell"><a class="facts-same" href="/acrejournal/about/" rel="nofollow noopener"
+                 title="Acre Journal method">same source</a></td>
+        </tr>
+        <tr role="row">
+          <th scope="row" role="rowheader">Affiliate links</th>
+          <td role="cell">
+            <span class="facts-value">Marked, and capped per page</span>
+<span class="facts-hint">Three commercial exits per page maximum outside the tools</span>          </td><td class="facts-src" role="cell"><a class="facts-same" href="/acrejournal/about/" rel="nofollow noopener"
+                 title="Acre Journal method">same source</a></td>
+        </tr>
+        <tr role="row">
+          <th scope="row" role="rowheader">Paid placement in verdicts</th>
+          <td role="cell">
+            <span class="facts-value">Not sold</span>
+<span class="facts-hint">Advertising cannot buy a recommendation</span>          </td><td class="facts-src" role="cell"><a class="facts-same" href="/acrejournal/about/" rel="nofollow noopener"
+                 title="Acre Journal method">same source</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+<p class="facts-foot">These rules are not decoration — the site is built so that breaking them is visible. A figure without a source is flagged when the page is built, and a page with no facts table is flagged too.</p></section>
+
+      <p>Acre Journal covers compact tractors, used equipment, irrigation and greenhouses for people who
+work a few acres rather than a few thousand. The reason it exists is narrow: almost everything
+written about this equipment is either a dealer brochure retyped, or a page assembled to rank and
+never checked by anyone who owns the machine.</p>
+<h2 id="what">What we publish</h2>
+<p>Four kinds of page, and they are built differently on purpose.</p>
+<p><strong>Owner reports</strong> aggregate documented owner experience about one machine — what breaks, what
+holds, what owners would buy again. Every report states its sample size, the period it covers, and
+a section listing what we could not verify. It is the part of the site that cannot be copied,
+because it is work rather than rewriting.</p>
+<p><strong>Learn pages</strong> answer one question each and are written to be quotable: a short answer at the top,
+a facts table with sources, and the explanation below it.</p>
+<p><strong>Comparisons</strong> put two machines side by side on published specifications, plus owner-reported
+behavior where it contradicts the brochure. We do not score machines out of ten — a single number
+hides the trade-off that actually decides the purchase.</p>
+<p><strong>Tools</strong> are calculators that run in your browser. Each one lists what it assumes, and those
+assumptions are on the page rather than buried in the code. The irrigation calculator queries the
+USDA soil survey for your ZIP rather than guessing your soil.</p>
+<h2 id="method">How the numbers are checked</h2>
+<p>Every figure in a facts table carries a source, and the site build prints a warning for any row
+that does not have one. That is a mechanical check, not a promise: it means an unsourced number
+cannot quietly reach the published page, because it shows up every time the site is rebuilt.</p>
+<p>Where a row describes our own method rather than an external measurement, the source points here,
+to this page. Where a figure comes from a university extension service, a federal dataset or a
+manufacturer specification, the row links to it directly.</p>
+<h2 id="refuse">What we will not do</h2>
+<p>We will not write first-person testing copy for equipment nobody here has operated. Beyond being
+dishonest, it is illegal in the United States: the FTC rule on fake reviews carries penalties per
+violation, and a review update from Google removes exactly this kind of page.</p>
+<p>We will not publish location pages for towns we have no presence in, and we will not generate
+model pages in bulk from a spreadsheet. Pages here exist because there is something specific to
+say on them.</p>
+<h2 id="money">How we make money</h2>
+<p>Affiliate commissions on equipment and supplies, and referral fees on equipment financing. Those
+links are marked, and outside the calculator pages there are never more than three commercial
+exits on a page — a limit the build enforces rather than a preference we state.</p>
+<p>Advertising does not buy a verdict, a shortlist position or a rating. If that changes, this page
+changes first.</p>
+<h2 id="who">Who writes here</h2>
+
+<p>The editorial standard above is the part that does not change with the byline. The named author,
+their background and how to reach them go here before launch.</p>
+<h2 id="corrections">Corrections</h2>
+<p>If a figure here is wrong, it gets fixed and the page says what changed. Reports and comparisons
+carry an updated date, and a correction that changes a verdict is stated in the text rather than
+edited away silently.</p>
+    </article>
+    <aside class="rail">
+      <div class="toc toc-page">
+        <b>On this page</b>
+        <ul>
+<li><a href="#what">What we publish</a></li><li><a href="#method">How the numbers are checked</a></li><li><a href="#refuse">What we will not do</a></li><li><a href="#money">How we make money</a></li><li><a href="#who">Who writes here</a></li><li><a href="#corrections">Corrections</a></li>        </ul>
+      </div>
+      <div class="toc toc-related">
+        <b>Legal</b>
+        <ul>
+          <li><a href="/acrejournal/about/">About us</a></li>
+          <li><a href="/acrejournal/disclosure/">Affiliate disclosure</a></li>
+          <li><a href="/acrejournal/privacy/">Privacy policy</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<section class="faq-band">
+  <div class="wrap">
+    <section class="faq" aria-label="Questions and answers">
+  <div class="faq-side">
+    <span class="pill">FAQ</span>
+<h2 id="faq">Questions &amp; Answers</h2>    <p class="faq-lede">Answered from the same sources as the tables above — each figure is
+      linked on the page it comes from.</p>
+  </div>
+  <div class="faq-list">
+    <details open>
+      <summary><h3 class="faq-q">Do you test the machines you write about?</h3></summary>
+      <div class="faq-a"><div class="faq-a-in"><p>Not all of them, and we say which. Where we have hands-on experience we write in the first person and describe the conditions. Where we do not, the page is built from owner reports and published specifications, and it says so at the top.</p></div></div>
+    </details>
+    <details>
+      <summary><h3 class="faq-q">Where do the owner reports come from?</h3></summary>
+      <div class="faq-a"><div class="faq-a-in"><p>Public owner threads, forum histories and direct interviews with owners and technicians. Each report states how many owners it covers, what period, and what we could not verify.</p></div></div>
+    </details>
+    <details>
+      <summary><h3 class="faq-q">How does Acre Journal make money?</h3></summary>
+      <div class="faq-a"><div class="faq-a-in"><p>Affiliate links and, on financing pages, referral fees. Links that pay us are marked. We do not sell placement inside a verdict or a shortlist.</p></div></div>
+    </details>
+    <details>
+      <summary><h3 class="faq-q">Why are some figures marked as pending a source?</h3></summary>
+      <div class="faq-a"><div class="faq-a-in"><p>Because they are not sourced yet. Marking them is deliberate: the alternative is a confident number nobody can check, which is exactly what this niche is already full of.</p></div></div>
+    </details>
+  </div>
+</section>
+
+  </div>
+</section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="footer-logo" href="/acrejournal/" aria-label="Acre Journal — home">
+          <svg class="mark" width="38" height="38" viewBox="0 0 32 32" aria-hidden="true">
+            <rect width="32" height="32" rx="8" fill="currentColor"></rect>
+            <rect x="7.4" y="7.4" width="17.2" height="17.2" rx="1.6" stroke="var(--dark)" stroke-width="2.6" fill="none"></rect>
+            <path d="M15.4 8.7v14.6M8.7 15.2h14.6" stroke="var(--dark)" stroke-width="1.9"></path>
+            <path d="M16.7 16.5h6.9v6.8h-6.9z" fill="var(--accent)"></path>
+          </svg>
+          <span class="wordmark"><i>Acre</i><i>Journal</i></span>
+        </a>
+        <p class="footer-about">Independent coverage of compact tractors, used equipment, irrigation and greenhouses. Every figure on the site carries a source, and a place in a shortlist is never for sale.
+</p>
+      </div>
+
+      <div class="cols">
+        <div>
+          <b>Sections</b>
+<a href="/acrejournal/compact-tractors/">Compact tractors</a><a href="/acrejournal/used-tractors/">Used equipment</a><a href="/acrejournal/irrigation/">Irrigation</a><a href="/acrejournal/greenhouses/">Greenhouses</a><a href="/acrejournal/parts/">Parts</a><a href="/acrejournal/attachments/">Attachments &amp; PTO</a>        </div>
+        <div>
+          <b>Read</b>
+<a href="/acrejournal/reviews/">Owner reports</a><a href="/acrejournal/compare/">Comparisons</a><a href="/acrejournal/learn/">Learn</a><a href="/acrejournal/glossary/">Glossary</a><a href="/acrejournal/faq/">FAQ</a>        </div>
+        <div>
+          <b>About</b>
+<a href="/acrejournal/about/#method">How we check</a><a href="/acrejournal/about/">About us</a><a href="/acrejournal/disclosure/">Affiliate disclosure</a><a href="/acrejournal/privacy/">Privacy policy</a>        </div>
+      </div>
+    </div>
+
+    <div class="fine">
+      <p>We only cover gear we have researched, and our reports are built on documented owner experience, not on brand copy — the method is stated on every report page. Links to sellers are plain links: we are not in their affiliate programmes yet, and nothing on this site is paid placement.
+</p>
+      <p>&copy; 2026 Acre Journal. Figures carry their source and check date. Photography is illustrative.</p>
+    </div>
+  </div>
+  <span class="footer-word" aria-hidden="true">ACRE JOURNAL</span>
+</footer>
+
+<div class="palette-dock" hidden>
+  <b>Palette</b>
+  <div class="palette-list">
+    <button type="button" data-palette-pick="clay"><i style="--a:#B4571A;--g:#F5F3EF"></i>Clay</button>
+    <button type="button" data-palette-pick="paper"><i style="--a:#1F7A4C;--g:#FFFFFF"></i>Paper</button>
+    <button type="button" data-palette-pick="field"><i style="--a:#2E7D32;--g:#F7F9F5"></i>Field</button>
+    <button type="button" data-palette-pick="journal"><i style="--a:#17507A;--g:#FBFBFC"></i>Journal</button>
+  </div>
+</div>
+
+<script src="/acrejournal/js/app.js?v=1b2739c8" defer></script>
+</body>
+</html>

@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script>
+(function () {
+  var d = document.documentElement;
+  d.className += ' js';
+  try {
+    var th = localStorage.getItem('aj-theme');
+    d.setAttribute('data-theme', th === 'dark' ? 'dark' : 'light');
+    var pal = localStorage.getItem('aj-palette');
+    if (pal) d.setAttribute('data-palette', pal);
+  } catch (e) {}
+  if (location.hash && location.hash.length > 1) d.classList.add('anchor-landing');
+})();
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
+<meta name="x-apple-disable-message-reformatting">
+<title>Tractor sizing calculator — Acre Journal</title>
+<meta name="description" content="Answer four questions about your land and the jobs you do — get the class you actually need and three machines that fit.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://acrejournal.com/compact-tractors/tractor-sizing/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Tractor sizing calculator">
+<meta property="og:description" content="Answer four questions about your land and the jobs you do — get the class you actually need and three machines that fit.">
+<meta property="og:url" content="https://acrejournal.com/compact-tractors/tractor-sizing/">
+<meta property="og:site_name" content="Acre Journal">
+<link rel="icon" href="/acrejournal/favicon.svg?v=40b724f3" type="image/svg+xml">
+<link rel="stylesheet" href="/acrejournal/css/site.css?v=b44cc107"><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "CollectionPage", "name": "Tractor sizing calculator", "description": "Answer four questions about your land and the jobs you do — get the class you actually need and three machines that fit.", "url": "https://acrejournal.com/compact-tractors/tractor-sizing/"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://acrejournal.com/"}, {"@type": "ListItem", "position": 2, "name": "Compact tractors", "item": "https://acrejournal.com/compact-tractors/"}, {"@type": "ListItem", "position": 3, "name": "Tractor sizing calculator", "item": "https://acrejournal.com/compact-tractors/tractor-sizing/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Does more horsepower always help?", "acceptedAnswer": {"@type": "Answer", "text": "Past a point, weight and hydraulics matter more than engine power — a heavier machine with the same horsepower does more work."}}, {"@type": "Question", "name": "Is a sub-compact enough for five acres?", "acceptedAnswer": {"@type": "Answer", "text": "It depends far more on the heaviest implement you plan to run than on the acreage itself."}}]}]}</script>
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="logo" href="/acrejournal/" aria-label="Acre Journal — home">
+      <svg class="mark" width="30" height="30" viewBox="0 0 32 32" aria-hidden="true">
+        <rect width="32" height="32" rx="8" fill="currentColor"></rect>
+        <rect x="7.4" y="7.4" width="17.2" height="17.2" rx="1.6" stroke="var(--ground)" stroke-width="2.6" fill="none"></rect>
+        <path d="M15.4 8.7v14.6M8.7 15.2h14.6" stroke="var(--ground)" stroke-width="1.9"></path>
+        <path d="M16.7 16.5h6.9v6.8h-6.9z" fill="var(--mark-crop)"></path>
+      </svg>
+      <span class="wordmark"><i>Acre</i><i>Journal</i></span>
+    </a>
+    <nav class="site" id="site-nav" aria-label="Main">
+      <a href="/acrejournal/compact-tractors/" aria-current="page">Compact tractors</a>
+      <a href="/acrejournal/used-tractors/">Used</a>
+      <a href="/acrejournal/irrigation/">Irrigation</a>
+      <a href="/acrejournal/greenhouses/">Greenhouses</a>
+
+      <div class="more">
+        <button class="more-toggle" type="button" aria-expanded="false" aria-controls="nav-more"
+>
+          More
+          <svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <path d="M2.5 4.5 6 8l3.5-3.5" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <div class="more-sheet" id="nav-more">
+          <span class="more-cap">Sections</span>
+          <a href="/acrejournal/parts/">Parts</a>
+          <a href="/acrejournal/attachments/">Attachments &amp; PTO</a>
+          <a href="/acrejournal/lawn-mowers/">Mowing</a>
+          <a href="/acrejournal/hydroponics/">Hydroponics</a>
+          <span class="more-cap">Read</span>
+          <a href="/acrejournal/reviews/">Owner reports</a>
+          <a href="/acrejournal/learn/">Learn</a>
+          <a href="/acrejournal/glossary/">Glossary</a>
+          <a href="/acrejournal/compare/">Compare</a>
+          <a href="/acrejournal/faq/">FAQ</a>
+        </div>
+      </div>
+
+      <a class="btn cta in-drawer" href="/acrejournal/reviews/">Owner reports</a>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Switch theme" title="Theme: system">
+      <svg class="i-sun" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+        <circle cx="10" cy="10" r="4"></circle>
+        <path d="M10 1.5v2M10 16.5v2M1.5 10h2M16.5 10h2M4 4l1.4 1.4M14.6 14.6L16 16M16 4l-1.4 1.4M5.4 14.6L4 16" stroke-linecap="round"></path>
+      </svg>
+      <svg class="i-moon" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+        <path d="M16.5 12.4A7 7 0 0 1 7.6 3.5a7 7 0 1 0 8.9 8.9z" stroke-linejoin="round"></path>
+      </svg>
+      <svg class="i-auto" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+        <circle cx="10" cy="10" r="7"></circle>
+        <path d="M10 3v14a7 7 0 0 0 0-14z" fill="currentColor" stroke="none"></path>
+      </svg>
+    </button>
+    <a class="btn cta on-bar" href="/acrejournal/reviews/">Owner reports</a>
+    <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="nav-scrim" hidden></div>
+
+<main id="main">
+
+<div class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb">
+<a href="/acrejournal/">Home</a> / <a href="/acrejournal/compact-tractors/">Compact tractors</a> / <span aria-current="page">Tractor sizing calculator</span></nav>
+
+  <div class="hero-top">
+    <h1 class="rise-lines">
+      <span class="line"><span>WHAT SIZE TRACTOR</span></span>
+      <span class="line dim"><span>DO YOU ACTUALLY NEED</span></span>
+    </h1>
+    <div class="hero-aside">
+      <span class="pill reveal" data-delay="200">Interactive</span>
+      <p class="lede reveal" data-delay="280">Answer four questions about your land and the jobs you do — get the class you actually need and three machines that fit.</p>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="tool reveal" data-tool="sizing">
+      <script type="application/json" id="sizing-data">{"source": {"label": "Kubota USA, full tractor lineup", "url": "https://www.kubotausa.com/tractors", "checked": "2026-08-16"}, "models": [{"id": "kubota-bx1880", "brand": "Kubota", "name": "BX1880", "klass": "sub-compact", "hp": 16.6, "pto": 13.7, "lift": 680, "loader": 739, "flow": 6.2, "weight": 1336, "price": 12798, "price_year": 2026, "price_source": "manufacturer", "specs_source": "manufacturer", "verified": true, "hitch": "Category I", "tasks": ["mowing", "garden", "snow"], "note": "The entry point of the class: mower deck, light loader, fits a single garage bay.", "url": "https://www.kubotausa.com/equipment-series/bx-series"}, {"id": "kubota-bx2680", "brand": "Kubota", "name": "BX2680", "klass": "sub-compact", "hp": 23.3, "pto": 19.5, "lift": 680, "loader": null, "loader_note": "Kubota publishes the loader figure only for the first model of the series", "flow": 6.2, "weight": 1521, "price": 17632, "price_year": 2026, "price_source": "manufacturer", "specs_source": "mixed", "verified": true, "hitch": "Category I", "tasks": ["mowing", "loader", "garden", "snow"], "note": "Top of the BX range — same frame as the BX1880 with meaningfully more engine.", "url": "https://www.kubotausa.com/equipment-series/bx-series"}, {"id": "kubota-b2601", "brand": "Kubota", "name": "B2601", "klass": "sub-compact", "hp": 24.3, "pto": 19.5, "lift": 1411, "loader": null, "loader_note": "948 lb belongs to the B2301 spec sheet, not confirmed for the B2601", "flow_total": 8.3, "weight": 1632, "price": 20017, "price_year": 2026, "price_source": "manufacturer", "specs_source": "mixed", "verified": true, "hitch": "Category I", "tasks": ["mowing", "loader", "garden", "snow"], "note": "Heavier build than the BX with a three-range HST — the usual step up when a loader is the main job.", "hp_note": "TractorData quotes 25.5 hp gross for this model", "url": "https://www.kubotausa.com/equipment-series/b01-series"}, {"id": "kubota-lx2620", "brand": "Kubota", "name": "LX2620", "klass": "compact", "hp": 23.3, "pto": 19.4, "lift": 1676, "loader": 1324, "flow": 8.7, "price": 20337, "price_year": 2026, "price_source": "manufacturer", "specs_source": "manufacturer", "verified": true, "hitch": "Category I", "tasks": ["mowing", "loader", "garden", "snow", "hay"], "note": "Replaces the LX2610. Same engine class as an L2502 but a far stronger hitch and 8.7 GPM of flow.", "url": "https://www.kubotausa.com/equipment-series/lx-series"}, {"id": "kubota-l2502", "page": "/compact-tractors/kubota-l2502/", "brand": "Kubota", "name": "L2502", "klass": "compact", "hp": 23.3, "pto": 19.8, "lift": 1389, "loader": null, "loader_note": "no loader figure published for this model", "flow": 5.2, "price": 17449, "price_year": 2026, "price_source": "manufacturer", "specs_source": "manufacturer", "verified": true, "hitch": "Category I", "tasks": ["loader", "land", "hay", "snow"], "note": "Replaces the L2501. Stays under the emissions threshold, so no diesel particulate filter to service.", "url": "https://www.kubotausa.com/equipment-series/standard-l-series"}, {"id": "kubota-l3302", "brand": "Kubota", "name": "L3302", "klass": "compact", "hp": 33.0, "pto": 26.0, "lift": 1389, "loader": null, "loader_note": "no loader figure published for this model", "price": 23791, "price_year": 2026, "price_source": "manufacturer", "specs_source": "mixed", "verified": true, "hitch": "Category I", "tasks": ["loader", "land", "hay", "snow"], "note": "First step over the emissions line: more capable, and now with aftertreatment to maintain.", "url": "https://www.kubotausa.com/equipment-series/standard-l-series"}, {"id": "john-deere-1025r", "brand": "John Deere", "page": "/compact-tractors/john-deere-1025r/", "name": "1025R", "klass": "sub-compact", "hp": 23.8, "pto": 18, "lift": 681, "loader": null, "loader_note": "TractorData lists the loader as an option but publishes no lift figure", "flow": 3.5, "flow_total": 6.3, "weight": 1444, "price": 18013, "price_year": 2026, "price_source": "tractordata", "specs_source": "tractordata", "verified": "tractordata", "tasks": ["mowing", "loader", "garden", "snow"], "note": "The most common sub-compact in the country, with the widest dealer network.", "url": "https://www.tractordata.com/farm-tractors/007/2/7/7277-john-deere-1025r.html"}, {"id": "john-deere-2025r", "brand": "John Deere", "page": "/compact-tractors/john-deere-2025r/", "name": "2025R", "klass": "sub-compact", "hp": 24.2, "pto": 18, "lift": 1150, "lift_at_ends": 1433, "loader": null, "loader_note": "TractorData lists the loader as an option but publishes no lift figure", "flow": 3.4, "flow_total": 5.6, "weight": 1660, "price": null, "price_last_known": 15348, "price_year": 2014, "price_source": "none", "specs_source": "tractordata", "verified": "tractordata", "tasks": ["mowing", "loader", "garden", "snow"], "note": "Same class as the 1025R with a heavier three-point hitch.", "url": "https://www.tractordata.com/farm-tractors/007/2/8/7282-john-deere-2025r.html"}, {"id": "john-deere-3025e", "brand": "John Deere", "page": "/compact-tractors/john-deere-3025e/", "name": "3025E", "klass": "compact", "hp": 24.4, "pto": 17.4, "lift": 1356, "loader": null, "loader_note": "TractorData lists the loader as an option but publishes no lift figure", "flow": 5.3, "flow_total": 9.3, "weight": 2222, "price": null, "price_last_known": 18330, "price_year": 2020, "price_source": "none", "specs_source": "tractordata", "verified": "tractordata", "tasks": ["loader", "land", "hay", "snow"], "note": "Direct rival to the L2502, usually argued on loader-package pricing rather than specs.", "url": "https://www.tractordata.com/farm-tractors/009/1/0/9102-john-deere-3025e.html"}, {"id": "kioti-ck2620", "brand": "Kioti", "name": "CK2620", "klass": "compact", "hp": 24.5, "pto": 18.7, "pto_note": "TractorData figure is for the CK2620SE", "lift": 1631, "loader": null, "flow": 11.73, "price": null, "price_source": "none", "specs_source": "tractordata", "verified": "tractordata", "tasks": ["loader", "land", "hay", "snow"], "note": "Strong hitch for the money; dealer coverage is thinner than the two big brands.", "url": "https://www.tractordata.com/farm-tractors/011/4/1/11417-kioti-ck2620.html"}, {"id": "kioti-cs2520", "brand": "Kioti", "name": "CS2520", "klass": "sub-compact", "hp": 24.5, "pto": 18.5, "lift": 700, "loader": null, "weight": 1554, "flow": 6.97, "price": null, "price_source": "none", "specs_source": "tractordata", "verified": "tractordata", "tasks": ["mowing", "garden", "snow"], "note": "Budget entry into the class.", "url": "https://www.tractordata.com/farm-tractors/011/2/2/11222-kioti-cs2520.html"}, {"id": "mahindra-max-26xlt", "brand": "Mahindra", "name": "Max 26XLT", "klass": "sub-compact", "hp": 25.9, "pto": 20.2, "lift": null, "loader": null, "flow": 5.8, "flow_total": 8.3, "price": null, "price_last_known": 16880, "price_year": 2019, "price_source": "none", "specs_source": "tractordata", "verified": "tractordata", "tasks": ["mowing", "loader", "garden"], "note": "Priced below average; resale is the open question owners raise most.", "url": "https://www.tractordata.com/farm-tractors/010/3/5/10359-mahindra-max-26xlt.html"}, {"id": "mahindra-1626", "brand": "Mahindra", "name": 1626, "klass": "compact", "hp": 25.9, "pto": 21.5, "lift": 1720, "lift_at_ends": 2646, "loader": null, "flow": 7.5, "price": null, "price_last_known": 18200, "price_year": 2018, "price_source": "none", "specs_source": "tractordata", "verified": "tractordata", "tasks": ["loader", "land", "hay"], "note": "One of the strongest three-point lifts quoted in the class.", "url": "https://www.tractordata.com/farm-tractors/010/0/2/10023-mahindra-1626.html"}, {"id": "new-holland-workmaster-25s", "brand": "New Holland", "name": "Workmaster 25S", "klass": "compact", "hp": 24.7, "pto": 17.2, "lift": 728, "lift_at_ends": 992, "loader": null, "weight": 1444, "flow": 4.6, "flow_total": 6.7, "price": null, "price_source": "none", "specs_source": "tractordata", "verified": "tractordata", "tasks": ["loader", "land", "snow"], "note": "Deliberately simple machine with little electronics to fail.", "url": "https://www.tractordata.com/farm-tractors/011/1/3/11130-new-holland-workmaster-25s.html"}, {"id": "massey-gc1723e", "brand": "Massey Ferguson", "name": "GC1723E", "klass": "sub-compact", "hp": null, "pto": null, "lift": null, "loader": null, "price": null, "price_source": "none", "specs_source": "none", "unverified": true, "verified": false, "tasks": ["mowing", "garden", "snow"], "note": "More compact than most of the class, limited on lift.", "url": "#"}, {"id": "ls-mt225s", "brand": "LS", "name": "MT225S", "klass": "sub-compact", "hp": 24.7, "pto": 19.3, "lift": null, "lift_at_ends": 1896, "loader": null, "weight": 1764, "flow": 5.6, "price": null, "price_source": "none", "specs_source": "tractordata", "verified": "tractordata", "tasks": ["mowing", "loader", "garden"], "note": "Cheapest in the shortlist at comparable specs.", "url": "https://www.tractordata.com/farm-tractors/011/0/6/11064-ls-mt225s.html"}], "outlets": [{"label": "Equipment financing", "note": "Know the monthly payment before you shortlist machines", "url": "https://vipcapitalfunding.com/equipment-financing/"}, {"label": "Implements by PTO horsepower", "note": "Match the implement to the power at the PTO, not at the engine", "url": "https://palletforks.com/collections/3-point-hitch-attachments"}, {"label": "Kubota lineup and MSRP by series", "note": "Manufacturer's own pricing — the series index, then pick a series", "url": "https://www.kubotausa.com/tractors"}], "disclosure": "We only cover gear we have researched, and our reports are built on documented owner experience, not on brand copy — the method is stated on every report page. Links to sellers are plain links: we are not in their affiliate programmes yet, and nothing on this site is paid placement."}</script>
+
+      <form class="tool-form">
+        <label class="field">
+          <span class="field-label">Land you work, acres</span>
+          <input type="number" name="acres" value="3" min="0.25" max="200" step="0.25" inputmode="decimal">
+<span class="field-hint">Count what you actually mow, till or clear — not what the deed says you own.</span>        </label>
+        <label class="field">
+          <span class="field-label">Budget, USD</span>
+          <input type="number" name="budget" value="25000" min="5000" max="120000" step="500" inputmode="decimal">
+<span class="field-hint">New machine at list price, before attachments and dealer fees.</span>        </label>
+        <label class="field field-wide">
+          <span class="field-label">What you will do with it</span>
+          <span class="checks">
+            <label class="check">
+              <input type="checkbox" name="task" value="mowing" checked>
+              <span>Mowing</span>
+            </label>
+            <label class="check">
+              <input type="checkbox" name="task" value="loader" checked>
+              <span>Loader work</span>
+            </label>
+            <label class="check">
+              <input type="checkbox" name="task" value="land">
+              <span>Land clearing</span>
+            </label>
+            <label class="check">
+              <input type="checkbox" name="task" value="hay">
+              <span>Hay and pasture</span>
+            </label>
+            <label class="check">
+              <input type="checkbox" name="task" value="garden">
+              <span>Garden and tilling</span>
+            </label>
+            <label class="check">
+              <input type="checkbox" name="task" value="snow">
+              <span>Snow removal</span>
+            </label>
+          </span>
+        </label>
+
+        <div class="tool-actions">
+          <button class="btn" type="submit">Show my match</button>
+          <button class="btn ghost" type="reset">Reset</button>
+        </div>
+      </form>
+
+      <div class="tool-result" data-result hidden></div>
+    </div>
+  </div>
+</section>
+
+<section class="pt-0">
+  <div class="wrap">
+    <div class="layout">
+      <article class="prose reveal">
+        <p>Below the calculator we explain the logic it uses, so the answer is not a
+black box: class thresholds, why <a class="glossary-link" href="/acrejournal/glossary/#three-point-lift" title="Weight the rear hitch raises — the number that limits which implements you can run.">lift capacity</a> matters more than horsepower, and where the numbers
+come from.</p>
+<h2 id="logic">How the answer is calculated</h2>
+<p>Acreage is the input people expect to matter and the one that matters least. What decides
+the machine is the heaviest job you will do repeatedly: the weight of the implement it has
+to lift, the flow a hydraulic attachment needs, and whether the ground is level.</p>
+<p>That is why this tool asks what you do rather than how much land you have. Five acres of
+lawn and five acres of scrub with a gravel drive to clear are not the same problem, and no
+acreage figure separates them.</p>
+<h2 id="sources">Where these numbers come from</h2>
+<p>Kubota figures in this tool are manufacturer MSRP and horsepower read from the Kubota USA
+series pages on 16 August 2026 and marked as verified. Other brands are estimates in the
+right class, marked unverified, because those manufacturers block our checks — and an
+estimate presented as a specification is worse than no number at all.</p>
+
+        <section class="facts reveal" aria-labelledby="facts-heading">
+  <div class="facts-top">
+    <span class="kick">Method</span>
+    <h2 id="facts-heading">What this tool assumes</h2>
+  </div>
+  <div class="table-wrap">
+    <table class="facts-table" role="table">
+      <thead role="rowgroup">
+        <tr role="row">
+          <th scope="col" role="columnheader">What</th>
+          <th scope="col" role="columnheader">Figure</th>
+          <th scope="col" role="columnheader">Source</th>
+        </tr>
+      </thead>
+      <tbody role="rowgroup">
+        <tr role="row">
+          <th scope="row" role="rowheader">Model set</th>
+          <td role="cell">
+            <span class="facts-value">13 machines</span>
+<span class="facts-hint">The models that cover most of the documented demand</span>          </td><td class="facts-src" role="cell"><a href="/acrejournal/about/" rel="nofollow noopener">Acre Journal method</a></td>
+        </tr>
+        <tr role="row">
+          <th scope="row" role="rowheader">Matching logic</th>
+          <td role="cell">
+            <span class="facts-value">Jobs first, acreage second</span>
+<span class="facts-hint">The heaviest implement decides the class, not the acre count</span>          </td><td class="facts-src" role="cell"><a class="facts-same" href="/acrejournal/about/" rel="nofollow noopener"
+                 title="Acre Journal method">same source</a></td>
+        </tr>
+        <tr role="row">
+          <th scope="row" role="rowheader">Prices in this tool</th>
+          <td role="cell">
+            <span class="facts-value">manufacturer MSRP</span>
+<span class="facts-hint">Kubota list prices as of 16 Aug 2026; other brands are estimates and marked as such</span>          </td><td class="facts-src" role="cell"><a href="https://www.kubotausa.com/tractors" rel="nofollow noopener">Kubota USA, full tractor lineup</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+        <div class="disclosure">We only cover gear we have researched, and our reports are built on documented owner experience, not on brand copy — the method is stated on every report page. Links to sellers are plain links: we are not in their affiliate programmes yet, and nothing on this site is paid placement.
+</div>
+        
+      </article>
+      <aside class="rail reveal" data-delay="140">
+        <div class="toc toc-related">
+          <b>Related</b>
+          <ul>
+<li><a href="/acrejournal/compact-tractors/">Compact tractors</a></li><li><a href="/acrejournal/compact-tractors/kubota-l2502/">Kubota L2501</a></li><li><a href="/acrejournal/attachments/">Attachments &amp; PTO</a></li>          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<script src="/acrejournal/js/tool-sizing.js?v=8963855d" defer></script>
+
+<section class="faq-band">
+  <div class="wrap">
+    <section class="faq" aria-label="Questions and answers">
+  <div class="faq-side">
+    <span class="pill">FAQ</span>
+<h2 id="faq">Questions &amp; Answers</h2>    <p class="faq-lede">Answered from the same sources as the tables above — each figure is
+      linked on the page it comes from.</p>
+  </div>
+  <div class="faq-list">
+    <details open>
+      <summary><h3 class="faq-q">Does more horsepower always help?</h3></summary>
+      <div class="faq-a"><div class="faq-a-in"><p>Past a point, weight and hydraulics matter more than engine power — a heavier machine with the same horsepower does more work.</p></div></div>
+    </details>
+    <details>
+      <summary><h3 class="faq-q">Is a sub-compact enough for five acres?</h3></summary>
+      <div class="faq-a"><div class="faq-a-in"><p>It depends far more on the heaviest implement you plan to run than on the acreage itself.</p></div></div>
+    </details>
+  </div>
+</section>
+
+  </div>
+</section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="footer-logo" href="/acrejournal/" aria-label="Acre Journal — home">
+          <svg class="mark" width="38" height="38" viewBox="0 0 32 32" aria-hidden="true">
+            <rect width="32" height="32" rx="8" fill="currentColor"></rect>
+            <rect x="7.4" y="7.4" width="17.2" height="17.2" rx="1.6" stroke="var(--dark)" stroke-width="2.6" fill="none"></rect>
+            <path d="M15.4 8.7v14.6M8.7 15.2h14.6" stroke="var(--dark)" stroke-width="1.9"></path>
+            <path d="M16.7 16.5h6.9v6.8h-6.9z" fill="var(--accent)"></path>
+          </svg>
+          <span class="wordmark"><i>Acre</i><i>Journal</i></span>
+        </a>
+        <p class="footer-about">Independent coverage of compact tractors, used equipment, irrigation and greenhouses. Every figure on the site carries a source, and a place in a shortlist is never for sale.
+</p>
+      </div>
+
+      <div class="cols">
+        <div>
+          <b>Sections</b>
+<a href="/acrejournal/compact-tractors/">Compact tractors</a><a href="/acrejournal/used-tractors/">Used equipment</a><a href="/acrejournal/irrigation/">Irrigation</a><a href="/acrejournal/greenhouses/">Greenhouses</a><a href="/acrejournal/parts/">Parts</a><a href="/acrejournal/attachments/">Attachments &amp; PTO</a>        </div>
+        <div>
+          <b>Read</b>
+<a href="/acrejournal/reviews/">Owner reports</a><a href="/acrejournal/compare/">Comparisons</a><a href="/acrejournal/learn/">Learn</a><a href="/acrejournal/glossary/">Glossary</a><a href="/acrejournal/faq/">FAQ</a>        </div>
+        <div>
+          <b>About</b>
+<a href="/acrejournal/about/#method">How we check</a><a href="/acrejournal/about/">About us</a><a href="/acrejournal/disclosure/">Affiliate disclosure</a><a href="/acrejournal/privacy/">Privacy policy</a>        </div>
+      </div>
+    </div>
+
+    <div class="fine">
+      <p>We only cover gear we have researched, and our reports are built on documented owner experience, not on brand copy — the method is stated on every report page. Links to sellers are plain links: we are not in their affiliate programmes yet, and nothing on this site is paid placement.
+</p>
+      <p>&copy; 2026 Acre Journal. Figures carry their source and check date. Photography is illustrative.</p>
+    </div>
+  </div>
+  <span class="footer-word" aria-hidden="true">ACRE JOURNAL</span>
+</footer>
+
+<div class="palette-dock" hidden>
+  <b>Palette</b>
+  <div class="palette-list">
+    <button type="button" data-palette-pick="clay"><i style="--a:#B4571A;--g:#F5F3EF"></i>Clay</button>
+    <button type="button" data-palette-pick="paper"><i style="--a:#1F7A4C;--g:#FFFFFF"></i>Paper</button>
+    <button type="button" data-palette-pick="field"><i style="--a:#2E7D32;--g:#F7F9F5"></i>Field</button>
+    <button type="button" data-palette-pick="journal"><i style="--a:#17507A;--g:#FBFBFC"></i>Journal</button>
+  </div>
+</div>
+
+<script src="/acrejournal/js/app.js?v=1b2739c8" defer></script>
+</body>
+</html>

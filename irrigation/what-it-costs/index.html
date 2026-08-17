@@ -1,0 +1,455 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script>
+(function () {
+  var d = document.documentElement;
+  d.className += ' js';
+  try {
+    var th = localStorage.getItem('aj-theme');
+    d.setAttribute('data-theme', th === 'dark' ? 'dark' : 'light');
+    var pal = localStorage.getItem('aj-palette');
+    if (pal) d.setAttribute('data-palette', pal);
+  } catch (e) {}
+  if (location.hash && location.hash.length > 1) d.classList.add('anchor-landing');
+})();
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
+<meta name="x-apple-disable-message-reformatting">
+<title>What irrigation actually costs — Acre Journal</title>
+<meta name="description" content="Hardware prices for drip and sprinkler on a small block, which parts are fixtures and which are consumables, and the three costs people leave out of the budget.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://acrejournal.com/irrigation/what-it-costs/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="What irrigation actually costs">
+<meta property="og:description" content="Hardware prices for drip and sprinkler on a small block, which parts are fixtures and which are consumables, and the three costs people leave out of the budget.">
+<meta property="og:url" content="https://acrejournal.com/irrigation/what-it-costs/">
+<meta property="og:site_name" content="Acre Journal">
+<link rel="icon" href="/acrejournal/favicon.svg?v=40b724f3" type="image/svg+xml">
+<link rel="stylesheet" href="/acrejournal/css/site.css?v=b44cc107"><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "headline": "What irrigation actually costs", "description": "Hardware prices for drip and sprinkler on a small block, which parts are fixtures and which are consumables, and the three costs people leave out of the budget.", "url": "https://acrejournal.com/irrigation/what-it-costs/", "dateModified": "2026-08-16", "publisher": {"@type": "Organization", "name": "Acre Journal"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://acrejournal.com/"}, {"@type": "ListItem", "position": 2, "name": "Irrigation", "item": "https://acrejournal.com/irrigation/"}, {"@type": "ListItem", "position": 3, "name": "What irrigation actually costs", "item": "https://acrejournal.com/irrigation/what-it-costs/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What does a drip system cost per acre?", "acceptedAnswer": {"@type": "Answer", "text": "There is no single figure, because the cost scales with row spacing rather than area. A block of widely spaced rows needs a fraction of the tape that close-planted beds do on the same acre. Price it by feet of tape and number of zones, not by acreage."}}, {"@type": "Question", "name": "What is the biggest recurring cost?", "acceptedAnswer": {"@type": "Answer", "text": "Tape. Depending on wall thickness it lasts one to five seasons, and it is the only part of a well-built system that is designed to be thrown away. Filters, regulators, mainline and fittings are bought once."}}, {"@type": "Question", "name": "Do I need a timer?", "acceptedAnswer": {"@type": "Answer", "text": "Once you have more than one zone, yes — not for convenience but because zones have to run in sequence to hold pressure. Without one you are the timer, every day, for the whole season."}}, {"@type": "Question", "name": "What do people forget to budget for?", "acceptedAnswer": {"@type": "Answer", "text": "Three things. Filtration sized to the actual water source rather than to the catalogue default. Enough fittings, because you always need more than you counted. And the replacement cycle for tape, which turns a one-off purchase into an annual line item."}}, {"@type": "Question", "name": "Is a kit cheaper than buying parts separately?", "acceptedAnswer": {"@type": "Answer", "text": "Not usually on price. The reason to buy a kit is that the pressure ratings of the parts agree, which is exactly the thing a first-time buyer gets wrong when assembling a system from a parts list."}}]}]}</script>
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="logo" href="/acrejournal/" aria-label="Acre Journal — home">
+      <svg class="mark" width="30" height="30" viewBox="0 0 32 32" aria-hidden="true">
+        <rect width="32" height="32" rx="8" fill="currentColor"></rect>
+        <rect x="7.4" y="7.4" width="17.2" height="17.2" rx="1.6" stroke="var(--ground)" stroke-width="2.6" fill="none"></rect>
+        <path d="M15.4 8.7v14.6M8.7 15.2h14.6" stroke="var(--ground)" stroke-width="1.9"></path>
+        <path d="M16.7 16.5h6.9v6.8h-6.9z" fill="var(--mark-crop)"></path>
+      </svg>
+      <span class="wordmark"><i>Acre</i><i>Journal</i></span>
+    </a>
+    <nav class="site" id="site-nav" aria-label="Main">
+      <a href="/acrejournal/compact-tractors/">Compact tractors</a>
+      <a href="/acrejournal/used-tractors/">Used</a>
+      <a href="/acrejournal/irrigation/" aria-current="page">Irrigation</a>
+      <a href="/acrejournal/greenhouses/">Greenhouses</a>
+
+      <div class="more">
+        <button class="more-toggle" type="button" aria-expanded="false" aria-controls="nav-more"
+>
+          More
+          <svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <path d="M2.5 4.5 6 8l3.5-3.5" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <div class="more-sheet" id="nav-more">
+          <span class="more-cap">Sections</span>
+          <a href="/acrejournal/parts/">Parts</a>
+          <a href="/acrejournal/attachments/">Attachments &amp; PTO</a>
+          <a href="/acrejournal/lawn-mowers/">Mowing</a>
+          <a href="/acrejournal/hydroponics/">Hydroponics</a>
+          <span class="more-cap">Read</span>
+          <a href="/acrejournal/reviews/">Owner reports</a>
+          <a href="/acrejournal/learn/">Learn</a>
+          <a href="/acrejournal/glossary/">Glossary</a>
+          <a href="/acrejournal/compare/">Compare</a>
+          <a href="/acrejournal/faq/">FAQ</a>
+        </div>
+      </div>
+
+      <a class="btn cta in-drawer" href="/acrejournal/reviews/">Owner reports</a>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Switch theme" title="Theme: system">
+      <svg class="i-sun" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+        <circle cx="10" cy="10" r="4"></circle>
+        <path d="M10 1.5v2M10 16.5v2M1.5 10h2M16.5 10h2M4 4l1.4 1.4M14.6 14.6L16 16M16 4l-1.4 1.4M5.4 14.6L4 16" stroke-linecap="round"></path>
+      </svg>
+      <svg class="i-moon" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+        <path d="M16.5 12.4A7 7 0 0 1 7.6 3.5a7 7 0 1 0 8.9 8.9z" stroke-linejoin="round"></path>
+      </svg>
+      <svg class="i-auto" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+        <circle cx="10" cy="10" r="7"></circle>
+        <path d="M10 3v14a7 7 0 0 0 0-14z" fill="currentColor" stroke="none"></path>
+      </svg>
+    </button>
+    <a class="btn cta on-bar" href="/acrejournal/reviews/">Owner reports</a>
+    <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="nav-scrim" hidden></div>
+
+<main id="main">
+
+<div class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb">
+<a href="/acrejournal/">Home</a> / <a href="/acrejournal/irrigation/">Irrigation</a> / <span aria-current="page">What irrigation actually costs</span></nav>
+
+  <div class="layout">
+    <article class="prose reveal">
+      <h1>What irrigation actually costs</h1>
+      <div class="meta">
+        <span>Updated 16 Aug 2026</span>
+        <span>·</span>
+        <span> min read</span>
+      </div>
+
+      <section class="facts reveal" aria-labelledby="facts-heading">
+  <div class="facts-top">
+    <span class="kick">At a glance</span>
+    <h2 id="facts-heading">Current hardware prices</h2>
+  </div>
+  <div class="table-wrap">
+    <table class="facts-table" role="table">
+      <thead role="rowgroup">
+        <tr role="row">
+          <th scope="col" role="columnheader">What</th>
+          <th scope="col" role="columnheader">Figure</th>
+          <th scope="col" role="columnheader">Source</th>
+        </tr>
+      </thead>
+      <tbody role="rowgroup">
+        <tr role="row">
+          <th scope="row" role="rowheader">Sprinkler stake and hose base</th>
+          <td role="cell">
+            <span class="facts-value"><span translate="no">$14.76</span></span>
+<span class="facts-hint">The cheapest way to put one head where you need it</span>          </td><td class="facts-src" role="cell"><a href="https://www.irrigationking.com/sprinklers/1-2m-metal-stake-hose-base-for-rk-21.html" rel="nofollow noopener">IrrigationKing, RainSpike base</a></td>
+        </tr>
+        <tr role="row">
+          <th scope="row" role="rowheader">Wobbler assembly</th>
+          <td role="cell">
+            <span class="facts-value"><span translate="no">$22.47</span></span>
+<span class="facts-hint">Bigger droplet at low pressure — less loss to drift</span>          </td><td class="facts-src" role="cell"><a href="https://www.irrigationking.com/sprinklers/wobbler-kit-1.html" rel="nofollow noopener">IrrigationKing, wobbler kit</a></td>
+        </tr>
+        <tr role="row">
+          <th scope="row" role="rowheader">Tripod sprinkler stand, 6 ft</th>
+          <td role="cell">
+            <span class="facts-value"><span translate="no">$177.00</span></span>
+<span class="facts-hint">Height is what buys coverage</span>          </td><td class="facts-src" role="cell"><a href="https://www.irrigationking.com/sprinklers/one-inch-raintower-sprinkler-stand.html" rel="nofollow noopener">IrrigationKing, Raintower stand</a></td>
+        </tr>
+        <tr role="row">
+          <th scope="row" role="rowheader">Complete tripod sprinkler kit</th>
+          <td role="cell">
+            <span class="facts-value"><span translate="no">$267.97</span></span>
+<span class="facts-hint">Stand and head together</span>          </td><td class="facts-src" role="cell"><a href="https://www.irrigationking.com/sprinklers/1-raintower-tripod-kit.html" rel="nofollow noopener">IrrigationKing, Raintower kit</a></td>
+        </tr>
+        <tr role="row">
+          <th scope="row" role="rowheader">Complete manual irrigation kit</th>
+          <td role="cell">
+            <span class="facts-value"><span translate="no">$1,130.08</span></span>
+<span class="facts-hint">A whole block&#39;s hardware in one box</span>          </td><td class="facts-src" role="cell"><a href="https://www.irrigationking.com/sprinklers/rainspike-sprinkler-kit.html" rel="nofollow noopener">IrrigationKing, RainSpike kit</a></td>
+        </tr>
+        <tr role="row">
+          <th scope="row" role="rowheader">Drip tape, 100 ft roll</th>
+          <td role="cell">
+            <span class="facts-value"><span translate="no">$29.65</span></span>
+<span class="facts-hint">The small roll for a garden run; row-crop rolls are sold by the thousand feet</span>          </td><td class="facts-src" role="cell"><a href="https://www.dripworks.com/dripworks-100-drip-tape-rolls" rel="nofollow noopener">DripWorks, 100 ft rolls</a></td>
+        </tr>
+        <tr role="row">
+          <th scope="row" role="rowheader">Drip tape, 7,500 ft roll</th>
+          <td role="cell">
+            <span class="facts-value"><span translate="no">$360.45</span></span>
+<span class="facts-hint">Aqua-Traxx 8 mil — under 5 cents a foot at row-crop scale</span>          </td><td class="facts-src" role="cell"><a href="https://www.dripworks.com/aqua-traxx-azul-8-mil-drip-tape-rolls" rel="nofollow noopener">DripWorks, Aqua-Traxx 8 mil</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+<p class="facts-foot">Seller list prices taken on 17 August 2026, before shipping and tax. They move. Every row links to the product it prices, not to the seller&#39;s catalogue.</p></section>
+
+      <p>Irrigation hardware is cheap in absolute terms and structured in a way that catches people
+out. The mistake is not overspending on the first purchase — it is treating the first
+purchase as the cost of the system.</p>
+<h2>Fixtures and consumables</h2>
+<p>Split every price list into two columns before you compare anything.</p>
+<p><strong>Fixtures</strong>, bought once and lasting years: filters, pressure regulators, mainline,
+fittings, valves, timers, sprinkler stands and heads. This is where the quality decision
+belongs, because replacing them is disruptive.</p>
+<p><strong>Consumables</strong>, on a replacement cycle: <a class="glossary-link" href="/acrejournal/glossary/#drip-tape" title="Thin-walled tubing with built-in emitters, laid along a crop row.">drip tape</a>, above all. Depending on wall thickness
+tape lasts one season to five. Thin-wall tape is designed as an annual item; heavier tape
+survives being rolled and redeployed if it is not left in sunlight over winter.</p>
+<p>A budget that lists only fixtures looks cheap and is wrong by whatever the tape costs
+every few years.</p>
+<h2>What the parts cost right now</h2>
+<p>Prices from a working seller on 16 August 2026, before shipping.</p>
+<section class="offers reveal" aria-labelledby="off-irrigation-sprinklers-h">
+  <div class="offers-top">
+    <span class="kick">What to buy</span>
+    <h2 id="off-irrigation-sprinklers-h">Sprinkler hardware that fits a small block</h2>
+<p class="offers-lede">Everything below moves water above ground, which is the right choice when the field is uneven or the crop is close-planted. Prices are the seller&#39;s list on the date shown, before shipping.</p>  </div>
+  <ul class="offers-list">
+    <li class="buy-card">
+      <div class="buy-head">
+        <h3>RainSpike base with 47&#34; stake and hose fitting</h3>
+        <span class="buy-price mono"><span translate="no">$14.76</span></span>
+      </div>
+<p class="buy-note">The cheapest way to put one sprinkler where you need it. A stake and a hose fitting, nothing else — the sprinkler head is sold separately.</p>      <a class="btn buy-btn" href="https://www.irrigationking.com/sprinklers/1-2m-metal-stake-hose-base-for-rk-21.html"
+         rel="sponsored nofollow noopener" target="_blank"
+         aria-label="RainSpike base with 47&#34; stake and hose fitting at IrrigationKing (opens in a new tab)">
+See the RainSpike base with 47&#34;        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M3.5 8h8M8 4.5 11.5 8 8 11.5" stroke-linecap="square"/></svg>
+      </a>
+    </li>
+    <li class="buy-card">
+      <div class="buy-head">
+        <h3>Wobbler RainSpike assembly</h3>
+        <span class="buy-price mono"><span translate="no">$22.47</span></span>
+      </div>
+<p class="buy-note">A wobbler throws a bigger droplet at low pressure, so less of the water leaves as drift. Sensible on a windy site where a fine mist is wasted.</p>      <a class="btn buy-btn" href="https://www.irrigationking.com/sprinklers/wobbler-kit-1.html"
+         rel="sponsored nofollow noopener" target="_blank"
+         aria-label="Wobbler RainSpike assembly at IrrigationKing (opens in a new tab)">
+See the Wobbler RainSpike        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M3.5 8h8M8 4.5 11.5 8 8 11.5" stroke-linecap="square"/></svg>
+      </a>
+    </li>
+    <li class="buy-card">
+      <div class="buy-head">
+        <h3>Raintower 1&#34; tripod stand, 6 ft</h3>
+        <span class="buy-price mono"><span translate="no">$177.00</span></span>
+      </div>
+<p class="buy-note">Height is what buys you coverage: the same head on a tripod wets a far wider circle than one on a stake. Stand only.</p>      <a class="btn buy-btn" href="https://www.irrigationking.com/sprinklers/one-inch-raintower-sprinkler-stand.html"
+         rel="sponsored nofollow noopener" target="_blank"
+         aria-label="Raintower 1&#34; tripod stand, 6 ft at IrrigationKing (opens in a new tab)">
+See the Raintower 1&#34; tripod        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M3.5 8h8M8 4.5 11.5 8 8 11.5" stroke-linecap="square"/></svg>
+      </a>
+    </li>
+    <li class="buy-card">
+      <div class="buy-head">
+        <h3>Raintower 1&#34; heavy-duty tripod sprinkler kit</h3>
+        <span class="buy-price mono"><span translate="no">$267.97</span></span>
+      </div>
+<p class="buy-note">Stand and head together. The usual starting point for someone watering an acre or two in blocks rather than all at once.</p>      <a class="btn buy-btn" href="https://www.irrigationking.com/sprinklers/1-raintower-tripod-kit.html"
+         rel="sponsored nofollow noopener" target="_blank"
+         aria-label="Raintower 1&#34; heavy-duty tripod sprinkler kit at IrrigationKing (opens in a new tab)">
+See the Raintower 1&#34; heavy-duty        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M3.5 8h8M8 4.5 11.5 8 8 11.5" stroke-linecap="square"/></svg>
+      </a>
+    </li>
+    <li class="buy-card">
+      <div class="buy-head">
+        <h3>RainSpike complete manual irrigation kit</h3>
+        <span class="buy-price mono"><span translate="no">$1,130.08</span></span>
+      </div>
+<p class="buy-note">A whole block&#39;s worth of hardware in one box. Worth pricing against buying the same parts separately — sometimes the kit wins, sometimes not.</p>      <a class="btn buy-btn" href="https://www.irrigationking.com/sprinklers/rainspike-sprinkler-kit.html"
+         rel="sponsored nofollow noopener" target="_blank"
+         aria-label="RainSpike complete manual irrigation kit at IrrigationKing (opens in a new tab)">
+See the RainSpike complete        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M3.5 8h8M8 4.5 11.5 8 8 11.5" stroke-linecap="square"/></svg>
+      </a>
+    </li>
+  </ul>
+  <p class="offers-foot">
+    Prices are the seller's list on 2026-08-16, before shipping and tax, and
+    they move. Links go to IrrigationKing.    We are not in IrrigationKing's affiliate programme, so these are plain
+    links and nothing here is paid placement.  </p>
+</section>
+
+<p>Note the shape of that list: the difference between putting one sprinkler on a stake and
+running a proper block is two orders of magnitude, and almost all of it is the hardware
+between the source and the head, not the head itself.</p>
+<section class="offers reveal" aria-labelledby="off-irrigation-drip-h">
+  <div class="offers-top">
+    <span class="kick">What to buy</span>
+    <h2 id="off-irrigation-drip-h">Drip line, from the tape out</h2>
+<p class="offers-lede">Drip beats sprinklers on efficiency by a wide margin — over 90% of applied water reaches the root zone against 50–70% overhead. The order of parts matters more than the brand: filter, then regulator, then tape.</p>  </div>
+  <ul class="offers-list">
+    <li class="buy-card">
+      <div class="buy-head">
+        <h3>Aqua-Traxx Azul 8 mil drip tape, 7,500 ft roll</h3>
+        <span class="buy-price mono"><span translate="no">$360.45</span></span>
+      </div>
+<p class="buy-note">The consumable at the end of the line, sold by the roll — this one works out under 5 cents a foot. Wall thickness decides how many seasons it survives; the 6 and 15 mil versions sit either side of this one. Emitter spacing (4 or 8 in) has to match your crop spacing, not your budget.</p>      <a class="btn buy-btn" href="https://www.dripworks.com/aqua-traxx-azul-8-mil-drip-tape-rolls"
+         rel="sponsored nofollow noopener" target="_blank"
+         aria-label="Aqua-Traxx Azul 8 mil drip tape, 7,500 ft roll at DripWorks (opens in a new tab)">
+See the Aqua-Traxx Azul 8 mil        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M3.5 8h8M8 4.5 11.5 8 8 11.5" stroke-linecap="square"/></svg>
+      </a>
+    </li>
+    <li class="buy-card">
+      <div class="buy-head">
+        <h3>Drip tape row crop kit, small</h3>
+        <span class="buy-price mono"><span translate="no">$131.85</span></span>
+      </div>
+<p class="buy-note">Filter, regulator, header and tape pre-matched for a small block; medium is <span translate="no">$486.95</span> and large <span translate="no">$675.45</span>. The reason to buy a kit is not price, it&#39;s that the pressure ratings of the parts agree.</p>      <a class="btn buy-btn" href="https://www.dripworks.com/drip-tape-row-crop-kit-small"
+         rel="sponsored nofollow noopener" target="_blank"
+         aria-label="Drip tape row crop kit, small at DripWorks (opens in a new tab)">
+See the Drip tape row crop kit        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M3.5 8h8M8 4.5 11.5 8 8 11.5" stroke-linecap="square"/></svg>
+      </a>
+    </li>
+    <li class="buy-card">
+      <div class="buy-head">
+        <h3>Arkal disc filter, 140 mesh</h3>
+        <span class="buy-price mono"><span translate="no">$44.75</span></span>
+      </div>
+<p class="buy-note">Skip filtration and emitters clog — that is the single most common way a drip system dies in its first season. A disc filter handles dirty surface water better than a screen; if the supply is clean municipal water, a <span translate="no">$14.35</span> Y-screen does the job. It goes before the regulator.</p>      <a class="btn buy-btn" href="https://www.dripworks.com/arkal-disc-filters"
+         rel="sponsored nofollow noopener" target="_blank"
+         aria-label="Arkal disc filter, 140 mesh at DripWorks (opens in a new tab)">
+See the Arkal disc filter        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M3.5 8h8M8 4.5 11.5 8 8 11.5" stroke-linecap="square"/></svg>
+      </a>
+    </li>
+  </ul>
+  <p class="offers-foot">
+    Prices are the seller's list on 2026-08-17, before shipping and tax, and
+    they move. Links go to DripWorks.    We are not in DripWorks's affiliate programme, so these are plain
+    links and nothing here is paid placement.  </p>
+</section>
+
+<h2>Why per-acre pricing misleads</h2>
+<p>Ask what a drip system costs per acre and every answer is wrong, because area is not what
+drives the cost. Row spacing is.</p>
+<p>An acre of orchard rows twelve feet apart needs roughly 3,600 feet of line. An acre of
+close-planted beds at three feet needs four times that. Same acre, four times the tape,
+four times the emitters, four times the replacement cycle.</p>
+<p>Price a system in feet of line and number of zones. Anyone quoting you a dollars-per-acre
+figure without asking about spacing is guessing.</p>
+<h2>The three costs people leave out</h2>
+<p><strong>Filtration sized to your water.</strong> The filter that ships with a kit assumes clean supply.
+Pond water, surface water and iron-bearing wells need more, and finding that out after the
+emitters clog costs you a season of growth, not just the filter.</p>
+<p><strong>Fittings.</strong> Every system needs more couplings, tees, end caps and goof plugs than the
+plan says. Buy a surplus with the first order; a <span translate="no">$2 </span>fitting that stops the job on a
+Saturday costs a day.</p>
+<p><strong>The replacement cycle.</strong> Divide the tape cost by its service life in seasons and put
+that number in the annual budget. On thin-wall tape it is the largest recurring line in
+the whole system.</p>
+<h2>Where the money is actually saved</h2>
+<p>Not in cheaper hardware. In three decisions:</p>
+<ol>
+<li><strong>Zone properly.</strong> Long runs starve at the far end and tempt you to raise pressure,
+   which splits tape at the near end. Shorter zones on a timer cost one timer and save the
+   tape.</li>
+<li><strong>Filter before the regulator.</strong> Grit chews regulator seats. Getting the order right
+   costs nothing and saves a component.</li>
+<li><strong>Buy tape by wall thickness, not by price per foot.</strong> The cheapest tape is the most
+   expensive over five seasons unless you genuinely want an annual consumable.</li>
+</ol>
+
+      <div class="disclosure">We only cover gear we have researched, and our reports are built on documented owner experience, not on brand copy — the method is stated on every report page. Links to sellers are plain links: we are not in their affiliate programmes yet, and nothing on this site is paid placement.
+</div>
+      <a class="next-read" href="/acrejournal/irrigation/drip-tape/">
+  <span class="kick">Component</span>
+  <b>What is drip tape, and which wall thickness do you need?</b>
+  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M4 9h10M9.5 4.5 14 9l-4.5 4.5" stroke-linecap="square"/></svg>
+</a>
+
+    </article>
+
+    <aside class="rail reveal" data-delay="140">
+      <div class="toc toc-related">
+        <b>Related</b>
+        <ul>
+<li><a href="/acrejournal/irrigation/">Irrigation</a></li><li><a href="/acrejournal/irrigation/drip-vs-sprinkler/">Drip or sprinkler</a></li><li><a href="/acrejournal/irrigation/drip-calculator/">Drip calculator</a></li><li><a href="/acrejournal/irrigation/drip-tape/">What is drip tape, and which wall thickness do you need?</a></li>        </ul>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<section class="faq-band">
+  <div class="wrap">
+    <section class="faq" aria-label="Questions and answers">
+  <div class="faq-side">
+    <span class="pill">FAQ</span>
+<h2 id="faq">Questions &amp; Answers</h2>    <p class="faq-lede">Answered from the same sources as the tables above — each figure is
+      linked on the page it comes from.</p>
+  </div>
+  <div class="faq-list">
+    <details open>
+      <summary><h3 class="faq-q">What does a drip system cost per acre?</h3></summary>
+      <div class="faq-a"><div class="faq-a-in"><p>There is no single figure, because the cost scales with row spacing rather than area. A block of widely spaced rows needs a fraction of the tape that close-planted beds do on the same acre. Price it by feet of tape and number of zones, not by acreage.</p></div></div>
+    </details>
+    <details>
+      <summary><h3 class="faq-q">What is the biggest recurring cost?</h3></summary>
+      <div class="faq-a"><div class="faq-a-in"><p>Tape. Depending on wall thickness it lasts one to five seasons, and it is the only part of a well-built system that is designed to be thrown away. Filters, regulators, mainline and fittings are bought once.</p></div></div>
+    </details>
+    <details>
+      <summary><h3 class="faq-q">Do I need a timer?</h3></summary>
+      <div class="faq-a"><div class="faq-a-in"><p>Once you have more than one zone, yes — not for convenience but because zones have to run in sequence to hold pressure. Without one you are the timer, every day, for the whole season.</p></div></div>
+    </details>
+    <details>
+      <summary><h3 class="faq-q">What do people forget to budget for?</h3></summary>
+      <div class="faq-a"><div class="faq-a-in"><p>Three things. Filtration sized to the actual water source rather than to the catalogue default. Enough fittings, because you always need more than you counted. And the replacement cycle for tape, which turns a one-off purchase into an annual line item.</p></div></div>
+    </details>
+    <details>
+      <summary><h3 class="faq-q">Is a kit cheaper than buying parts separately?</h3></summary>
+      <div class="faq-a"><div class="faq-a-in"><p>Not usually on price. The reason to buy a kit is that the pressure ratings of the parts agree, which is exactly the thing a first-time buyer gets wrong when assembling a system from a parts list.</p></div></div>
+    </details>
+  </div>
+</section>
+
+  </div>
+</section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="footer-logo" href="/acrejournal/" aria-label="Acre Journal — home">
+          <svg class="mark" width="38" height="38" viewBox="0 0 32 32" aria-hidden="true">
+            <rect width="32" height="32" rx="8" fill="currentColor"></rect>
+            <rect x="7.4" y="7.4" width="17.2" height="17.2" rx="1.6" stroke="var(--dark)" stroke-width="2.6" fill="none"></rect>
+            <path d="M15.4 8.7v14.6M8.7 15.2h14.6" stroke="var(--dark)" stroke-width="1.9"></path>
+            <path d="M16.7 16.5h6.9v6.8h-6.9z" fill="var(--accent)"></path>
+          </svg>
+          <span class="wordmark"><i>Acre</i><i>Journal</i></span>
+        </a>
+        <p class="footer-about">Independent coverage of compact tractors, used equipment, irrigation and greenhouses. Every figure on the site carries a source, and a place in a shortlist is never for sale.
+</p>
+      </div>
+
+      <div class="cols">
+        <div>
+          <b>Sections</b>
+<a href="/acrejournal/compact-tractors/">Compact tractors</a><a href="/acrejournal/used-tractors/">Used equipment</a><a href="/acrejournal/irrigation/">Irrigation</a><a href="/acrejournal/greenhouses/">Greenhouses</a><a href="/acrejournal/parts/">Parts</a><a href="/acrejournal/attachments/">Attachments &amp; PTO</a>        </div>
+        <div>
+          <b>Read</b>
+<a href="/acrejournal/reviews/">Owner reports</a><a href="/acrejournal/compare/">Comparisons</a><a href="/acrejournal/learn/">Learn</a><a href="/acrejournal/glossary/">Glossary</a><a href="/acrejournal/faq/">FAQ</a>        </div>
+        <div>
+          <b>About</b>
+<a href="/acrejournal/about/#method">How we check</a><a href="/acrejournal/about/">About us</a><a href="/acrejournal/disclosure/">Affiliate disclosure</a><a href="/acrejournal/privacy/">Privacy policy</a>        </div>
+      </div>
+    </div>
+
+    <div class="fine">
+      <p>We only cover gear we have researched, and our reports are built on documented owner experience, not on brand copy — the method is stated on every report page. Links to sellers are plain links: we are not in their affiliate programmes yet, and nothing on this site is paid placement.
+</p>
+      <p>&copy; 2026 Acre Journal. Figures carry their source and check date. Photography is illustrative.</p>
+    </div>
+  </div>
+  <span class="footer-word" aria-hidden="true">ACRE JOURNAL</span>
+</footer>
+
+<aside class="nudge" data-nudge="irrigation" hidden>
+  <button class="nudge-close" type="button" aria-label="Dismiss">
+    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M3 3l8 8M11 3l-8 8" stroke-linecap="round"/></svg>
+  </button>
+  <span class="kick">Planning a system?</span>
+  <b>Size your drip line</b>
+  <p>Plot size and crop give you tape length, emitter count, daily water demand and a parts budget.</p>
+  <a class="btn" href="/acrejournal/irrigation/drip-calculator/">Open the calculator</a>
+</aside>
+
+<div class="palette-dock" hidden>
+  <b>Palette</b>
+  <div class="palette-list">
+    <button type="button" data-palette-pick="clay"><i style="--a:#B4571A;--g:#F5F3EF"></i>Clay</button>
+    <button type="button" data-palette-pick="paper"><i style="--a:#1F7A4C;--g:#FFFFFF"></i>Paper</button>
+    <button type="button" data-palette-pick="field"><i style="--a:#2E7D32;--g:#F7F9F5"></i>Field</button>
+    <button type="button" data-palette-pick="journal"><i style="--a:#17507A;--g:#FBFBFC"></i>Journal</button>
+  </div>
+</div>
+
+<script src="/acrejournal/js/app.js?v=1b2739c8" defer></script>
+</body>
+</html>

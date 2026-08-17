@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script>
+(function () {
+  var d = document.documentElement;
+  d.className += ' js';
+  try {
+    var th = localStorage.getItem('aj-theme');
+    d.setAttribute('data-theme', th === 'dark' ? 'dark' : 'light');
+    var pal = localStorage.getItem('aj-palette');
+    if (pal) d.setAttribute('data-palette', pal);
+  } catch (e) {}
+  if (location.hash && location.hash.length > 1) d.classList.add('anchor-landing');
+})();
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
+<meta name="x-apple-disable-message-reformatting">
+<title>Glossary — Acre Journal</title>
+<meta name="description" content="Every term used across this site, defined once — and linked automatically the first time it appears on any page.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://acrejournal.com/glossary/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Glossary">
+<meta property="og:description" content="Every term used across this site, defined once — and linked automatically the first time it appears on any page.">
+<meta property="og:url" content="https://acrejournal.com/glossary/">
+<meta property="og:site_name" content="Acre Journal">
+<link rel="icon" href="/acrejournal/favicon.svg?v=40b724f3" type="image/svg+xml">
+<link rel="stylesheet" href="/acrejournal/css/site.css?v=b44cc107"><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "CollectionPage", "name": "Glossary", "description": "Every term used across this site, defined once — and linked automatically the first time it appears on any page.", "url": "https://acrejournal.com/glossary/"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://acrejournal.com/"}, {"@type": "ListItem", "position": 2, "name": "Glossary", "item": "https://acrejournal.com/glossary/"}]}]}</script>
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="logo" href="/acrejournal/" aria-label="Acre Journal — home">
+      <svg class="mark" width="30" height="30" viewBox="0 0 32 32" aria-hidden="true">
+        <rect width="32" height="32" rx="8" fill="currentColor"></rect>
+        <rect x="7.4" y="7.4" width="17.2" height="17.2" rx="1.6" stroke="var(--ground)" stroke-width="2.6" fill="none"></rect>
+        <path d="M15.4 8.7v14.6M8.7 15.2h14.6" stroke="var(--ground)" stroke-width="1.9"></path>
+        <path d="M16.7 16.5h6.9v6.8h-6.9z" fill="var(--mark-crop)"></path>
+      </svg>
+      <span class="wordmark"><i>Acre</i><i>Journal</i></span>
+    </a>
+    <nav class="site" id="site-nav" aria-label="Main">
+      <a href="/acrejournal/compact-tractors/">Compact tractors</a>
+      <a href="/acrejournal/used-tractors/">Used</a>
+      <a href="/acrejournal/irrigation/">Irrigation</a>
+      <a href="/acrejournal/greenhouses/">Greenhouses</a>
+
+      <div class="more">
+        <button class="more-toggle" type="button" aria-expanded="false" aria-controls="nav-more"
+data-active="true">
+          More
+          <svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <path d="M2.5 4.5 6 8l3.5-3.5" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <div class="more-sheet" id="nav-more">
+          <span class="more-cap">Sections</span>
+          <a href="/acrejournal/parts/">Parts</a>
+          <a href="/acrejournal/attachments/">Attachments &amp; PTO</a>
+          <a href="/acrejournal/lawn-mowers/">Mowing</a>
+          <a href="/acrejournal/hydroponics/">Hydroponics</a>
+          <span class="more-cap">Read</span>
+          <a href="/acrejournal/reviews/">Owner reports</a>
+          <a href="/acrejournal/learn/">Learn</a>
+          <a href="/acrejournal/glossary/" aria-current="page">Glossary</a>
+          <a href="/acrejournal/compare/">Compare</a>
+          <a href="/acrejournal/faq/">FAQ</a>
+        </div>
+      </div>
+
+      <a class="btn cta in-drawer" href="/acrejournal/reviews/">Owner reports</a>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Switch theme" title="Theme: system">
+      <svg class="i-sun" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+        <circle cx="10" cy="10" r="4"></circle>
+        <path d="M10 1.5v2M10 16.5v2M1.5 10h2M16.5 10h2M4 4l1.4 1.4M14.6 14.6L16 16M16 4l-1.4 1.4M5.4 14.6L4 16" stroke-linecap="round"></path>
+      </svg>
+      <svg class="i-moon" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+        <path d="M16.5 12.4A7 7 0 0 1 7.6 3.5a7 7 0 1 0 8.9 8.9z" stroke-linejoin="round"></path>
+      </svg>
+      <svg class="i-auto" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+        <circle cx="10" cy="10" r="7"></circle>
+        <path d="M10 3v14a7 7 0 0 0 0-14z" fill="currentColor" stroke="none"></path>
+      </svg>
+    </button>
+    <a class="btn cta on-bar" href="/acrejournal/reviews/">Owner reports</a>
+    <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="nav-scrim" hidden></div>
+
+<main id="main">
+
+<div class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb">
+<a href="/acrejournal/">Home</a> / <span aria-current="page">Glossary</span></nav>
+
+  <div class="hero-top">
+    <h1 class="rise-lines">
+      <span class="line"><span>THE WORDS</span></span>
+      <span class="line dim"><span>ON THE SPEC SHEET</span></span>
+    </h1>
+    <div class="hero-aside">
+      <span class="pill reveal" data-delay="200">24 terms</span>
+      <p class="lede reveal" data-delay="280">Every term used across this site, defined once — and linked automatically the first time it appears on any page.</p>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="prose reveal"><p>Spec sheets and dealer brochures assume you already know the vocabulary. This page
+defines it once — and every article links the first mention of a term straight here.</p></div>
+
+    <div class="terms stagger mt-block">
+      <article class="term reveal" id="ballast">
+        <h2>Ballast</h2>
+        <p>Added rear weight that keeps the tractor stable when the loader is full.</p>
+      </article>
+      <article class="term reveal" id="box-blade">
+        <h2>Box blade</h2>
+        <p>Rear implement for grading and moving soil, with scarifiers for hard ground.</p>
+      </article>
+      <article class="term reveal" id="category-one">
+        <h2>Category 1</h2>
+        <p>Hitch size class covering most compact and utility tractors.</p>
+      </article>
+      <article class="term reveal" id="center-pivot">
+        <h2>Center pivot</h2>
+        <p>Rotating sprinkler system that waters a circular field from a central point.</p>
+      </article>
+      <article class="term reveal" id="compact-tractor">
+        <h2>Compact tractor</h2>
+        <p>Roughly 20 to 45 hp with a category one hitch — the core class of this site.</p>
+      </article>
+      <article class="term reveal" id="drawbar">
+        <h2>Drawbar</h2>
+        <p>Rear towing point for trailed implements, distinct from the three-point hitch.</p>
+      </article>
+      <article class="term reveal" id="drip-tape">
+        <h2>Drip tape</h2>
+        <p>Thin-walled tubing with built-in emitters, laid along a crop row.</p>
+      </article>
+      <article class="term reveal" id="emitter">
+        <h2>Emitter</h2>
+        <p>Outlet that meters water to a plant at a set flow rate.</p>
+      </article>
+      <article class="term reveal" id="gear-drive">
+        <h2>Gear drive</h2>
+        <p>Mechanical transmission with fixed ratios — simpler and cheaper than hydrostatic.</p>
+      </article>
+      <article class="term reveal" id="high-tunnel">
+        <h2>High tunnel</h2>
+        <p>Unheated covered structure grown in directly at ground level.</p>
+      </article>
+      <article class="term reveal" id="hydraulic-flow">
+        <h2>Hydraulic flow</h2>
+        <p>Gallons per minute available to attachments — decides how fast a loader cycles.</p>
+      </article>
+      <article class="term reveal" id="hydrostatic">
+        <h2>Hydrostatic transmission</h2>
+        <p>Fluid drive with no clutch pedal — easier for loader work, slightly less efficient.</p>
+      </article>
+      <article class="term reveal" id="loader-lift">
+        <h2>Loader lift capacity</h2>
+        <p>Weight the front loader raises, measured at the pivot pins.</p>
+      </article>
+      <article class="term reveal" id="polycarbonate">
+        <h2>Polycarbonate panel</h2>
+        <p>Twin-wall greenhouse glazing — lighter than glass, warmer than film.</p>
+      </article>
+      <article class="term reveal" id="pressure-regulator">
+        <h2>Pressure regulator</h2>
+        <p>Drops line pressure to what drip components are rated for.</p>
+      </article>
+      <article class="term reveal" id="pto">
+        <h2>PTO</h2>
+        <p>Splined shaft that sends engine power to an implement instead of the wheels.</p>
+      </article>
+      <article class="term reveal" id="quick-attach">
+        <h2>Quick attach</h2>
+        <p>Standard loader mount that lets one machine take many attachments.</p>
+      </article>
+      <article class="term reveal" id="rops">
+        <h2>ROPS</h2>
+        <p>Rollover protective structure — the frame that keeps the operator alive in a tip.</p>
+      </article>
+      <article class="term reveal" id="rotary-cutter">
+        <h2>Rotary cutter</h2>
+        <p>Heavy mower for tall grass and brush, driven from the PTO.</p>
+      </article>
+      <article class="term reveal" id="snow-load">
+        <h2>Snow load</h2>
+        <p>Weight of snow a greenhouse frame is rated to carry, in pounds per square foot.</p>
+      </article>
+      <article class="term reveal" id="sub-compact">
+        <h2>Sub-compact tractor</h2>
+        <p>Smallest class, roughly under 25 hp, sized for lawns and small acreage.</p>
+      </article>
+      <article class="term reveal" id="three-point-hitch">
+        <h2>Three-point hitch</h2>
+        <p>The standard mounting linkage at the rear of a tractor, sized by category.</p>
+      </article>
+      <article class="term reveal" id="three-point-lift">
+        <h2>Three-point lift capacity</h2>
+        <p>Weight the rear hitch raises — the number that limits which implements you can run.</p>
+      </article>
+      <article class="term reveal" id="utility-tractor">
+        <h2>Utility tractor</h2>
+        <p>Larger class above compacts, from about 45 hp, for real field work.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="footer-logo" href="/acrejournal/" aria-label="Acre Journal — home">
+          <svg class="mark" width="38" height="38" viewBox="0 0 32 32" aria-hidden="true">
+            <rect width="32" height="32" rx="8" fill="currentColor"></rect>
+            <rect x="7.4" y="7.4" width="17.2" height="17.2" rx="1.6" stroke="var(--dark)" stroke-width="2.6" fill="none"></rect>
+            <path d="M15.4 8.7v14.6M8.7 15.2h14.6" stroke="var(--dark)" stroke-width="1.9"></path>
+            <path d="M16.7 16.5h6.9v6.8h-6.9z" fill="var(--accent)"></path>
+          </svg>
+          <span class="wordmark"><i>Acre</i><i>Journal</i></span>
+        </a>
+        <p class="footer-about">Independent coverage of compact tractors, used equipment, irrigation and greenhouses. Every figure on the site carries a source, and a place in a shortlist is never for sale.
+</p>
+      </div>
+
+      <div class="cols">
+        <div>
+          <b>Sections</b>
+<a href="/acrejournal/compact-tractors/">Compact tractors</a><a href="/acrejournal/used-tractors/">Used equipment</a><a href="/acrejournal/irrigation/">Irrigation</a><a href="/acrejournal/greenhouses/">Greenhouses</a><a href="/acrejournal/parts/">Parts</a><a href="/acrejournal/attachments/">Attachments &amp; PTO</a>        </div>
+        <div>
+          <b>Read</b>
+<a href="/acrejournal/reviews/">Owner reports</a><a href="/acrejournal/compare/">Comparisons</a><a href="/acrejournal/learn/">Learn</a><a href="/acrejournal/glossary/">Glossary</a><a href="/acrejournal/faq/">FAQ</a>        </div>
+        <div>
+          <b>About</b>
+<a href="/acrejournal/about/#method">How we check</a><a href="/acrejournal/about/">About us</a><a href="/acrejournal/disclosure/">Affiliate disclosure</a><a href="/acrejournal/privacy/">Privacy policy</a>        </div>
+      </div>
+    </div>
+
+    <div class="fine">
+      <p>We only cover gear we have researched, and our reports are built on documented owner experience, not on brand copy — the method is stated on every report page. Links to sellers are plain links: we are not in their affiliate programmes yet, and nothing on this site is paid placement.
+</p>
+      <p>&copy; 2026 Acre Journal. Figures carry their source and check date. Photography is illustrative.</p>
+    </div>
+  </div>
+  <span class="footer-word" aria-hidden="true">ACRE JOURNAL</span>
+</footer>
+
+<div class="palette-dock" hidden>
+  <b>Palette</b>
+  <div class="palette-list">
+    <button type="button" data-palette-pick="clay"><i style="--a:#B4571A;--g:#F5F3EF"></i>Clay</button>
+    <button type="button" data-palette-pick="paper"><i style="--a:#1F7A4C;--g:#FFFFFF"></i>Paper</button>
+    <button type="button" data-palette-pick="field"><i style="--a:#2E7D32;--g:#F7F9F5"></i>Field</button>
+    <button type="button" data-palette-pick="journal"><i style="--a:#17507A;--g:#FBFBFC"></i>Journal</button>
+  </div>
+</div>
+
+<script src="/acrejournal/js/app.js?v=1b2739c8" defer></script>
+</body>
+</html>

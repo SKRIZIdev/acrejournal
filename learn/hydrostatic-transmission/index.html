@@ -1,0 +1,358 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script>
+(function () {
+  var d = document.documentElement;
+  d.className += ' js';
+  try {
+    var th = localStorage.getItem('aj-theme');
+    d.setAttribute('data-theme', th === 'dark' ? 'dark' : 'light');
+    var pal = localStorage.getItem('aj-palette');
+    if (pal) d.setAttribute('data-palette', pal);
+  } catch (e) {}
+  if (location.hash && location.hash.length > 1) d.classList.add('anchor-landing');
+})();
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
+<meta name="x-apple-disable-message-reformatting">
+<title>What is a hydrostatic transmission, and when is gear drive better? — Acre Journal</title>
+<meta name="description" content="How a hydrostatic transmission works, what it costs you at the PTO, and the one question that decides between HST and gear drive on a compact tractor.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://acrejournal.com/learn/hydrostatic-transmission/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="What is a hydrostatic transmission, and when is gear drive better?">
+<meta property="og:description" content="How a hydrostatic transmission works, what it costs you at the PTO, and the one question that decides between HST and gear drive on a compact tractor.">
+<meta property="og:url" content="https://acrejournal.com/learn/hydrostatic-transmission/">
+<meta property="og:site_name" content="Acre Journal">
+<link rel="icon" href="/acrejournal/favicon.svg?v=40b724f3" type="image/svg+xml">
+<link rel="stylesheet" href="/acrejournal/css/site.css?v=b44cc107"><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "headline": "What is a hydrostatic transmission, and when is gear drive better?", "description": "How a hydrostatic transmission works, what it costs you at the PTO, and the one question that decides between HST and gear drive on a compact tractor.", "url": "https://acrejournal.com/learn/hydrostatic-transmission/", "dateModified": "2026-08-17", "publisher": {"@type": "Organization", "name": "Acre Journal"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://acrejournal.com/"}, {"@type": "ListItem", "position": 2, "name": "Learn", "item": "https://acrejournal.com/learn/"}, {"@type": "ListItem", "position": 3, "name": "What is a hydrostatic transmission, and when is gear drive better?", "item": "https://acrejournal.com/learn/hydrostatic-transmission/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How does a hydrostatic transmission work?", "acceptedAnswer": {"@type": "Answer", "text": "The engine drives a variable-displacement hydraulic pump. The pump sends oil to a hydraulic motor connected to the wheels. Tilting the pump's swashplate changes how much oil moves and in which direction, so one pedal gives you infinitely variable speed forwards and reverse with no clutch and no gear to select."}}, {"@type": "Question", "name": "Does a hydrostatic transmission lose power?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. Converting mechanical power to fluid flow and back is not free, and the loss shows up at the PTO. Kubota publishes both figures for the L2502 — 19.8 hp at the PTO with the gear transmission, 18.4 hp with the hydrostatic. That is 1.4 hp, about 7%."}}, {"@type": "Question", "name": "Is hydrostatic or gear drive better for a compact tractor?", "acceptedAnswer": {"@type": "Answer", "text": "It depends on one thing — how often you change direction. Loader work is a cycle of forward, stop, reverse, stop, hundreds of times an hour, and doing that on a clutch is exhausting. Field work with an implement is one direction at one speed for hours, where gears hold the speed without effort and give you the extra horsepower."}}, {"@type": "Question", "name": "Is a hydrostatic transmission reliable?", "acceptedAnswer": {"@type": "Answer", "text": "On modern compacts, yes, with one caveat — the fluid is the transmission. Hydrostatic drives are less tolerant of neglected oil and clogged filters than a gearbox, because the oil is doing the work rather than just lubricating. Service intervals in the manual are not advisory."}}, {"@type": "Question", "name": "Why does hydrostatic feel slower uphill with a load?", "acceptedAnswer": {"@type": "Answer", "text": "Because the drive is pressure-limited rather than geared. As resistance rises, so does system pressure, and the machine slows until the load and the available pressure balance. A geared machine in the same situation either pulls or stalls the engine. Three-range HST exists to give you a lower range for exactly this."}}]}]}</script>
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="logo" href="/acrejournal/" aria-label="Acre Journal — home">
+      <svg class="mark" width="30" height="30" viewBox="0 0 32 32" aria-hidden="true">
+        <rect width="32" height="32" rx="8" fill="currentColor"></rect>
+        <rect x="7.4" y="7.4" width="17.2" height="17.2" rx="1.6" stroke="var(--ground)" stroke-width="2.6" fill="none"></rect>
+        <path d="M15.4 8.7v14.6M8.7 15.2h14.6" stroke="var(--ground)" stroke-width="1.9"></path>
+        <path d="M16.7 16.5h6.9v6.8h-6.9z" fill="var(--mark-crop)"></path>
+      </svg>
+      <span class="wordmark"><i>Acre</i><i>Journal</i></span>
+    </a>
+    <nav class="site" id="site-nav" aria-label="Main">
+      <a href="/acrejournal/compact-tractors/">Compact tractors</a>
+      <a href="/acrejournal/used-tractors/">Used</a>
+      <a href="/acrejournal/irrigation/">Irrigation</a>
+      <a href="/acrejournal/greenhouses/">Greenhouses</a>
+
+      <div class="more">
+        <button class="more-toggle" type="button" aria-expanded="false" aria-controls="nav-more"
+data-active="true">
+          More
+          <svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <path d="M2.5 4.5 6 8l3.5-3.5" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <div class="more-sheet" id="nav-more">
+          <span class="more-cap">Sections</span>
+          <a href="/acrejournal/parts/">Parts</a>
+          <a href="/acrejournal/attachments/">Attachments &amp; PTO</a>
+          <a href="/acrejournal/lawn-mowers/">Mowing</a>
+          <a href="/acrejournal/hydroponics/">Hydroponics</a>
+          <span class="more-cap">Read</span>
+          <a href="/acrejournal/reviews/">Owner reports</a>
+          <a href="/acrejournal/learn/" aria-current="page">Learn</a>
+          <a href="/acrejournal/glossary/">Glossary</a>
+          <a href="/acrejournal/compare/">Compare</a>
+          <a href="/acrejournal/faq/">FAQ</a>
+        </div>
+      </div>
+
+      <a class="btn cta in-drawer" href="/acrejournal/reviews/">Owner reports</a>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Switch theme" title="Theme: system">
+      <svg class="i-sun" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+        <circle cx="10" cy="10" r="4"></circle>
+        <path d="M10 1.5v2M10 16.5v2M1.5 10h2M16.5 10h2M4 4l1.4 1.4M14.6 14.6L16 16M16 4l-1.4 1.4M5.4 14.6L4 16" stroke-linecap="round"></path>
+      </svg>
+      <svg class="i-moon" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+        <path d="M16.5 12.4A7 7 0 0 1 7.6 3.5a7 7 0 1 0 8.9 8.9z" stroke-linejoin="round"></path>
+      </svg>
+      <svg class="i-auto" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+        <circle cx="10" cy="10" r="7"></circle>
+        <path d="M10 3v14a7 7 0 0 0 0-14z" fill="currentColor" stroke="none"></path>
+      </svg>
+    </button>
+    <a class="btn cta on-bar" href="/acrejournal/reviews/">Owner reports</a>
+    <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="nav-scrim" hidden></div>
+
+<main id="main">
+
+<div class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb">
+<a href="/acrejournal/">Home</a> / <a href="/acrejournal/learn/">Learn</a> / <span aria-current="page">What is a hydrostatic transmission, and when is gear drive better?</span></nav>
+
+  <div class="layout">
+    <article class="prose reveal">
+      <h1>What is a hydrostatic transmission, and when is gear drive better?</h1>
+      <div class="meta">
+        <span>Updated 17 Aug 2026</span>
+        <span>·</span>
+        <span>7 min read</span>
+      </div>
+
+      <div class="answer">
+        <b>Short answer</b>
+        <p>A hydrostatic transmission replaces the clutch and gears with a hydraulic pump driving a hydraulic motor, so speed and direction move with a pedal. It costs some power on the way to the PTO — on a Kubota L2502, 19.8 hp in gear drive against 18.4 hp hydrostatic — and it wins wherever you change direction constantly.</p>
+      </div>
+
+      <section class="facts reveal" aria-labelledby="facts-heading">
+  <div class="facts-top">
+    <span class="kick">At a glance</span>
+    <h2 id="facts-heading">What the transmission costs at the PTO</h2>
+  </div>
+  <div class="table-wrap">
+    <table class="facts-table" role="table">
+      <thead role="rowgroup">
+        <tr role="row">
+          <th scope="col" role="columnheader">What</th>
+          <th scope="col" role="columnheader">Figure</th>
+          <th scope="col" role="columnheader">Source</th>
+        </tr>
+      </thead>
+      <tbody role="rowgroup">
+        <tr role="row">
+          <th scope="row" role="rowheader">L2502 PTO power, gear drive</th>
+          <td role="cell">
+            <span class="facts-value">19.8 hp</span>
+<span class="facts-hint">8 forward, 8 reverse</span>          </td><td class="facts-src" role="cell"><a href="https://www.kubotausa.com/equipment-series/standard-l-series" rel="nofollow noopener">Kubota USA, Standard L Series</a></td>
+        </tr>
+        <tr role="row">
+          <th scope="row" role="rowheader">L2502 PTO power, hydrostatic</th>
+          <td role="cell">
+            <span class="facts-value">18.4 hp</span>
+<span class="facts-hint">Three-range HST</span>          </td><td class="facts-src" role="cell"><a class="facts-same" href="https://www.kubotausa.com/equipment-series/standard-l-series" rel="nofollow noopener"
+                 title="Kubota USA, Standard L Series">same source</a></td>
+        </tr>
+        <tr role="row">
+          <th scope="row" role="rowheader">Cost of the hydrostatic</th>
+          <td role="cell">
+            <span class="facts-value">1.4 hp, about 7%</span>
+<span class="facts-hint">Our arithmetic from the two figures above</span>          </td><td class="facts-src" role="cell"><a href="/acrejournal/about/" rel="nofollow noopener">Acre Journal method</a></td>
+        </tr>
+        <tr role="row">
+          <th scope="row" role="rowheader">Typical sub-compact transmission</th>
+          <td role="cell">
+            <span class="facts-value">hydrostatic only</span>
+<span class="facts-hint">BX and B series are HST; no gear option offered</span>          </td><td class="facts-src" role="cell"><a class="facts-same" href="https://www.kubotausa.com/equipment-series/standard-l-series" rel="nofollow noopener"
+                 title="Kubota USA, Standard L Series">same source</a></td>
+        </tr>
+        <tr role="row">
+          <th scope="row" role="rowheader">John Deere 1025R transmission</th>
+          <td role="cell">
+            <span class="facts-value">hydrostatic</span>
+<span class="facts-hint">No gear variant listed</span>          </td><td class="facts-src" role="cell"><a href="https://www.tractordata.com/farm-tractors/007/2/7/7277-john-deere-1025r.html" rel="nofollow noopener">TractorData, John Deere 1025R</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+<p class="facts-foot">Manufacturer figures for the Kubota L2502, which publishes both transmission variants, read from Kubota USA on 16 August 2026. Comparison machines as marked.</p></section>
+
+      <p>A <a class="glossary-link" href="/acrejournal/glossary/#hydrostatic" title="Fluid drive with no clutch pedal — easier for loader work, slightly less efficient.">hydrostatic transmission</a> has no clutch and no gears to choose. The engine drives a
+hydraulic pump, the pump drives a hydraulic motor, the motor drives the wheels, and a pedal
+decides how much oil moves and which way it goes.</p>
+<p>The whole trade is in one line of the specification sheet: the L2502 delivers 19.8 hp to the
+<a class="glossary-link" href="/acrejournal/glossary/#pto" title="Splined shaft that sends engine power to an implement instead of the wheels.">PTO</a> with gears and 18.4 hp with the hydrostatic. Everything else follows from that 1.4 hp.</p>
+<h2 id="how">How it works</h2>
+<p>Inside the pump is a swashplate — a disc that can tilt. Pistons ride against it, and how far
+it tilts sets how much oil each stroke moves. Tilt it one way and oil flows one direction;
+tilt it the other and the flow reverses, which is how you get reverse without a gear.</p>
+<p>The motor at the other end turns as fast as the oil arriving allows. Push the pedal further
+and more oil moves, so the machine goes faster. Let it back and the flow reduces. Nothing
+disengages, nothing grinds, and there is no wrong gear to be in.</p>
+<p>That is also why the drive can hold a machine still on a slope with the pedal at neutral: the
+oil has nowhere to go.</p>
+<h2 id="cost">What it costs</h2>
+<p>Every conversion loses something, and here it loses twice — mechanical to hydraulic, then
+hydraulic back to mechanical. Kubota is unusually straightforward about the result, publishing
+both variants of the L2502:</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Transmission</th>
+<th>PTO power</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Gear, 8F/8R</td>
+<td>19.8 hp</td>
+</tr>
+<tr>
+<td>Hydrostatic, 3 range</td>
+<td>18.4 hp</td>
+</tr>
+</tbody>
+</table></div>
+<p>1.4 hp, or about 7%, and on a machine that only has 19.8 to give away that is not nothing. On
+a rotary tiller — a continuous load at the edge of what the class can drive — it is the
+difference between working and stalling.</p>
+<h2 id="decide">The one question that decides it</h2>
+<p>How often do you change direction?</p>
+<p><strong>Loader work</strong> is forward, stop, reverse, stop — hundreds of cycles an hour. On a clutch and
+a shift lever that is genuinely tiring, and after the first afternoon most people stop caring
+about 1.4 hp. HST wins outright.</p>
+<p><strong>Field work</strong> is one direction at one speed for as long as the row lasts. Gears hold that
+speed with no pedal pressure, no heat, and the full PTO rating. <a class="glossary-link" href="/acrejournal/glossary/#gear-drive" title="Mechanical transmission with fixed ratios — simpler and cheaper than hydrostatic.">Gear drive</a> wins outright.</p>
+<p><strong>Snow</strong> goes with HST, for the same reason as the loader — plowing is a reversing job.</p>
+<p><strong>Mowing</strong> is usually HST, because the sub-compacts that carry mid-mount decks rarely offer
+anything else. The BX and B series are hydrostatic only.</p>
+<h2 id="care">What to watch if you buy hydrostatic</h2>
+<p>The fluid is the transmission. In a gearbox oil lubricates; in a hydrostatic drive it
+transmits every bit of the power, so contamination and heat matter more. Filter and fluid
+intervals in the manual are the maintenance schedule, not a suggestion.</p>
+<p>Second, expect it to slow under load rather than to pull harder. The system is
+pressure-limited: as the load rises the pressure rises and the speed drops. Three ranges
+exist so you can start in a lower one and keep the pressure inside its working band — using
+the high range for heavy work is the most common way to make a good HST feel weak.</p>
+<h2 id="summary">Where this leaves the choice</h2>
+<p>If the tractor is for a loader, snow and a mid-mount deck, take the hydrostatic and do not
+think about it again. If it is for a tiller, a cutter, or hours of one-direction field work,
+take the gears and keep the 1.4 hp. And if you are unsure which of those you are buying for,
+the <a href="/acrejournal/compact-tractors/tractor-sizing/">sizing calculator</a> asks the same question in a
+different order.</p>
+
+      <div class="disclosure">We only cover gear we have researched, and our reports are built on documented owner experience, not on brand copy — the method is stated on every report page. Links to sellers are plain links: we are not in their affiliate programmes yet, and nothing on this site is paid placement.
+</div>
+      <a class="next-read" href="/acrejournal/learn/what-is-a-pto/">
+  <span class="kick">Explainer</span>
+  <b>What is a PTO on a tractor?</b>
+  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M4 9h10M9.5 4.5 14 9l-4.5 4.5" stroke-linecap="square"/></svg>
+</a>
+
+    </article>
+
+    <aside class="rail reveal" data-delay="140">
+      <div class="toc toc-page" data-toc>
+        <b>On this page</b>
+        <div class="toc-track" aria-hidden="true"><span class="toc-fill" data-toc-fill></span></div>
+        <ul>
+<li><a href="#how">How it works</a></li><li><a href="#cost">What it costs</a></li><li><a href="#decide">The one question that decides it</a></li><li><a href="#care">What to watch if you buy hydrostatic</a></li><li><a href="#summary">Where this leaves the choice</a></li>        </ul>
+      </div>
+      <div class="toc toc-related">
+        <b>Related</b>
+        <ul>
+<li><a href="/acrejournal/compact-tractors/tractor-sizing/">Tractor sizing calculator</a></li><li><a href="/acrejournal/learn/what-is-a-pto/">What is a PTO on a tractor?</a></li><li><a href="/acrejournal/compact-tractors/kubota-l2502/">Kubota L2502</a></li><li><a href="/acrejournal/compact-tractors/">Compact tractors</a></li>        </ul>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<section class="faq-band">
+  <div class="wrap">
+    <section class="faq" aria-label="Questions and answers">
+  <div class="faq-side">
+    <span class="pill">FAQ</span>
+<h2 id="faq">Questions &amp; Answers</h2>    <p class="faq-lede">Answered from the same sources as the tables above — each figure is
+      linked on the page it comes from.</p>
+  </div>
+  <div class="faq-list">
+    <details open>
+      <summary><h3 class="faq-q">How does a hydrostatic transmission work?</h3></summary>
+      <div class="faq-a"><div class="faq-a-in"><p>The engine drives a variable-displacement hydraulic pump. The pump sends oil to a hydraulic motor connected to the wheels. Tilting the pump&#39;s swashplate changes how much oil moves and in which direction, so one pedal gives you infinitely variable speed forwards and reverse with no clutch and no gear to select.</p></div></div>
+    </details>
+    <details>
+      <summary><h3 class="faq-q">Does a hydrostatic transmission lose power?</h3></summary>
+      <div class="faq-a"><div class="faq-a-in"><p>Yes. Converting mechanical power to fluid flow and back is not free, and the loss shows up at the PTO. Kubota publishes both figures for the L2502 — 19.8 hp at the PTO with the gear transmission, 18.4 hp with the hydrostatic. That is 1.4 hp, about 7%.</p></div></div>
+    </details>
+    <details>
+      <summary><h3 class="faq-q">Is hydrostatic or gear drive better for a compact tractor?</h3></summary>
+      <div class="faq-a"><div class="faq-a-in"><p>It depends on one thing — how often you change direction. Loader work is a cycle of forward, stop, reverse, stop, hundreds of times an hour, and doing that on a clutch is exhausting. Field work with an implement is one direction at one speed for hours, where gears hold the speed without effort and give you the extra horsepower.</p></div></div>
+    </details>
+    <details>
+      <summary><h3 class="faq-q">Is a hydrostatic transmission reliable?</h3></summary>
+      <div class="faq-a"><div class="faq-a-in"><p>On modern compacts, yes, with one caveat — the fluid is the transmission. Hydrostatic drives are less tolerant of neglected oil and clogged filters than a gearbox, because the oil is doing the work rather than just lubricating. Service intervals in the manual are not advisory.</p></div></div>
+    </details>
+    <details>
+      <summary><h3 class="faq-q">Why does hydrostatic feel slower uphill with a load?</h3></summary>
+      <div class="faq-a"><div class="faq-a-in"><p>Because the drive is pressure-limited rather than geared. As resistance rises, so does system pressure, and the machine slows until the load and the available pressure balance. A geared machine in the same situation either pulls or stalls the engine. Three-range HST exists to give you a lower range for exactly this.</p></div></div>
+    </details>
+  </div>
+</section>
+
+  </div>
+</section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="footer-logo" href="/acrejournal/" aria-label="Acre Journal — home">
+          <svg class="mark" width="38" height="38" viewBox="0 0 32 32" aria-hidden="true">
+            <rect width="32" height="32" rx="8" fill="currentColor"></rect>
+            <rect x="7.4" y="7.4" width="17.2" height="17.2" rx="1.6" stroke="var(--dark)" stroke-width="2.6" fill="none"></rect>
+            <path d="M15.4 8.7v14.6M8.7 15.2h14.6" stroke="var(--dark)" stroke-width="1.9"></path>
+            <path d="M16.7 16.5h6.9v6.8h-6.9z" fill="var(--accent)"></path>
+          </svg>
+          <span class="wordmark"><i>Acre</i><i>Journal</i></span>
+        </a>
+        <p class="footer-about">Independent coverage of compact tractors, used equipment, irrigation and greenhouses. Every figure on the site carries a source, and a place in a shortlist is never for sale.
+</p>
+      </div>
+
+      <div class="cols">
+        <div>
+          <b>Sections</b>
+<a href="/acrejournal/compact-tractors/">Compact tractors</a><a href="/acrejournal/used-tractors/">Used equipment</a><a href="/acrejournal/irrigation/">Irrigation</a><a href="/acrejournal/greenhouses/">Greenhouses</a><a href="/acrejournal/parts/">Parts</a><a href="/acrejournal/attachments/">Attachments &amp; PTO</a>        </div>
+        <div>
+          <b>Read</b>
+<a href="/acrejournal/reviews/">Owner reports</a><a href="/acrejournal/compare/">Comparisons</a><a href="/acrejournal/learn/">Learn</a><a href="/acrejournal/glossary/">Glossary</a><a href="/acrejournal/faq/">FAQ</a>        </div>
+        <div>
+          <b>About</b>
+<a href="/acrejournal/about/#method">How we check</a><a href="/acrejournal/about/">About us</a><a href="/acrejournal/disclosure/">Affiliate disclosure</a><a href="/acrejournal/privacy/">Privacy policy</a>        </div>
+      </div>
+    </div>
+
+    <div class="fine">
+      <p>We only cover gear we have researched, and our reports are built on documented owner experience, not on brand copy — the method is stated on every report page. Links to sellers are plain links: we are not in their affiliate programmes yet, and nothing on this site is paid placement.
+</p>
+      <p>&copy; 2026 Acre Journal. Figures carry their source and check date. Photography is illustrative.</p>
+    </div>
+  </div>
+  <span class="footer-word" aria-hidden="true">ACRE JOURNAL</span>
+</footer>
+
+<aside class="nudge" data-nudge="learn" hidden>
+  <button class="nudge-close" type="button" aria-label="Dismiss">
+    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M3 3l8 8M11 3l-8 8" stroke-linecap="round"/></svg>
+  </button>
+  <span class="kick">Reading up on tractors?</span>
+  <b>Skip to the shortlist</b>
+  <p>Four questions and you have the class plus three machines that fit your land.</p>
+  <a class="btn" href="/acrejournal/compact-tractors/tractor-sizing/">Open the calculator</a>
+</aside>
+
+<div class="palette-dock" hidden>
+  <b>Palette</b>
+  <div class="palette-list">
+    <button type="button" data-palette-pick="clay"><i style="--a:#B4571A;--g:#F5F3EF"></i>Clay</button>
+    <button type="button" data-palette-pick="paper"><i style="--a:#1F7A4C;--g:#FFFFFF"></i>Paper</button>
+    <button type="button" data-palette-pick="field"><i style="--a:#2E7D32;--g:#F7F9F5"></i>Field</button>
+    <button type="button" data-palette-pick="journal"><i style="--a:#17507A;--g:#FBFBFC"></i>Journal</button>
+  </div>
+</div>
+
+<script src="/acrejournal/js/app.js?v=1b2739c8" defer></script>
+</body>
+</html>

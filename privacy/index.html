@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script>
+(function () {
+  var d = document.documentElement;
+  d.className += ' js';
+  try {
+    var th = localStorage.getItem('aj-theme');
+    d.setAttribute('data-theme', th === 'dark' ? 'dark' : 'light');
+    var pal = localStorage.getItem('aj-palette');
+    if (pal) d.setAttribute('data-palette', pal);
+  } catch (e) {}
+  if (location.hash && location.hash.length > 1) d.classList.add('anchor-landing');
+})();
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
+<meta name="x-apple-disable-message-reformatting">
+<title>Privacy policy — Acre Journal</title>
+<meta name="description" content="What this site collects, what it does not, and what happens when you follow a link to a seller.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://acrejournal.com/privacy/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Privacy policy">
+<meta property="og:description" content="What this site collects, what it does not, and what happens when you follow a link to a seller.">
+<meta property="og:url" content="https://acrejournal.com/privacy/">
+<meta property="og:site_name" content="Acre Journal">
+<link rel="icon" href="/acrejournal/favicon.svg?v=40b724f3" type="image/svg+xml">
+<link rel="stylesheet" href="/acrejournal/css/site.css?v=b44cc107"><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "CollectionPage", "name": "Privacy policy", "description": "What this site collects, what it does not, and what happens when you follow a link to a seller.", "url": "https://acrejournal.com/privacy/"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://acrejournal.com/"}, {"@type": "ListItem", "position": 2, "name": "Privacy policy", "item": "https://acrejournal.com/privacy/"}]}]}</script>
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="logo" href="/acrejournal/" aria-label="Acre Journal — home">
+      <svg class="mark" width="30" height="30" viewBox="0 0 32 32" aria-hidden="true">
+        <rect width="32" height="32" rx="8" fill="currentColor"></rect>
+        <rect x="7.4" y="7.4" width="17.2" height="17.2" rx="1.6" stroke="var(--ground)" stroke-width="2.6" fill="none"></rect>
+        <path d="M15.4 8.7v14.6M8.7 15.2h14.6" stroke="var(--ground)" stroke-width="1.9"></path>
+        <path d="M16.7 16.5h6.9v6.8h-6.9z" fill="var(--mark-crop)"></path>
+      </svg>
+      <span class="wordmark"><i>Acre</i><i>Journal</i></span>
+    </a>
+    <nav class="site" id="site-nav" aria-label="Main">
+      <a href="/acrejournal/compact-tractors/">Compact tractors</a>
+      <a href="/acrejournal/used-tractors/">Used</a>
+      <a href="/acrejournal/irrigation/">Irrigation</a>
+      <a href="/acrejournal/greenhouses/">Greenhouses</a>
+
+      <div class="more">
+        <button class="more-toggle" type="button" aria-expanded="false" aria-controls="nav-more"
+>
+          More
+          <svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <path d="M2.5 4.5 6 8l3.5-3.5" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <div class="more-sheet" id="nav-more">
+          <span class="more-cap">Sections</span>
+          <a href="/acrejournal/parts/">Parts</a>
+          <a href="/acrejournal/attachments/">Attachments &amp; PTO</a>
+          <a href="/acrejournal/lawn-mowers/">Mowing</a>
+          <a href="/acrejournal/hydroponics/">Hydroponics</a>
+          <span class="more-cap">Read</span>
+          <a href="/acrejournal/reviews/">Owner reports</a>
+          <a href="/acrejournal/learn/">Learn</a>
+          <a href="/acrejournal/glossary/">Glossary</a>
+          <a href="/acrejournal/compare/">Compare</a>
+          <a href="/acrejournal/faq/">FAQ</a>
+        </div>
+      </div>
+
+      <a class="btn cta in-drawer" href="/acrejournal/reviews/">Owner reports</a>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Switch theme" title="Theme: system">
+      <svg class="i-sun" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+        <circle cx="10" cy="10" r="4"></circle>
+        <path d="M10 1.5v2M10 16.5v2M1.5 10h2M16.5 10h2M4 4l1.4 1.4M14.6 14.6L16 16M16 4l-1.4 1.4M5.4 14.6L4 16" stroke-linecap="round"></path>
+      </svg>
+      <svg class="i-moon" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+        <path d="M16.5 12.4A7 7 0 0 1 7.6 3.5a7 7 0 1 0 8.9 8.9z" stroke-linejoin="round"></path>
+      </svg>
+      <svg class="i-auto" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+        <circle cx="10" cy="10" r="7"></circle>
+        <path d="M10 3v14a7 7 0 0 0 0-14z" fill="currentColor" stroke="none"></path>
+      </svg>
+    </button>
+    <a class="btn cta on-bar" href="/acrejournal/reviews/">Owner reports</a>
+    <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="nav-scrim" hidden></div>
+
+<main id="main">
+
+<div class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb">
+<a href="/acrejournal/">Home</a> / <span aria-current="page">Privacy policy</span></nav>
+
+  <div class="layout">
+    <article class="prose reveal">
+      <h1>Privacy policy</h1>
+<div class="meta"><span>Updated 16 Aug 2026</span></div>      
+      <p>This is a publication, not a service. There is no account to create, nothing to log in to,
+and nothing we ask you to submit. That keeps this policy short and mostly about what does
+<em>not</em> happen here.</p>
+<h2 id="collect">What we collect</h2>
+<p><strong>Nothing you type.</strong> There are no accounts, no newsletter sign-up, no contact form and no
+comment section. We do not ask for your name, email address or location, so we do not hold
+them.</p>
+<p><strong>Standard server records.</strong> Like any website, the hosting provider records requests: IP
+address, the page requested, the time, the browser's user agent string. These are ordinary
+web server logs, kept by the host for operational and security purposes.</p>
+<p><strong>What our tools keep locally.</strong> The calculators on this site run entirely in your browser.
+The values you enter — ZIP code, acreage, tent size, crop — are processed on your device
+and are not sent to us or stored on our servers. Some pages remember a preference (such as
+whether you dismissed a prompt) in your browser's local storage, on your device, where you
+can clear it at any time.</p>
+<h2 id="analytics">Analytics and cookies</h2>
+<p>We do not run advertising networks, and there are no third-party advertising cookies on
+this site.</p>
+<p>Where analytics are in use, they are limited to aggregate traffic measurement — which
+pages are read, roughly where readers come from — and are not used to build a profile of
+you or to target advertising at you elsewhere.</p>
+<h2 id="links">Links to other sites</h2>
+<p>Some links on this site go to sellers and may earn us a commission; they are marked, and
+the <a href="/acrejournal/disclosure/">affiliate disclosure</a> explains the arrangement in full.</p>
+<p>When you follow one of those links you leave this site, and the destination applies its
+own privacy policy and its own cookies. A tracking parameter in the link tells the seller
+which site sent you. We do not receive your name, your payment details or the contents of
+your order — only, at most, aggregate reporting that a referral converted.</p>
+<p>The same applies to any link to a manufacturer, an extension service or a regulator. We
+have no control over what those sites collect.</p>
+<h2 id="third-parties">Third parties</h2>
+<p>The site is served as static files from a hosting provider, which processes the server
+logs described above on our behalf.</p>
+<p>We do not sell, rent or share personal information, because we do not collect any that
+would be worth selling.</p>
+<h2 id="choices">Your choices</h2>
+<p>You can browse this site with cookies disabled and everything except a couple of remembered
+preferences will work exactly the same. Clearing your browser's local storage removes
+anything a page has remembered on your device.</p>
+<p>If you are in a jurisdiction that grants you rights over personal data — access,
+correction, deletion — those rights apply to whatever a data controller holds about you.
+In our case that is limited to server logs, which are not indexed by identity and cannot
+be searched by name.</p>
+<h2 id="changes">Changes</h2>
+<p>If this policy changes, the date at the top of the page changes with it. The site is
+published from a version-controlled repository, so revisions are recorded rather than
+silently overwritten.</p>
+<h2 id="contact">Contact</h2>
+<p>Questions about this policy, or about anything published here, go through the contact
+route on the <a href="/acrejournal/about/">about page</a>.</p>
+    </article>
+    <aside class="rail">
+      <div class="toc toc-page">
+        <b>On this page</b>
+        <ul>
+<li><a href="#collect">What we collect</a></li><li><a href="#analytics">Analytics and cookies</a></li><li><a href="#links">Links to other sites</a></li><li><a href="#third-parties">Third parties</a></li><li><a href="#choices">Your choices</a></li><li><a href="#changes">Changes</a></li><li><a href="#contact">Contact</a></li>        </ul>
+      </div>
+      <div class="toc toc-related">
+        <b>Legal</b>
+        <ul>
+          <li><a href="/acrejournal/about/">About us</a></li>
+          <li><a href="/acrejournal/disclosure/">Affiliate disclosure</a></li>
+          <li><a href="/acrejournal/privacy/">Privacy policy</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</div>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="footer-logo" href="/acrejournal/" aria-label="Acre Journal — home">
+          <svg class="mark" width="38" height="38" viewBox="0 0 32 32" aria-hidden="true">
+            <rect width="32" height="32" rx="8" fill="currentColor"></rect>
+            <rect x="7.4" y="7.4" width="17.2" height="17.2" rx="1.6" stroke="var(--dark)" stroke-width="2.6" fill="none"></rect>
+            <path d="M15.4 8.7v14.6M8.7 15.2h14.6" stroke="var(--dark)" stroke-width="1.9"></path>
+            <path d="M16.7 16.5h6.9v6.8h-6.9z" fill="var(--accent)"></path>
+          </svg>
+          <span class="wordmark"><i>Acre</i><i>Journal</i></span>
+        </a>
+        <p class="footer-about">Independent coverage of compact tractors, used equipment, irrigation and greenhouses. Every figure on the site carries a source, and a place in a shortlist is never for sale.
+</p>
+      </div>
+
+      <div class="cols">
+        <div>
+          <b>Sections</b>
+<a href="/acrejournal/compact-tractors/">Compact tractors</a><a href="/acrejournal/used-tractors/">Used equipment</a><a href="/acrejournal/irrigation/">Irrigation</a><a href="/acrejournal/greenhouses/">Greenhouses</a><a href="/acrejournal/parts/">Parts</a><a href="/acrejournal/attachments/">Attachments &amp; PTO</a>        </div>
+        <div>
+          <b>Read</b>
+<a href="/acrejournal/reviews/">Owner reports</a><a href="/acrejournal/compare/">Comparisons</a><a href="/acrejournal/learn/">Learn</a><a href="/acrejournal/glossary/">Glossary</a><a href="/acrejournal/faq/">FAQ</a>        </div>
+        <div>
+          <b>About</b>
+<a href="/acrejournal/about/#method">How we check</a><a href="/acrejournal/about/">About us</a><a href="/acrejournal/disclosure/">Affiliate disclosure</a><a href="/acrejournal/privacy/">Privacy policy</a>        </div>
+      </div>
+    </div>
+
+    <div class="fine">
+      <p>We only cover gear we have researched, and our reports are built on documented owner experience, not on brand copy — the method is stated on every report page. Links to sellers are plain links: we are not in their affiliate programmes yet, and nothing on this site is paid placement.
+</p>
+      <p>&copy; 2026 Acre Journal. Figures carry their source and check date. Photography is illustrative.</p>
+    </div>
+  </div>
+  <span class="footer-word" aria-hidden="true">ACRE JOURNAL</span>
+</footer>
+
+<div class="palette-dock" hidden>
+  <b>Palette</b>
+  <div class="palette-list">
+    <button type="button" data-palette-pick="clay"><i style="--a:#B4571A;--g:#F5F3EF"></i>Clay</button>
+    <button type="button" data-palette-pick="paper"><i style="--a:#1F7A4C;--g:#FFFFFF"></i>Paper</button>
+    <button type="button" data-palette-pick="field"><i style="--a:#2E7D32;--g:#F7F9F5"></i>Field</button>
+    <button type="button" data-palette-pick="journal"><i style="--a:#17507A;--g:#FBFBFC"></i>Journal</button>
+  </div>
+</div>
+
+<script src="/acrejournal/js/app.js?v=1b2739c8" defer></script>
+</body>
+</html>

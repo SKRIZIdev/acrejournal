@@ -1,0 +1,260 @@
+- file: hero-1.jpg
+  source: https://commons.wikimedia.org/wiki/File:-Plant2020_(20200429-FPAC-Planting-041).jpg
+  license: Public domain
+  author: USDA / NRCS
+  query: FPAC tractor field
+- file: hero-2.jpg
+  source: https://commons.wikimedia.org/wiki/File:20180925-FPAC-PJK-4307_TONED.jpg
+  license: Public domain
+  author: USDA / NRCS
+  query: FPAC tractor field
+- file: hero-3.jpg
+  source: https://commons.wikimedia.org/wiki/File:-Plant2020_(20200512-FPAC-PLANTING-333).jpg
+  license: Public domain
+  author: USDA / NRCS
+  query: FPAC tractor field
+- file: hero-4.jpg
+  source: https://commons.wikimedia.org/wiki/File:20180925-FPAC-PJK-4430_TONED.jpg
+  license: Public domain
+  author: USDA / NRCS
+  query: FPAC tractor field
+- file: band-1.jpg
+  source: https://commons.wikimedia.org/wiki/File:20211105-FPAC-PJK-2016_TONED.jpg
+  license: Public domain
+  author: USDA / NRCS
+  query: USDA 2021 crop rows field
+- file: band-2.jpg
+  source: https://commons.wikimedia.org/wiki/File:20211213-USDA-OC-PSD-0254_Agriculture_in_the_United_States.jpg
+  license: Public domain
+  author: USDA / NRCS
+  query: USDA 2021 crop rows field
+- file: band-3.jpg
+  source: https://commons.wikimedia.org/wiki/File:ARS_-_Energy_Cane_Harvest_and_Lab_Tests_(20211213-ARS-LSC-1312).jpg
+  license: Public domain
+  author: USDA / NRCS
+  query: USDA 2021 crop rows field
+- file: band-4.jpg
+  source: https://commons.wikimedia.org/wiki/File:20211105-FPAC-PJK-2028_TONED.jpg
+  license: Public domain
+  author: USDA / NRCS
+  query: USDA 2021 crop rows field
+- file: compact-tractors-1.jpg
+  source: https://commons.wikimedia.org/wiki/File:20221021-FPAC-LSC-0559_00_32_59_12_Still010.jpg
+  license: Public domain
+  author: USDA / NRCS
+  query: small tractor farm field NRCS
+- file: compact-tractors-2.jpg
+  source: ''
+  license: Public domain
+  author: USDA / NRCS
+  query: ''
+- file: compact-tractors-3.jpg
+  source: https://commons.wikimedia.org/wiki/File:20180925-FPAC-PJK-4307_TONED.jpg
+  license: Public domain
+  author: USDA / NRCS
+  query: FPAC tractor field
+- file: compact-tractors-4.jpg
+  source: https://commons.wikimedia.org/wiki/File:FARMERS_GOV_-_Vue_Her_-_Diversified_Farmer_(20181109-FPAC-LSC-0781).jpg
+  license: Public domain
+  author: USDA / NRCS
+  query: NRCS farmer machinery field
+- file: used-tractors-1.jpg
+  source: https://commons.wikimedia.org/wiki/File:Farm_and_tractor_in_F%C3%A4rlev.jpg
+  license: CC0
+  author: USDA / NRCS
+  query: farm tractor barn
+- file: used-tractors-2.jpg
+  source: https://commons.wikimedia.org/wiki/File:Rusty_Tractor_Vineyards_Eclipses_Success_with_Solar_Power_(20240406-USDA-RD-AR-LSC-0029).jpg
+  license: Public domain
+  author: USDA / NRCS
+  query: old tractor rusty field
+- file: used-tractors-3.jpg
+  source: https://commons.wikimedia.org/wiki/File:Rusty_Tractor_Vineyards_Eclipses_Success_with_Solar_Power_(20240406-USDA-RD-AR-LSC-0033).jpg
+  license: Public domain
+  author: USDA / NRCS
+  query: old tractor rusty field
+- file: used-tractors-4.jpg
+  source: https://commons.wikimedia.org/wiki/File:Renfroe_Farms_Balances_Land_Stewardship_and_Production_in_TN_(20190917-NRCS-LSC-0108).jpg
+  license: Public domain
+  author: USDA / NRCS
+  query: tractor implement field NRCS
+- file: irrigation-1.jpg
+  source: https://commons.wikimedia.org/wiki/File:NRCS-EQIP_Water_Wise_Irrigation_at_Schirmer_Farms_(20200728-NRCS-LSC-0107).jpg
+  license: Public domain
+  author: USDA / NRCS
+  query: drip irrigation field NRCS
+- file: irrigation-2.jpg
+  source: https://commons.wikimedia.org/wiki/File:NRCS-EQIP_Water_Wise_Irrigation_at_Schirmer_Farms_(20200728-NRCS-LSC-0094).jpg
+  license: Public domain
+  author: USDA / NRCS
+  query: drip irrigation field NRCS
+- file: irrigation-3.jpg
+  source: https://commons.wikimedia.org/wiki/File:Drought_Mitigation_Underground_Micro-Irrigation_(20150415-NRCS-LSC-0429).jpg
+  license: Public domain
+  author: USDA / NRCS
+  query: drip irrigation field NRCS
+- file: irrigation-4.jpg
+  source: https://commons.wikimedia.org/wiki/File:Drought_Mitigation_Underground_Micro-Irrigation_(20150415-NRCS-LSC-0316).jpg
+  license: Public domain
+  author: USDA / NRCS
+  query: drip irrigation field NRCS
+- file: greenhouses-1.jpg
+  source: https://commons.wikimedia.org/wiki/File:Bismarck_Plant_Materials_Center_-_North_Dakota_(20150515-NRCS-LSC-0187).jpg
+  license: Public domain
+  author: USDA / NRCS
+  query: high tunnel greenhouse NRCS
+- file: greenhouses-2.jpg
+  source: https://commons.wikimedia.org/wiki/File:Veteran_New_Farmer_Green_Bexar_Farm_(20201021-NRCS-LSC-0488).jpg
+  license: Public domain
+  author: USDA / NRCS
+  query: high tunnel greenhouse NRCS
+- file: greenhouses-3.jpg
+  source: https://commons.wikimedia.org/wiki/File:Veteran_New_Farmer_Green_Bexar_Farm_(20201021-NRCS-LSC-0584).jpg
+  license: Public domain
+  author: USDA / NRCS
+  query: high tunnel greenhouse NRCS
+- file: greenhouses-4.jpg
+  source: https://commons.wikimedia.org/wiki/File:Veteran_New_Farmer_Green_Bexar_Farm_(20201021-NRCS-LSC-0894).jpg
+  license: Public domain
+  author: USDA / NRCS
+  query: high tunnel greenhouse NRCS
+- file: attachments-1.jpg
+  source: https://commons.wikimedia.org/wiki/File:Renfroe_Farms_Balances_Land_Stewardship_and_Production_in_TN_(20190918-NRCS-LSC-0137).jpg
+  license: Public domain
+  author: USDA / NRCS
+  query: tractor implement field NRCS
+- file: attachments-2.jpg
+  source: https://commons.wikimedia.org/wiki/File:Renfroe_Farms_Balances_Land_Stewardship_and_Production_in_TN_(20190918-NRCS-LSC-0171).jpg
+  license: Public domain
+  author: USDA / NRCS
+  query: tractor implement field NRCS
+- file: attachments-3.jpg
+  source: https://commons.wikimedia.org/wiki/File:20200724-NRCS-LSC-0046_(50168863586).jpg
+  license: Public domain
+  author: USDA / NRCS
+  query: tractor implement field NRCS
+- file: attachments-4.jpg
+  source: https://commons.wikimedia.org/wiki/File:Renfroe_Farms_Balances_Land_Stewardship_and_Production_in_TN_(20190918-NRCS-LSC-0189).jpg
+  license: Public domain
+  author: USDA / NRCS
+  query: tractor implement field NRCS
+- file: parts-1.jpg
+  source: https://commons.wikimedia.org/wiki/File:Cotton_Harvest_at_Schirmer_Farms,_TX_(20200811-NRCS-LSC-0030).jpg
+  license: Public domain
+  author: USDA / NRCS
+  query: tractor engine maintenance USDA
+- file: parts-2.jpg
+  source: https://commons.wikimedia.org/wiki/File:Cotton_Harvest_at_Schirmer_Farms,_TX_(20200811-NRCS-LSC-0065).jpg
+  license: Public domain
+  author: USDA / NRCS
+  query: tractor engine maintenance USDA
+- file: parts-3.jpg
+  source: https://commons.wikimedia.org/wiki/File:Cotton_Harvest_at_Schirmer_Farms,_TX_(20200811-NRCS-LSC-0228).jpg
+  license: Public domain
+  author: USDA / NRCS
+  query: tractor engine maintenance USDA
+- file: parts-4.jpg
+  source: https://commons.wikimedia.org/wiki/File:Cotton_Harvest_at_Schirmer_Farms,_TX_(20200811-NRCS-LSC-0210).jpg
+  license: Public domain
+  author: USDA / NRCS
+  query: tractor engine maintenance USDA
+- file: lawn-mowers-1.jpg
+  source: https://commons.wikimedia.org/wiki/File:Riding_lawn_mowers_-_DPLA_-_44428a4f6a3eadc1b163be488a9f6748.jpg
+  license: Public domain
+  author: USDA / NRCS
+  query: riding mower grass
+- file: lawn-mowers-2.jpg
+  source: https://commons.wikimedia.org/wiki/File:20160520-RD-LSC-0522_(27127991190).jpg
+  license: Public domain
+  author: USDA / NRCS
+  query: mowing grass tractor USDA
+- file: lawn-mowers-3.jpg
+  source: https://commons.wikimedia.org/wiki/File:Colleges_and_Universities_-Vassar_College_-_Vassar_College_Girls_Work_on_Farm_to_Promote_Nurses%27_School_-_NARA_-_26430068.jpg
+  license: Public domain
+  author: USDA / NRCS
+  query: hay mowing field tractor
+- file: lawn-mowers-4.jpg
+  source: https://commons.wikimedia.org/wiki/File:Landowner_Says_Planning_and_Care_Essential_for_Hardy_Shelterbelt_(8621828547).jpg
+  license: Public domain
+  author: USDA / NRCS
+  query: mowing grass tractor USDA
+- file: hydroponics-1.jpg
+  source: https://commons.wikimedia.org/wiki/File:Hydroponic_farming,_USA_(9386).jpg
+  license: Public domain
+  author: USDA / NRCS
+  query: hydroponic lettuce USDA
+- file: hydroponics-2.jpg
+  source: https://commons.wikimedia.org/wiki/File:Drought_Mitigation-Kitayama_Brothers,_Inc_Rain_Harvest,_Water_Reuse,_Saltwater_Intrusion_and_Reclaimed-Recharge_Blending_(20150827-NRCS-LSC-0362).jpg
+  license: Public domain
+  author: USDA / NRCS
+  query: hydroponics grow system NRCS
+- file: hydroponics-3.jpg
+  source: https://commons.wikimedia.org/wiki/File:Drought_Mitigation-Kitayama_Brothers,_Inc_Rain_Harvest,_Water_Reuse,_Saltwater_Intrusion_and_Reclaimed-Recharge_Blending_(20150827-NRCS-LSC-0384).jpg
+  license: Public domain
+  author: USDA / NRCS
+  query: hydroponics grow system NRCS
+- file: hydroponics-4.jpg
+  source: https://commons.wikimedia.org/wiki/File:Irrigation_and_Water_(20150827-NRCS-LSC-0333).jpg
+  license: Public domain
+  author: USDA / NRCS
+  query: hydroponics grow system NRCS
+- file: learn-1.jpg
+  source: https://commons.wikimedia.org/wiki/File:Cotton_Harvest_at_Schirmer_Farms,_TX_(20200811-NRCS-LSC-0057).jpg
+  license: Public domain
+  author: USDA / NRCS
+  query: tractor engine maintenance USDA
+- file: learn-2.jpg
+  source: https://commons.wikimedia.org/wiki/File:2019_Iowa_Tractor_Ride_with_Secretary_Perdue_(20190624-OSEC-LSC-0247).jpg
+  license: Public domain
+  author: USDA / NRCS
+  query: FPAC tractor field
+- file: learn-3.jpg
+  source: https://commons.wikimedia.org/wiki/File:Renfroe_Farms_Balances_Land_Stewardship_and_Production_in_TN_(20190918-NRCS-LSC-0157).jpg
+  license: Public domain
+  author: USDA / NRCS
+  query: tractor implement field NRCS
+- file: learn-4.jpg
+  source: https://commons.wikimedia.org/wiki/File:Cotton_Harvest_at_Schirmer_Farms,_TX_(20200811-NRCS-LSC-0097).jpg
+  license: Public domain
+  author: USDA / NRCS
+  query: tractor engine maintenance USDA
+- file: reviews-1.jpg
+  source: https://commons.wikimedia.org/wiki/File:Farmers_and_Ranchers_(20210513-NRCS-BJOC-034).jpg
+  license: Public domain
+  author: USDA / NRCS
+  query: NRCS farmer machinery field
+- file: reviews-2.jpg
+  source: https://commons.wikimedia.org/wiki/File:FARMERS_GOV_-_Vue_Her_-_Diversified_Farmer_(20181109-FPAC-LSC-0623).jpg
+  license: Public domain
+  author: USDA / NRCS
+  query: NRCS farmer machinery field
+- file: reviews-3.jpg
+  source: https://commons.wikimedia.org/wiki/File:Harvest_(20200822-NRCS-LSC-0194).jpg
+  license: Public domain
+  author: USDA / NRCS
+  query: NRCS farmer machinery field
+- file: reviews-4.jpg
+  source: https://commons.wikimedia.org/wiki/File:FARMERS_GOV_-_Vue_Her_-_Diversified_Farmer_(20181109-FPAC-LSC-0700).jpg
+  license: Public domain
+  author: USDA / NRCS
+  query: NRCS farmer machinery field
+- file: compare-1.jpg
+  source: https://commons.wikimedia.org/wiki/File:FARMERS_GOV_-_Vue_Her_-_Diversified_Farmer_(20181109-FPAC-LSC-0886).jpg
+  license: Public domain
+  author: USDA / NRCS
+  query: NRCS farmer machinery field
+- file: compare-2.jpg
+  source: https://commons.wikimedia.org/wiki/File:Harvest_(20200822-NRCS-LSC-0737).jpg
+  license: Public domain
+  author: USDA / NRCS
+  query: NRCS farmer machinery field
+- file: compare-3.jpg
+  source: https://commons.wikimedia.org/wiki/File:20221021-FPAC-LSC-0559_00_07_25_00_Still006.jpg
+  license: Public domain
+  author: USDA / NRCS
+  query: small tractor farm field NRCS
+- file: compare-4.jpg
+  source: https://commons.wikimedia.org/wiki/File:20221021-FPAC-LSC-0504_MOV_00_00_01_06_Still001.jpg
+  license: Public domain
+  author: USDA / NRCS
+  query: small tractor farm field NRCS

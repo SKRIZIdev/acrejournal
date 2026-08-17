@@ -1,0 +1,458 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script>
+(function () {
+  var d = document.documentElement;
+  d.className += ' js';
+  try {
+    var th = localStorage.getItem('aj-theme');
+    d.setAttribute('data-theme', th === 'dark' ? 'dark' : 'light');
+    var pal = localStorage.getItem('aj-palette');
+    if (pal) d.setAttribute('data-palette', pal);
+  } catch (e) {}
+  if (location.hash && location.hash.length > 1) d.classList.add('anchor-landing');
+})();
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
+<meta name="x-apple-disable-message-reformatting">
+<title>How to build a greenhouse — Acre Journal</title>
+<meta name="description" content="What it takes to build a greenhouse that survives its first winter — snow load first, then span, then covering. With current kit prices and the cheap routes that actually work.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://acrejournal.com/greenhouses/how-to-build-a-greenhouse/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="How to build a greenhouse">
+<meta property="og:description" content="What it takes to build a greenhouse that survives its first winter — snow load first, then span, then covering. With current kit prices and the cheap routes that actually work.">
+<meta property="og:url" content="https://acrejournal.com/greenhouses/how-to-build-a-greenhouse/">
+<meta property="og:site_name" content="Acre Journal">
+<link rel="icon" href="/acrejournal/favicon.svg?v=40b724f3" type="image/svg+xml">
+<link rel="stylesheet" href="/acrejournal/css/site.css?v=b44cc107"><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "headline": "How to build a greenhouse", "description": "What it takes to build a greenhouse that survives its first winter — snow load first, then span, then covering. With current kit prices and the cheap routes that actually work.", "url": "https://acrejournal.com/greenhouses/how-to-build-a-greenhouse/", "dateModified": "2026-08-16", "publisher": {"@type": "Organization", "name": "Acre Journal"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://acrejournal.com/"}, {"@type": "ListItem", "position": 2, "name": "Greenhouses", "item": "https://acrejournal.com/greenhouses/"}, {"@type": "ListItem", "position": 3, "name": "How to build a greenhouse", "item": "https://acrejournal.com/greenhouses/how-to-build-a-greenhouse/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How much does it cost to build a greenhouse?", "acceptedAnswer": {"@type": "Answer", "text": "A frame kit is $1,589 for a 16 ft low-profile span and $2,630 for 24 ft at current seller prices, checked 16 August 2026. On top of that: covering from about $51 for 4-year 6 mil film, end walls, a door, ground posts or a base, and ventilation. A realistic small working tunnel lands well above the kit price, and the covering comes back as a cost every few years."}}, {"@type": "Question", "name": "How to build a greenhouse cheap?", "acceptedAnswer": {"@type": "Answer", "text": "Three routes actually work. Buy a DIY kit that supplies the fittings and source the timber and pipe locally. Build a hoop house over cattle panel or PVC for a season-extension structure rather than a permanent one. Or buy a smaller span with a taller sidewall instead of a wider low one — height costs less than width and makes the edge beds usable. What does not work is under-specifying the frame for your snow load."}}, {"@type": "Question", "name": "How to make a greenhouse without buying a kit?", "acceptedAnswer": {"@type": "Answer", "text": "Same three steps in the same order — snow load, span, covering — but you source the frame yourself. Cattle panel bent over a timber base, or PVC hoops in a mild-winter county, will make a greenhouse for a fraction of a kit price. The fittings are the part worth buying rather than improvising."}}, {"@type": "Question", "name": "How to build a small greenhouse?", "acceptedAnswer": {"@type": "Answer", "text": "Smaller is easier structurally and harder ergonomically. A short span carries snow better, but a low shoulder wastes the outer beds — so on a small greenhouse the sidewall height matters even more than on a large one. Under about 12 ft of span, build tall or accept that only the center is usable."}}, {"@type": "Question", "name": "How much is a greenhouse?", "acceptedAnswer": {"@type": "Answer", "text": "A frame kit runs $1,589 to $2,630 depending on span at current seller prices. What a greenhouse costs in total is that plus covering, end walls, a door, ground anchoring and ventilation — realistically well above the kit figure, and with the covering returning as a cost every few years."}}, {"@type": "Question", "name": "Can I build a greenhouse out of PVC?", "acceptedAnswer": {"@type": "Answer", "text": "For a light season-extension structure in a mild-winter county, yes, and it is the cheapest frame there is. PVC bends under snow and degrades in UV, so it is not a structure you leave covered through a heavy winter. Treat it as a two-to-four year structure, not a decade one."}}, {"@type": "Question", "name": "Does a greenhouse kit include the foundation?", "acceptedAnswer": {"@type": "Answer", "text": "Almost never. Kits are frame, and sometimes covering. Ground posts, base boards, end walls, doors, concrete and ventilation are usually extra or your own work. Read the parts list before comparing two kit prices — the cheaper one often stops earlier."}}, {"@type": "Question", "name": "What size greenhouse should I build?", "acceptedAnswer": {"@type": "Answer", "text": "Wider than you think for growing, and taller than you think for working. The step from a 16 ft low-profile to a 16 ft high tunnel is about $330 and it is the upgrade people are gladdest they made: sidewall height is what makes the edge beds usable, and edge beds are a quarter of the growing area."}}, {"@type": "Question", "name": "Which way should a greenhouse face?", "acceptedAnswer": {"@type": "Answer", "text": "In most of the US, orient the ridge north to south for even light through the day on a season-long crop. An east-west ridge favours low winter sun, which suits a structure used mainly for overwintering. Site it out of the prevailing wind and away from anything that drops snow onto it."}}]}]}</script>
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="logo" href="/acrejournal/" aria-label="Acre Journal — home">
+      <svg class="mark" width="30" height="30" viewBox="0 0 32 32" aria-hidden="true">
+        <rect width="32" height="32" rx="8" fill="currentColor"></rect>
+        <rect x="7.4" y="7.4" width="17.2" height="17.2" rx="1.6" stroke="var(--ground)" stroke-width="2.6" fill="none"></rect>
+        <path d="M15.4 8.7v14.6M8.7 15.2h14.6" stroke="var(--ground)" stroke-width="1.9"></path>
+        <path d="M16.7 16.5h6.9v6.8h-6.9z" fill="var(--mark-crop)"></path>
+      </svg>
+      <span class="wordmark"><i>Acre</i><i>Journal</i></span>
+    </a>
+    <nav class="site" id="site-nav" aria-label="Main">
+      <a href="/acrejournal/compact-tractors/">Compact tractors</a>
+      <a href="/acrejournal/used-tractors/">Used</a>
+      <a href="/acrejournal/irrigation/">Irrigation</a>
+      <a href="/acrejournal/greenhouses/" aria-current="page">Greenhouses</a>
+
+      <div class="more">
+        <button class="more-toggle" type="button" aria-expanded="false" aria-controls="nav-more"
+>
+          More
+          <svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <path d="M2.5 4.5 6 8l3.5-3.5" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <div class="more-sheet" id="nav-more">
+          <span class="more-cap">Sections</span>
+          <a href="/acrejournal/parts/">Parts</a>
+          <a href="/acrejournal/attachments/">Attachments &amp; PTO</a>
+          <a href="/acrejournal/lawn-mowers/">Mowing</a>
+          <a href="/acrejournal/hydroponics/">Hydroponics</a>
+          <span class="more-cap">Read</span>
+          <a href="/acrejournal/reviews/">Owner reports</a>
+          <a href="/acrejournal/learn/">Learn</a>
+          <a href="/acrejournal/glossary/">Glossary</a>
+          <a href="/acrejournal/compare/">Compare</a>
+          <a href="/acrejournal/faq/">FAQ</a>
+        </div>
+      </div>
+
+      <a class="btn cta in-drawer" href="/acrejournal/reviews/">Owner reports</a>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Switch theme" title="Theme: system">
+      <svg class="i-sun" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+        <circle cx="10" cy="10" r="4"></circle>
+        <path d="M10 1.5v2M10 16.5v2M1.5 10h2M16.5 10h2M4 4l1.4 1.4M14.6 14.6L16 16M16 4l-1.4 1.4M5.4 14.6L4 16" stroke-linecap="round"></path>
+      </svg>
+      <svg class="i-moon" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+        <path d="M16.5 12.4A7 7 0 0 1 7.6 3.5a7 7 0 1 0 8.9 8.9z" stroke-linejoin="round"></path>
+      </svg>
+      <svg class="i-auto" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+        <circle cx="10" cy="10" r="7"></circle>
+        <path d="M10 3v14a7 7 0 0 0 0-14z" fill="currentColor" stroke="none"></path>
+      </svg>
+    </button>
+    <a class="btn cta on-bar" href="/acrejournal/reviews/">Owner reports</a>
+    <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="nav-scrim" hidden></div>
+
+<main id="main">
+
+<div class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb">
+<a href="/acrejournal/">Home</a> / <a href="/acrejournal/greenhouses/">Greenhouses</a> / <span aria-current="page">How to build a greenhouse</span></nav>
+
+  <div class="layout">
+    <article class="prose reveal">
+      <h1>How to build a greenhouse</h1>
+      <div class="meta">
+        <span>Updated 16 Aug 2026</span>
+        <span>·</span>
+        <span>9 min read</span>
+      </div>
+
+      <div class="answer">
+        <b>Short answer</b>
+        <p>Start with your county&#39;s ground snow load, not with a design. Snow and span are what collapse tunnels, and every other decision follows from them. A frame kit runs from about <span translate="no">$1,589 </span>for a 16 ft span to <span translate="no">$2,630 </span>for 24 ft; covering, end walls and ground anchoring are extra and are where most first-time budgets fall short.</p>
+      </div>
+
+      <section class="facts reveal" aria-labelledby="facts-heading">
+  <div class="facts-top">
+    <span class="kick">At a glance</span>
+    <h2 id="facts-heading">What a build actually costs</h2>
+  </div>
+  <div class="table-wrap">
+    <table class="facts-table" role="table">
+      <thead role="rowgroup">
+        <tr role="row">
+          <th scope="col" role="columnheader">What</th>
+          <th scope="col" role="columnheader">Figure</th>
+          <th scope="col" role="columnheader">Source</th>
+        </tr>
+      </thead>
+      <tbody role="rowgroup">
+        <tr role="row">
+          <th scope="row" role="rowheader">Frame kit, 16 ft low-profile</th>
+          <td role="cell">
+            <span class="facts-value"><span translate="no">$1,588.95</span></span>
+<span class="facts-hint">Narrow span, low shoulder — propagation rather than walking beds</span>          </td><td class="facts-src" role="cell"><a href="https://growerssolution.com/products/16ftlowpkg" rel="nofollow noopener">Growers Solution, 16 ft low sidewall</a></td>
+        </tr>
+        <tr role="row">
+          <th scope="row" role="rowheader">Frame kit, 16 ft high tunnel</th>
+          <td role="cell">
+            <span class="facts-value"><span translate="no">$1,920.95</span></span>
+<span class="facts-hint">Same width, taller sidewall — about <span translate="no">$330 </span>for usable edge beds</span>          </td><td class="facts-src" role="cell"><a class="facts-same" href="https://growerssolution.com/products/16ftlowpkg" rel="nofollow noopener"
+                 title="Growers Solution, 16 ft low sidewall">same source</a></td>
+        </tr>
+        <tr role="row">
+          <th scope="row" role="rowheader">Frame kit, 20 ft high tunnel</th>
+          <td role="cell">
+            <span class="facts-value"><span translate="no">$2,390.95</span></span>
+<span class="facts-hint">The common working size for a market garden</span>          </td><td class="facts-src" role="cell"><a class="facts-same" href="https://growerssolution.com/products/16ftlowpkg" rel="nofollow noopener"
+                 title="Growers Solution, 16 ft low sidewall">same source</a></td>
+        </tr>
+        <tr role="row">
+          <th scope="row" role="rowheader">Frame kit, 24 ft low-profile</th>
+          <td role="cell">
+            <span class="facts-value"><span translate="no">$2,629.95</span></span>
+<span class="facts-hint">Wide enough for machinery — check the snow rating before going this wide</span>          </td><td class="facts-src" role="cell"><a class="facts-same" href="https://growerssolution.com/products/16ftlowpkg" rel="nofollow noopener"
+                 title="Growers Solution, 16 ft low sidewall">same source</a></td>
+        </tr>
+        <tr role="row">
+          <th scope="row" role="rowheader">Covering, 4-year 6 mil film</th>
+          <td role="cell">
+            <span class="facts-value"><span translate="no">$50.95</span></span>
+<span class="facts-hint">The recurring cost most budgets leave out</span>          </td><td class="facts-src" role="cell"><a href="https://growerssolution.com/products/4-year-6-mil-greenhouse-film" rel="nofollow noopener">Growers Solution, 4 year 6 mil film</a></td>
+        </tr>
+        <tr role="row">
+          <th scope="row" role="rowheader">Typical commercial design load</th>
+          <td role="cell">
+            <span class="facts-value">35 lb/sq ft snow, 100 mph wind</span>
+<span class="facts-hint">A manufacturing convention — your county&#39;s ground snow load governs</span>          </td><td class="facts-src" role="cell"><a href="https://extension.okstate.edu/fact-sheets/greenhouse-structures-and-coverings" rel="nofollow noopener">Oklahoma State Extension</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+<p class="facts-foot">Kit prices are the seller&#39;s list on 16 August 2026 for the frame package, before covering, ground work and shipping.</p></section>
+
+      <p>Most greenhouse guides start with a shopping list. That is the wrong end. A greenhouse
+fails in one night, under snow, and the decisions that prevent it are made before anything
+is bought.</p>
+<h2 id="snow">Step 1: find your snow load</h2>
+<p>Your county publishes a ground <a class="glossary-link" href="/acrejournal/glossary/#snow-load" title="Weight of snow a greenhouse frame is rated to carry, in pounds per square foot.">snow load</a> figure in local building code, derived from the
+ASCE hazard maps. That number, not the catalogue, decides what you can build.</p>
+<p>Commercial designs are commonly rated to around 35 lb per square foot of snow and 100 mph
+of wind. That is a manufacturing convention — it tells you what a typical structure is
+built to, not whether it suits your site.</p>
+<p>Two things make snow worse than the headline figure suggests. <strong>Span</strong>: a wider hoop
+carries more load on the same frame, so a design offered in 16 ft and 24 ft is not equally
+strong in both. <strong>Drifting</strong>: snow slides down the arch and piles at the shoulder, and that
+is where tunnels actually deform — not at the ridge.</p>
+<figure class="scheme"><svg class="scheme-svg" viewBox="0 0 760 360" role="img"
+     aria-labelledby="gh-snow-title gh-snow-desc">
+  <title id="gh-snow-title">Greenhouse section under snow load</title>
+  <desc id="gh-snow-desc">Snow rests on the roof slope and presses down on the covering, which
+    passes the load to the trusses and then to the foundation. Two dimensions decide whether the
+    structure holds: the spacing between trusses and the slope of the roof, which controls whether
+    snow slides off or accumulates.</desc>
+
+  
+  <path class="s-snow" d="M150 186c46-42 106-70 230-70s184 28 230 70c-18-8-40-14-64-18-52-9-104-13-166-13s-114 4-166 13c-24 4-46 10-64 18z"/>
+
+  
+  <g class="s-load">
+    <path d="M230 132v34M330 118v34M430 118v34M530 132v34"/>
+    <path class="s-arrow" d="M223 160l7 12 7-12zM323 146l7 12 7-12zM423 146l7 12 7-12zM523 160l7 12 7-12z"/>
+  </g>
+  <text x="380" y="96" text-anchor="middle" class="s-sub">Design snow load — set by local code</text>
+
+  
+  <path class="s-cover" d="M140 296c0-92 108-152 240-152s240 60 240 152"/>
+  <path class="s-truss" d="M170 296c0-74 94-124 210-124s210 50 210 124"/>
+  <g class="s-purlin">
+    <path d="M380 172v124M285 190v106M475 190v106"/>
+  </g>
+
+  
+  <path class="s-ground" d="M96 296h568"/>
+  <g class="s-base">
+    <rect x="150" y="296" width="26" height="28" rx="4"/>
+    <rect x="584" y="296" width="26" height="28" rx="4"/>
+  </g>
+
+  
+  <g class="s-dim">
+    <path d="M285 268h90M285 262v12M375 262v12"/>
+    <path class="s-arrow-thin" d="M292 264l-7 4 7 4zM368 264l7 4-7 4z"/>
+  </g>
+  <text x="330" y="256" text-anchor="middle" class="s-sub">Truss spacing</text>
+
+  <g class="s-callout">
+    <path class="s-lead" d="M128 324 146 294"/>
+    <path class="s-lead" d="M632 324 606 300"/>
+    <text x="96" y="338" class="s-label">Covering</text>
+    <text x="96" y="356" class="s-sub">carries load to the frame</text>
+    <text x="664" y="338" text-anchor="end" class="s-label">Foundation</text>
+    <text x="664" y="356" text-anchor="end" class="s-sub">where the load ends up</text>
+  </g>
+</svg><figcaption>How snow load reaches the frame. The load does not sit evenly on the arch: it slides toward the shoulder, and that is where deformation starts.</figcaption></figure>
+<h2 id="size">Step 2: choose the span and the height</h2>
+<p>Width is what you notice in the catalogue. Height is what you notice every day you work in
+it.</p>
+<p>A 16 ft low-profile package lists at <span translate="no">$1,588.95</span> and a 16 ft <a class="glossary-link" href="/acrejournal/glossary/#high-tunnel" title="Unheated covered structure grown in directly at ground level.">high tunnel</a> at <span translate="no">$1,920.95</span> —
+about <span translate="no">$330 </span>apart. That <span translate="no">$330 </span>buys sidewall height, and sidewall height is what makes the
+outer beds reachable. Those beds are roughly a quarter of your growing area, so a low
+shoulder means paying for space you then cannot use properly.</p>
+<p>Going wider is the more expensive move: 20 ft high tunnel at <span translate="no">$2,390.95</span>, 24 ft low-profile
+at <span translate="no">$2,629.95</span>. Twenty feet is the common working size for a market garden — a center path
+with beds either side. Twenty-four is where machinery fits, and where you must check the
+snow rating rather than assume it.</p>
+<h2 id="covering">Step 3: pick the covering</h2>
+<p>The frame outlives the covering several times over, so this is a recurring cost rather
+than a one-off.</p>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Covering</th>
+<th>Service life</th>
+<th>Where it makes sense</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Co-poly film</td>
+<td>About 1 season</td>
+<td>Overwintering, temporary structures</td>
+</tr>
+<tr>
+<td>Greenhouse-grade poly</td>
+<td>4 years warranted</td>
+<td>The default for working tunnels</td>
+</tr>
+<tr>
+<td>Twin-wall <a class="glossary-link" href="/acrejournal/glossary/#polycarbonate" title="Twin-wall greenhouse glazing — lighter than glass, warmer than film.">polycarbonate</a></td>
+<td>10–15 years</td>
+<td>Cold climates, structures you keep</td>
+</tr>
+<tr>
+<td>Corrugated polycarbonate</td>
+<td>Up to 20 years</td>
+<td>Permanent builds</td>
+</tr>
+</tbody>
+</table></div>
+<p>These service lives come from university extension material — the
+<a href="https://www.umass.edu/agriculture-food-environment/greenhouse-floriculture/fact-sheets/plastic-greenhouse-film-update">UMass Amherst film fact sheet</a>
+and <a href="https://extension.okstate.edu/fact-sheets/greenhouse-structures-and-coverings">Oklahoma State's guide</a>.
+They are the extension services' figures, not our measurements, and in a high-UV state
+expect the real number to fall short of the warranty.</p>
+<p>Run the maths over fifteen years rather than over one purchase: four rounds of
+greenhouse-grade poly against one polycarbonate install is closer than the shelf prices
+suggest, and re-covering costs labor as well as material.</p>
+<h2 id="extras">Step 4: what the kit does not include</h2>
+<p>This is where first budgets break. A kit is a frame, sometimes with covering. Plan
+separately for:</p>
+<ul>
+<li><strong>Ground anchoring</strong> — posts driven to depth, or a base. This is what holds the structure
+  down in wind.</li>
+<li><strong>End walls and a door</strong> wide enough for a wheelbarrow or a cart. Two end walls are a
+  surprising share of the total build.</li>
+<li><strong>Ventilation</strong> — roll-up sides or fans. A closed tunnel in summer cooks the crop.</li>
+<li><strong>Covering</strong>, if the kit is frame-only, plus batten or wiggle wire to hold it.</li>
+<li><strong>Repair tape</strong>, about <span translate="no">$21, </span>which postpones a full recover when a tear appears.</li>
+</ul>
+<h2 id="cheap">How to build a greenhouse cheaply</h2>
+<p>Three approaches genuinely reduce cost without reducing the structure to scrap:</p>
+<p><strong>Buy a DIY kit and source materials locally.</strong> These supply the fittings and connectors —
+the parts that are hard to improvise — and let you buy pipe and timber near you rather than
+shipping them.</p>
+<p><strong>Build a hoop house rather than a greenhouse.</strong> Cattle panel or PVC hoops over a timber
+base make a legitimate season-extension structure for a fraction of the price. Accept what
+it is: PVC bends under snow and degrades in UV, so it is a two-to-four year structure and
+should be uncovered before a heavy winter.</p>
+<p><strong>Buy height instead of width.</strong> As above — <span translate="no">$330 </span>for a taller sidewall does more for
+usable space than the same money spent on span.</p>
+<p>What does not work is under-specifying the frame for your snow load, or spacing the hoops
+wider than the design says to save on materials. Both save money once and cost the whole
+structure later.</p>
+<h2 id="check">Step 5: check it before you build</h2>
+<p>Our <a href="/acrejournal/greenhouses/greenhouse-calculator/">greenhouse calculator</a> takes your span, hoop
+spacing and local snow load and tells you when the combination does not hold — including
+when the covering you picked cannot carry the snow you specified. That combination is the
+common failure, and no catalogue flags it for you.</p>
+
+      <div class="disclosure">We only cover gear we have researched, and our reports are built on documented owner experience, not on brand copy — the method is stated on every report page. Links to sellers are plain links: we are not in their affiliate programmes yet, and nothing on this site is paid placement.
+</div>
+      
+    </article>
+
+    <aside class="rail reveal" data-delay="140">
+      <div class="toc toc-page" data-toc>
+        <b>On this page</b>
+        <div class="toc-track" aria-hidden="true"><span class="toc-fill" data-toc-fill></span></div>
+        <ul>
+<li><a href="#snow">Step 1: find your snow load</a></li><li><a href="#size">Step 2: choose the span and the height</a></li><li><a href="#covering">Step 3: pick the covering</a></li><li><a href="#extras">Step 4: what the kit does not include</a></li><li><a href="#cheap">How to build a greenhouse cheaply</a></li><li><a href="#check">Step 5: check it before you build</a></li>        </ul>
+      </div>
+      <div class="toc toc-related">
+        <b>Related</b>
+        <ul>
+<li><a href="/acrejournal/greenhouses/">Greenhouses</a></li><li><a href="/acrejournal/greenhouses/greenhouse-calculator/">Greenhouse calculator</a></li><li><a href="/acrejournal/hydroponics/">Hydroponics</a></li>        </ul>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<section class="faq-band">
+  <div class="wrap">
+    <section class="faq" aria-label="Questions and answers">
+  <div class="faq-side">
+    <span class="pill">FAQ</span>
+<h2 id="faq">Questions &amp; Answers</h2>    <p class="faq-lede">Answered from the same sources as the tables above — each figure is
+      linked on the page it comes from.</p>
+  </div>
+  <div class="faq-list">
+    <details open>
+      <summary><h3 class="faq-q">How much does it cost to build a greenhouse?</h3></summary>
+      <div class="faq-a"><div class="faq-a-in"><p>A frame kit is <span translate="no">$1,589 </span>for a 16 ft low-profile span and <span translate="no">$2,630 </span>for 24 ft at current seller prices, checked 16 August 2026. On top of that: covering from about <span translate="no">$51 </span>for 4-year 6 mil film, end walls, a door, ground posts or a base, and ventilation. A realistic small working tunnel lands well above the kit price, and the covering comes back as a cost every few years.</p></div></div>
+    </details>
+    <details>
+      <summary><h3 class="faq-q">How to build a greenhouse cheap?</h3></summary>
+      <div class="faq-a"><div class="faq-a-in"><p>Three routes actually work. Buy a DIY kit that supplies the fittings and source the timber and pipe locally. Build a hoop house over cattle panel or PVC for a season-extension structure rather than a permanent one. Or buy a smaller span with a taller sidewall instead of a wider low one — height costs less than width and makes the edge beds usable. What does not work is under-specifying the frame for your snow load.</p></div></div>
+    </details>
+    <details>
+      <summary><h3 class="faq-q">How to make a greenhouse without buying a kit?</h3></summary>
+      <div class="faq-a"><div class="faq-a-in"><p>Same three steps in the same order — snow load, span, covering — but you source the frame yourself. Cattle panel bent over a timber base, or PVC hoops in a mild-winter county, will make a greenhouse for a fraction of a kit price. The fittings are the part worth buying rather than improvising.</p></div></div>
+    </details>
+    <details>
+      <summary><h3 class="faq-q">How to build a small greenhouse?</h3></summary>
+      <div class="faq-a"><div class="faq-a-in"><p>Smaller is easier structurally and harder ergonomically. A short span carries snow better, but a low shoulder wastes the outer beds — so on a small greenhouse the sidewall height matters even more than on a large one. Under about 12 ft of span, build tall or accept that only the center is usable.</p></div></div>
+    </details>
+    <details>
+      <summary><h3 class="faq-q">How much is a greenhouse?</h3></summary>
+      <div class="faq-a"><div class="faq-a-in"><p>A frame kit runs <span translate="no">$1,589 </span>to <span translate="no">$2,630 </span>depending on span at current seller prices. What a greenhouse costs in total is that plus covering, end walls, a door, ground anchoring and ventilation — realistically well above the kit figure, and with the covering returning as a cost every few years.</p></div></div>
+    </details>
+    <details>
+      <summary><h3 class="faq-q">Can I build a greenhouse out of PVC?</h3></summary>
+      <div class="faq-a"><div class="faq-a-in"><p>For a light season-extension structure in a mild-winter county, yes, and it is the cheapest frame there is. PVC bends under snow and degrades in UV, so it is not a structure you leave covered through a heavy winter. Treat it as a two-to-four year structure, not a decade one.</p></div></div>
+    </details>
+    <details>
+      <summary><h3 class="faq-q">Does a greenhouse kit include the foundation?</h3></summary>
+      <div class="faq-a"><div class="faq-a-in"><p>Almost never. Kits are frame, and sometimes covering. Ground posts, base boards, end walls, doors, concrete and ventilation are usually extra or your own work. Read the parts list before comparing two kit prices — the cheaper one often stops earlier.</p></div></div>
+    </details>
+    <details>
+      <summary><h3 class="faq-q">What size greenhouse should I build?</h3></summary>
+      <div class="faq-a"><div class="faq-a-in"><p>Wider than you think for growing, and taller than you think for working. The step from a 16 ft low-profile to a 16 ft high tunnel is about <span translate="no">$330 </span>and it is the upgrade people are gladdest they made: sidewall height is what makes the edge beds usable, and edge beds are a quarter of the growing area.</p></div></div>
+    </details>
+    <details>
+      <summary><h3 class="faq-q">Which way should a greenhouse face?</h3></summary>
+      <div class="faq-a"><div class="faq-a-in"><p>In most of the US, orient the ridge north to south for even light through the day on a season-long crop. An east-west ridge favours low winter sun, which suits a structure used mainly for overwintering. Site it out of the prevailing wind and away from anything that drops snow onto it.</p></div></div>
+    </details>
+  </div>
+</section>
+
+  </div>
+</section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="footer-logo" href="/acrejournal/" aria-label="Acre Journal — home">
+          <svg class="mark" width="38" height="38" viewBox="0 0 32 32" aria-hidden="true">
+            <rect width="32" height="32" rx="8" fill="currentColor"></rect>
+            <rect x="7.4" y="7.4" width="17.2" height="17.2" rx="1.6" stroke="var(--dark)" stroke-width="2.6" fill="none"></rect>
+            <path d="M15.4 8.7v14.6M8.7 15.2h14.6" stroke="var(--dark)" stroke-width="1.9"></path>
+            <path d="M16.7 16.5h6.9v6.8h-6.9z" fill="var(--accent)"></path>
+          </svg>
+          <span class="wordmark"><i>Acre</i><i>Journal</i></span>
+        </a>
+        <p class="footer-about">Independent coverage of compact tractors, used equipment, irrigation and greenhouses. Every figure on the site carries a source, and a place in a shortlist is never for sale.
+</p>
+      </div>
+
+      <div class="cols">
+        <div>
+          <b>Sections</b>
+<a href="/acrejournal/compact-tractors/">Compact tractors</a><a href="/acrejournal/used-tractors/">Used equipment</a><a href="/acrejournal/irrigation/">Irrigation</a><a href="/acrejournal/greenhouses/">Greenhouses</a><a href="/acrejournal/parts/">Parts</a><a href="/acrejournal/attachments/">Attachments &amp; PTO</a>        </div>
+        <div>
+          <b>Read</b>
+<a href="/acrejournal/reviews/">Owner reports</a><a href="/acrejournal/compare/">Comparisons</a><a href="/acrejournal/learn/">Learn</a><a href="/acrejournal/glossary/">Glossary</a><a href="/acrejournal/faq/">FAQ</a>        </div>
+        <div>
+          <b>About</b>
+<a href="/acrejournal/about/#method">How we check</a><a href="/acrejournal/about/">About us</a><a href="/acrejournal/disclosure/">Affiliate disclosure</a><a href="/acrejournal/privacy/">Privacy policy</a>        </div>
+      </div>
+    </div>
+
+    <div class="fine">
+      <p>We only cover gear we have researched, and our reports are built on documented owner experience, not on brand copy — the method is stated on every report page. Links to sellers are plain links: we are not in their affiliate programmes yet, and nothing on this site is paid placement.
+</p>
+      <p>&copy; 2026 Acre Journal. Figures carry their source and check date. Photography is illustrative.</p>
+    </div>
+  </div>
+  <span class="footer-word" aria-hidden="true">ACRE JOURNAL</span>
+</footer>
+
+<aside class="nudge" data-nudge="greenhouses" hidden>
+  <button class="nudge-close" type="button" aria-label="Dismiss">
+    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M3 3l8 8M11 3l-8 8" stroke-linecap="round"/></svg>
+  </button>
+  <span class="kick">Before you order a kit</span>
+  <b>Will it hold your snow?</b>
+  <p>Size and local snow load decide the covering and truss spacing — the calculator picks what actually holds.</p>
+  <a class="btn" href="/acrejournal/greenhouses/greenhouse-calculator/">Size my greenhouse</a>
+</aside>
+
+<div class="palette-dock" hidden>
+  <b>Palette</b>
+  <div class="palette-list">
+    <button type="button" data-palette-pick="clay"><i style="--a:#B4571A;--g:#F5F3EF"></i>Clay</button>
+    <button type="button" data-palette-pick="paper"><i style="--a:#1F7A4C;--g:#FFFFFF"></i>Paper</button>
+    <button type="button" data-palette-pick="field"><i style="--a:#2E7D32;--g:#F7F9F5"></i>Field</button>
+    <button type="button" data-palette-pick="journal"><i style="--a:#17507A;--g:#FBFBFC"></i>Journal</button>
+  </div>
+</div>
+
+<script src="/acrejournal/js/app.js?v=1b2739c8" defer></script>
+</body>
+</html>

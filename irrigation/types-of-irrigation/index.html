@@ -1,0 +1,427 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script>
+(function () {
+  var d = document.documentElement;
+  d.className += ' js';
+  try {
+    var th = localStorage.getItem('aj-theme');
+    d.setAttribute('data-theme', th === 'dark' ? 'dark' : 'light');
+    var pal = localStorage.getItem('aj-palette');
+    if (pal) d.setAttribute('data-palette', pal);
+  } catch (e) {}
+  if (location.hash && location.hash.length > 1) d.classList.add('anchor-landing');
+})();
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
+<meta name="x-apple-disable-message-reformatting">
+<title>Types of irrigation, and what each one costs you in water — Acre Journal</title>
+<meta name="description" content="Surface, furrow, flood, spray, center pivot and drip irrigation compared on application efficiency — what each method is, where it still makes sense, and how much of the water actually reaches the root zone.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://acrejournal.com/irrigation/types-of-irrigation/">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Types of irrigation, and what each one costs you in water">
+<meta property="og:description" content="Surface, furrow, flood, spray, center pivot and drip irrigation compared on application efficiency — what each method is, where it still makes sense, and how much of the water actually reaches the root zone.">
+<meta property="og:url" content="https://acrejournal.com/irrigation/types-of-irrigation/">
+<meta property="og:site_name" content="Acre Journal">
+<link rel="icon" href="/acrejournal/favicon.svg?v=40b724f3" type="image/svg+xml">
+<link rel="stylesheet" href="/acrejournal/css/site.css?v=b44cc107"><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "headline": "Types of irrigation, and what each one costs you in water", "description": "Surface, furrow, flood, spray, center pivot and drip irrigation compared on application efficiency — what each method is, where it still makes sense, and how much of the water actually reaches the root zone.", "url": "https://acrejournal.com/irrigation/types-of-irrigation/", "dateModified": "2026-08-17", "publisher": {"@type": "Organization", "name": "Acre Journal"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://acrejournal.com/"}, {"@type": "ListItem", "position": 2, "name": "Irrigation", "item": "https://acrejournal.com/irrigation/"}, {"@type": "ListItem", "position": 3, "name": "Types of irrigation, and what each one costs you in water", "item": "https://acrejournal.com/irrigation/types-of-irrigation/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "What are the main types of irrigation?", "acceptedAnswer": {"@type": "Answer", "text": "Three families. Surface irrigation moves water across the field by gravity — flood and furrow are the common forms. Sprinkler irrigation throws it through the air — hand lines, wheel lines, center pivots, linear moves and traveling guns. Micro irrigation delivers it at the plant — drip tape, drip line and micro-sprays. Everything sold under a brand name is a variation inside one of those three."}}, {"@type": "Question", "name": "What is furrow irrigation?", "acceptedAnswer": {"@type": "Answer", "text": "A form of surface irrigation where water runs down small parallel channels cut between crop rows and soaks in sideways and down as it advances. The crop sits on the ridge, the water runs in the furrow. It needs a field with a consistent gentle slope, and its efficiency depends almost entirely on getting the stream size and the run length right."}}, {"@type": "Question", "name": "What is flood irrigation?", "acceptedAnswer": {"@type": "Answer", "text": "Surface irrigation where a whole basin or border strip is covered with water rather than being fed down individual furrows. It is the oldest method still in commercial use, the cheapest to install where water is delivered by canal, and the least precise — parts of the field get more than they need so that the far end gets enough."}}, {"@type": "Question", "name": "What is center pivot irrigation?", "acceptedAnswer": {"@type": "Answer", "text": "A sprinkler lateral, several hundred feet long, that rotates around a fixed point in the middle of the field. Standard geometry is a quarter section — half a mile square, 160 acres — with the pivot sweeping a circle inside it. The corners stay dry unless a corner arm or an end gun covers them."}}, {"@type": "Question", "name": "Which type of irrigation is most efficient?", "acceptedAnswer": {"@type": "Answer", "text": "Drip, on paper and usually in practice — extension figures put it at 90% and above, against 80–97% for a well-specified center pivot and 40–90% for surface systems. But the spread inside each method is wider than the gap between methods — a badly managed drip system loses to a well-managed pivot."}}, {"@type": "Question", "name": "Is spray irrigation the same as sprinkler irrigation?", "acceptedAnswer": {"@type": "Answer", "text": "In everyday use, yes — both mean throwing water through the air. Inside the industry \"spray\" usually points at the nozzle package rather than the machine — mid-elevation spray application on a pivot, as opposed to impact sprinklers above the crop or LEPA heads dropped down near the ground."}}, {"@type": "Question", "name": "What is an irrigation system?", "acceptedAnswer": {"@type": "Answer", "text": "The set of parts that takes water from a source and puts a measured amount of it in the root zone — a pump or a gravity head, a filter, a pressure regulator where the emitters need one, a mainline, and whatever does the applying at the end. The applicator is what people name the system after, but the parts ahead of it decide whether it works."}}, {"@type": "Question", "name": "Does the method decide how much water I use?", "acceptedAnswer": {"@type": "Answer", "text": "Less than the scheduling does. Method sets the ceiling on efficiency; when and how long you run it decides how close you get to that ceiling. The largest single saving on most holdings is not a new system but watering to a measured soil moisture deficit."}}]}]}</script>
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="logo" href="/acrejournal/" aria-label="Acre Journal — home">
+      <svg class="mark" width="30" height="30" viewBox="0 0 32 32" aria-hidden="true">
+        <rect width="32" height="32" rx="8" fill="currentColor"></rect>
+        <rect x="7.4" y="7.4" width="17.2" height="17.2" rx="1.6" stroke="var(--ground)" stroke-width="2.6" fill="none"></rect>
+        <path d="M15.4 8.7v14.6M8.7 15.2h14.6" stroke="var(--ground)" stroke-width="1.9"></path>
+        <path d="M16.7 16.5h6.9v6.8h-6.9z" fill="var(--mark-crop)"></path>
+      </svg>
+      <span class="wordmark"><i>Acre</i><i>Journal</i></span>
+    </a>
+    <nav class="site" id="site-nav" aria-label="Main">
+      <a href="/acrejournal/compact-tractors/">Compact tractors</a>
+      <a href="/acrejournal/used-tractors/">Used</a>
+      <a href="/acrejournal/irrigation/" aria-current="page">Irrigation</a>
+      <a href="/acrejournal/greenhouses/">Greenhouses</a>
+
+      <div class="more">
+        <button class="more-toggle" type="button" aria-expanded="false" aria-controls="nav-more"
+>
+          More
+          <svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <path d="M2.5 4.5 6 8l3.5-3.5" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <div class="more-sheet" id="nav-more">
+          <span class="more-cap">Sections</span>
+          <a href="/acrejournal/parts/">Parts</a>
+          <a href="/acrejournal/attachments/">Attachments &amp; PTO</a>
+          <a href="/acrejournal/lawn-mowers/">Mowing</a>
+          <a href="/acrejournal/hydroponics/">Hydroponics</a>
+          <span class="more-cap">Read</span>
+          <a href="/acrejournal/reviews/">Owner reports</a>
+          <a href="/acrejournal/learn/">Learn</a>
+          <a href="/acrejournal/glossary/">Glossary</a>
+          <a href="/acrejournal/compare/">Compare</a>
+          <a href="/acrejournal/faq/">FAQ</a>
+        </div>
+      </div>
+
+      <a class="btn cta in-drawer" href="/acrejournal/reviews/">Owner reports</a>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Switch theme" title="Theme: system">
+      <svg class="i-sun" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+        <circle cx="10" cy="10" r="4"></circle>
+        <path d="M10 1.5v2M10 16.5v2M1.5 10h2M16.5 10h2M4 4l1.4 1.4M14.6 14.6L16 16M16 4l-1.4 1.4M5.4 14.6L4 16" stroke-linecap="round"></path>
+      </svg>
+      <svg class="i-moon" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+        <path d="M16.5 12.4A7 7 0 0 1 7.6 3.5a7 7 0 1 0 8.9 8.9z" stroke-linejoin="round"></path>
+      </svg>
+      <svg class="i-auto" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+        <circle cx="10" cy="10" r="7"></circle>
+        <path d="M10 3v14a7 7 0 0 0 0-14z" fill="currentColor" stroke="none"></path>
+      </svg>
+    </button>
+    <a class="btn cta on-bar" href="/acrejournal/reviews/">Owner reports</a>
+    <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="nav-scrim" hidden></div>
+
+<main id="main">
+
+<div class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb">
+<a href="/acrejournal/">Home</a> / <a href="/acrejournal/irrigation/">Irrigation</a> / <span aria-current="page">Types of irrigation, and what each one costs you in water</span></nav>
+
+  <div class="layout">
+    <article class="prose reveal">
+      <h1>Types of irrigation, and what each one costs you in water</h1>
+      <div class="meta">
+        <span>Updated 17 Aug 2026</span>
+        <span>·</span>
+        <span>9 min read</span>
+      </div>
+
+      <div class="answer">
+        <b>Short answer</b>
+        <p>Irrigation methods split into three families — surface (flood and furrow, where water runs across the ground), sprinkler (hand lines, wheel lines, center pivots, spray guns) and micro (drip and micro-spray). They differ mostly in how much water reaches the root zone — surface systems run 40–90% depending on how they are managed, sprinklers 60–97% depending on the package, drip 90% and up.</p>
+      </div>
+
+      <section class="facts reveal" aria-labelledby="facts-heading">
+  <div class="facts-top">
+    <span class="kick">At a glance</span>
+    <h2 id="facts-heading">Application efficiency by method</h2>
+  </div>
+  <div class="table-wrap">
+    <table class="facts-table" role="table">
+      <thead role="rowgroup">
+        <tr role="row">
+          <th scope="col" role="columnheader">What</th>
+          <th scope="col" role="columnheader">Figure</th>
+          <th scope="col" role="columnheader">Source</th>
+        </tr>
+      </thead>
+      <tbody role="rowgroup">
+        <tr role="row">
+          <th scope="row" role="rowheader">Surface irrigation (flood, furrow)</th>
+          <td role="cell">
+            <span class="facts-value">40–90%</span>
+<span class="facts-hint">Varies by system, soil and management more than any other family</span>          </td><td class="facts-src" role="cell"><a href="https://extension.usu.edu/crops/research/irrigation-water-loss-and-recovery" rel="nofollow noopener">Utah State Extension, irrigation water loss</a></td>
+        </tr>
+        <tr role="row">
+          <th scope="row" role="rowheader">Line-source sprinklers (hand line, wheel line)</th>
+          <td role="cell">
+            <span class="facts-value">60–80%</span>
+<span class="facts-hint">Water thrown above the crop, exposed to wind and evaporation</span>          </td><td class="facts-src" role="cell"><a class="facts-same" href="https://extension.usu.edu/crops/research/irrigation-water-loss-and-recovery" rel="nofollow noopener"
+                 title="Utah State Extension, irrigation water loss">same source</a></td>
+        </tr>
+        <tr role="row">
+          <th scope="row" role="rowheader">Center pivot, including LESA and LEPA</th>
+          <td role="cell">
+            <span class="facts-value">80–97%</span>
+<span class="facts-hint">The range is the nozzle package, not the machine</span>          </td><td class="facts-src" role="cell"><a class="facts-same" href="https://extension.usu.edu/crops/research/irrigation-water-loss-and-recovery" rel="nofollow noopener"
+                 title="Utah State Extension, irrigation water loss">same source</a></td>
+        </tr>
+        <tr role="row">
+          <th scope="row" role="rowheader">Drip and micro</th>
+          <td role="cell">
+            <span class="facts-value">90% and above</span>
+<span class="facts-hint">Conditional on design, filtration and maintenance</span>          </td><td class="facts-src" role="cell"><a class="facts-same" href="https://extension.usu.edu/crops/research/irrigation-water-loss-and-recovery" rel="nofollow noopener"
+                 title="Utah State Extension, irrigation water loss">same source</a></td>
+        </tr>
+        <tr role="row">
+          <th scope="row" role="rowheader">Loss to wind drift and evaporation, travelling guns</th>
+          <td role="cell">
+            <span class="facts-value">35–40%</span>
+<span class="facts-hint">The worst case in common use</span>          </td><td class="facts-src" role="cell"><a class="facts-same" href="https://extension.usu.edu/crops/research/irrigation-water-loss-and-recovery" rel="nofollow noopener"
+                 title="Utah State Extension, irrigation water loss">same source</a></td>
+        </tr>
+        <tr role="row">
+          <th scope="row" role="rowheader">Loss to wind drift and evaporation, LESA or LEPA</th>
+          <td role="cell">
+            <span class="facts-value">5% and under</span>
+<span class="facts-hint">Same machine, heads dropped near the ground</span>          </td><td class="facts-src" role="cell"><a class="facts-same" href="https://extension.usu.edu/crops/research/irrigation-water-loss-and-recovery" rel="nofollow noopener"
+                 title="Utah State Extension, irrigation water loss">same source</a></td>
+        </tr>
+        <tr role="row">
+          <th scope="row" role="rowheader">Nozzle packages compared, MESA to MDI</th>
+          <td role="cell">
+            <span class="facts-value">78% vs 97%</span>
+<span class="facts-hint">Mid-elevation spray against mobile drip on the same pivot</span>          </td><td class="facts-src" role="cell"><a href="https://extension.usu.edu/crops/research/irrigation-pivots-laterals" rel="nofollow noopener">Utah State Extension, sprinkler packages</a></td>
+        </tr>
+        <tr role="row">
+          <th scope="row" role="rowheader">Standard pivot field</th>
+          <td role="cell">
+            <span class="facts-value">160 acres</span>
+<span class="facts-hint">A quarter section, half a mile square, with dry corners</span>          </td><td class="facts-src" role="cell"><a href="https://cropwatch.unl.edu/2020/center-pivot-end-gun-considerations/" rel="nofollow noopener">Nebraska Extension, end gun considerations</a></td>
+        </tr>
+        <tr role="row">
+          <th scope="row" role="rowheader">Extra ground an end gun reaches</th>
+          <td role="cell">
+            <span class="facts-value">8–10 acres</span>
+<span class="facts-hint">Throws up to 120 ft, and is the least uniform part of the machine</span>          </td><td class="facts-src" role="cell"><a class="facts-same" href="https://cropwatch.unl.edu/2020/center-pivot-end-gun-considerations/" rel="nofollow noopener"
+                 title="Nebraska Extension, end gun considerations">same source</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+<p class="facts-foot">Efficiency and loss figures are from Utah State University Extension, published August 2022, and are their measurements rather than ours. Ranges are wide because the same method performs very differently depending on design, soil and management — that spread is the point, not a caveat. Pivot geometry from University of Nebraska Extension.</p></section>
+
+      <p>Every irrigation system ever sold is a variation on one of three ideas: let water run
+across the ground, throw it through the air, or hand it to the plant. Everything else —
+the brand, the controller, the nozzle catalogue — is detail inside that choice.</p>
+<p>The reason the choice matters is that each family loses water in a different place, and
+those losses are not small. Between the worst and best method in common use, more than
+half the water in the pipe is at stake.</p>
+<h2 id="surface">Surface irrigation</h2>
+<p>Water is released at the top of the field and gravity does the distribution. No pump is
+strictly required, no pressure, and on ground that is already graded the capital cost is
+close to nothing. It is still the most used method in the world for exactly that reason.</p>
+<p>The cost is precision. Water soaks in as it travels, so the top of the field gets a longer
+soak than the bottom by definition. Getting an even result means managing the stream size
+and the run length until the water reaches the far end before the near end has taken far
+more than it needs.</p>
+<p>Extension figures put the whole family between 40 and 90 percent efficient. That range is
+not hedging — it is the honest difference between a graded, measured, well-timed surface
+system and the same field watered by opening the gate and going for lunch.</p>
+<h3 id="furrow">Furrow irrigation</h3>
+<p>Water runs down small parallel channels between the crop rows. The crop sits up on the
+ridge and drinks sideways from the furrow, which keeps the stem dry — a real agronomic
+advantage for anything prone to rot at the crown.</p>
+<p>Furrow suits row crops on a consistent gentle slope. Too flat and the water never reaches
+the end of the run; too steep and the stream cuts the furrow apart and carries the topsoil
+into the tail ditch. What leaves the bottom of the field is called tailwater, and on a
+furrow system it is normal, not a fault — the question is whether it is captured and
+recirculated or lost.</p>
+<h3 id="flood">Flood irrigation</h3>
+<p>The whole basin or border strip is covered. No furrows, no set-out — water is turned in at
+the head and spreads. On level basins with a reliable canal delivery it is efficient
+enough and almost free to run. On uneven ground it is the definition of watering the low
+spots to reach the high ones.</p>
+<p>Flood irrigation persists because in much of the western United States the water right,
+the canal schedule and the field grading all assume it. Changing method means changing all
+three, which is a different project from buying a machine.</p>
+<h2 id="sprinkler">Sprinkler irrigation</h2>
+<p>Water goes up a pipe under pressure and comes out through nozzles above the ground. This
+family buys uniformity — a sprinkler does not care much about field slope — and pays for
+it in pumping energy and in everything the wind takes.</p>
+<h3 id="lines">Hand lines and wheel lines</h3>
+<p>Aluminium pipe with impact sprinklers, moved across the field by hand or on wheels. Cheap
+to buy, expensive in labor, and the least efficient of the powered options at 60 to 80
+percent. Impact sprinklers throwing above the crop lose a quarter to a third of the water
+to drift and evaporation before it lands.</p>
+<h3 id="pivot">Center pivot irrigation</h3>
+<p>A lateral several hundred feet long walks in a circle around a fixed point. The standard
+field is a quarter section — half a mile by half a mile, 160 acres — with the circle
+inscribed inside the square. Corners stay dry unless a corner arm or an end gun handles
+them, and an end gun on a 160-acre field reaches an extra 8 to 10 acres, throwing up to
+120 feet, at the worst uniformity of anything on the machine.</p>
+<p>The pivot itself is not what decides efficiency. The nozzle package is:</p>
+<ul>
+<li><strong>MESA</strong>, mid-elevation spray on drops, is the common default and lands about 78 percent
+  of the water where it is wanted;</li>
+<li><strong>LESA</strong>, the same drops taken lower, about 88 percent;</li>
+<li><strong>LEPA</strong>, heads down at crop level applying in bubbles rather than spray, about 95;</li>
+<li><strong>MDI</strong>, drip tubing dragged along the ground by the machine, about 97.</li>
+</ul>
+<p>That is a 19-point spread on the same steel, in the same field, in the same season. It is
+the cheapest efficiency available to anyone who already owns a pivot.</p>
+<h3 id="guns">Spray irrigation: guns and travelers</h3>
+<p>A single large nozzle, often on a cart pulled across the field by its own hose. Simple,
+mobile, and by a distance the leakiest thing in the catalogue: 35 to 40 percent of the
+water is lost to drift and evaporation before it reaches the soil. Their case is coverage
+of an odd-shaped block for a short season, not efficiency.</p>
+<h2 id="micro">Micro irrigation</h2>
+<p>Water is delivered at low pressure directly at the plant, through tape, line or
+micro-sprays. Nothing is thrown through the air, so nothing is lost to wind, and the wetted
+area is only the root zone rather than the whole surface. Extension figures start at 90
+percent and go up.</p>
+<p>The conditions on that number matter more than in any other family. Drip depends on
+filtration, on pressure regulation, and on someone noticing when emitters block. A drip
+system nobody maintains is not a 90 percent system — it is a full-price system watering
+half the field.</p>
+<h2 id="cost">What an irrigation system costs</h2>
+<p>Method decides the shape of the bill, not just its size. A surface system on ground that is
+already graded is mostly labor and gated pipe. A sprinkler system is pump, mainline and
+heads, and the pump is sized by the whole block running at once. Drip is the cheapest per
+foot and the most expensive in parts you did not think about — filter, regulator, header,
+fittings — which is why our
+<a href="/acrejournal/irrigation/what-it-costs/">irrigation cost page</a> prices the hardware line by line rather
+than quoting a figure per acre.</p>
+<p>For a DIY irrigation system on a small holding the order of spending is the same every
+time: filtration first, pressure regulation second, distribution third, automation last. A
+timer on an unfiltered drip line automates the clogging.</p>
+<h2 id="choosing">Choosing between them</h2>
+<p>For a small holding the honest ranking is not by efficiency but by what the failure looks
+like. Surface irrigation fails slowly and visibly — you can see the water. Sprinklers fail
+loudly, with a broken head spraying at the sky. Drip fails silently, and the first sign is
+a row that stopped growing two weeks ago.</p>
+<p>Match the method to how often you will actually walk the system, then read the efficiency
+table as a ceiling rather than a promise. The gap between a well-run surface field and a
+neglected drip system is wider than the gap between the methods on paper.</p>
+
+      <div class="disclosure">We only cover gear we have researched, and our reports are built on documented owner experience, not on brand copy — the method is stated on every report page. Links to sellers are plain links: we are not in their affiliate programmes yet, and nothing on this site is paid placement.
+</div>
+      <a class="next-read" href="/acrejournal/irrigation/what-it-costs/">
+  <span class="kick">Irrigation</span>
+  <b>What irrigation actually costs</b>
+  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M4 9h10M9.5 4.5 14 9l-4.5 4.5" stroke-linecap="square"/></svg>
+</a>
+
+    </article>
+
+    <aside class="rail reveal" data-delay="140">
+      <div class="toc toc-page" data-toc>
+        <b>On this page</b>
+        <div class="toc-track" aria-hidden="true"><span class="toc-fill" data-toc-fill></span></div>
+        <ul>
+<li><a href="#surface">Surface irrigation</a></li><li><a href="#sprinkler">Sprinkler irrigation</a></li><li><a href="#micro">Micro irrigation</a></li><li><a href="#cost">What an irrigation system costs</a></li><li><a href="#choosing">Choosing between them</a></li>        </ul>
+      </div>
+      <div class="toc toc-related">
+        <b>Related</b>
+        <ul>
+<li><a href="/acrejournal/irrigation/drip-calculator/">Drip irrigation calculator</a></li><li><a href="/acrejournal/irrigation/drip-vs-sprinkler/">Drip or sprinkler for a small holding</a></li><li><a href="/acrejournal/learn/what-is-drip-irrigation/">What is drip irrigation?</a></li><li><a href="/acrejournal/irrigation/what-it-costs/">What irrigation actually costs</a></li>        </ul>
+      </div>
+    </aside>
+  </div>
+</div>
+
+<section class="faq-band">
+  <div class="wrap">
+    <section class="faq" aria-label="Questions and answers">
+  <div class="faq-side">
+    <span class="pill">FAQ</span>
+<h2 id="faq">Questions &amp; Answers</h2>    <p class="faq-lede">Answered from the same sources as the tables above — each figure is
+      linked on the page it comes from.</p>
+  </div>
+  <div class="faq-list">
+    <details open>
+      <summary><h3 class="faq-q">What are the main types of irrigation?</h3></summary>
+      <div class="faq-a"><div class="faq-a-in"><p>Three families. Surface irrigation moves water across the field by gravity — flood and furrow are the common forms. Sprinkler irrigation throws it through the air — hand lines, wheel lines, center pivots, linear moves and traveling guns. Micro irrigation delivers it at the plant — drip tape, drip line and micro-sprays. Everything sold under a brand name is a variation inside one of those three.</p></div></div>
+    </details>
+    <details>
+      <summary><h3 class="faq-q">What is furrow irrigation?</h3></summary>
+      <div class="faq-a"><div class="faq-a-in"><p>A form of surface irrigation where water runs down small parallel channels cut between crop rows and soaks in sideways and down as it advances. The crop sits on the ridge, the water runs in the furrow. It needs a field with a consistent gentle slope, and its efficiency depends almost entirely on getting the stream size and the run length right.</p></div></div>
+    </details>
+    <details>
+      <summary><h3 class="faq-q">What is flood irrigation?</h3></summary>
+      <div class="faq-a"><div class="faq-a-in"><p>Surface irrigation where a whole basin or border strip is covered with water rather than being fed down individual furrows. It is the oldest method still in commercial use, the cheapest to install where water is delivered by canal, and the least precise — parts of the field get more than they need so that the far end gets enough.</p></div></div>
+    </details>
+    <details>
+      <summary><h3 class="faq-q">What is center pivot irrigation?</h3></summary>
+      <div class="faq-a"><div class="faq-a-in"><p>A sprinkler lateral, several hundred feet long, that rotates around a fixed point in the middle of the field. Standard geometry is a quarter section — half a mile square, 160 acres — with the pivot sweeping a circle inside it. The corners stay dry unless a corner arm or an end gun covers them.</p></div></div>
+    </details>
+    <details>
+      <summary><h3 class="faq-q">Which type of irrigation is most efficient?</h3></summary>
+      <div class="faq-a"><div class="faq-a-in"><p>Drip, on paper and usually in practice — extension figures put it at 90% and above, against 80–97% for a well-specified center pivot and 40–90% for surface systems. But the spread inside each method is wider than the gap between methods — a badly managed drip system loses to a well-managed pivot.</p></div></div>
+    </details>
+    <details>
+      <summary><h3 class="faq-q">Is spray irrigation the same as sprinkler irrigation?</h3></summary>
+      <div class="faq-a"><div class="faq-a-in"><p>In everyday use, yes — both mean throwing water through the air. Inside the industry &#34;spray&#34; usually points at the nozzle package rather than the machine — mid-elevation spray application on a pivot, as opposed to impact sprinklers above the crop or LEPA heads dropped down near the ground.</p></div></div>
+    </details>
+    <details>
+      <summary><h3 class="faq-q">What is an irrigation system?</h3></summary>
+      <div class="faq-a"><div class="faq-a-in"><p>The set of parts that takes water from a source and puts a measured amount of it in the root zone — a pump or a gravity head, a filter, a pressure regulator where the emitters need one, a mainline, and whatever does the applying at the end. The applicator is what people name the system after, but the parts ahead of it decide whether it works.</p></div></div>
+    </details>
+    <details>
+      <summary><h3 class="faq-q">Does the method decide how much water I use?</h3></summary>
+      <div class="faq-a"><div class="faq-a-in"><p>Less than the scheduling does. Method sets the ceiling on efficiency; when and how long you run it decides how close you get to that ceiling. The largest single saving on most holdings is not a new system but watering to a measured soil moisture deficit.</p></div></div>
+    </details>
+  </div>
+</section>
+
+  </div>
+</section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="footer-logo" href="/acrejournal/" aria-label="Acre Journal — home">
+          <svg class="mark" width="38" height="38" viewBox="0 0 32 32" aria-hidden="true">
+            <rect width="32" height="32" rx="8" fill="currentColor"></rect>
+            <rect x="7.4" y="7.4" width="17.2" height="17.2" rx="1.6" stroke="var(--dark)" stroke-width="2.6" fill="none"></rect>
+            <path d="M15.4 8.7v14.6M8.7 15.2h14.6" stroke="var(--dark)" stroke-width="1.9"></path>
+            <path d="M16.7 16.5h6.9v6.8h-6.9z" fill="var(--accent)"></path>
+          </svg>
+          <span class="wordmark"><i>Acre</i><i>Journal</i></span>
+        </a>
+        <p class="footer-about">Independent coverage of compact tractors, used equipment, irrigation and greenhouses. Every figure on the site carries a source, and a place in a shortlist is never for sale.
+</p>
+      </div>
+
+      <div class="cols">
+        <div>
+          <b>Sections</b>
+<a href="/acrejournal/compact-tractors/">Compact tractors</a><a href="/acrejournal/used-tractors/">Used equipment</a><a href="/acrejournal/irrigation/">Irrigation</a><a href="/acrejournal/greenhouses/">Greenhouses</a><a href="/acrejournal/parts/">Parts</a><a href="/acrejournal/attachments/">Attachments &amp; PTO</a>        </div>
+        <div>
+          <b>Read</b>
+<a href="/acrejournal/reviews/">Owner reports</a><a href="/acrejournal/compare/">Comparisons</a><a href="/acrejournal/learn/">Learn</a><a href="/acrejournal/glossary/">Glossary</a><a href="/acrejournal/faq/">FAQ</a>        </div>
+        <div>
+          <b>About</b>
+<a href="/acrejournal/about/#method">How we check</a><a href="/acrejournal/about/">About us</a><a href="/acrejournal/disclosure/">Affiliate disclosure</a><a href="/acrejournal/privacy/">Privacy policy</a>        </div>
+      </div>
+    </div>
+
+    <div class="fine">
+      <p>We only cover gear we have researched, and our reports are built on documented owner experience, not on brand copy — the method is stated on every report page. Links to sellers are plain links: we are not in their affiliate programmes yet, and nothing on this site is paid placement.
+</p>
+      <p>&copy; 2026 Acre Journal. Figures carry their source and check date. Photography is illustrative.</p>
+    </div>
+  </div>
+  <span class="footer-word" aria-hidden="true">ACRE JOURNAL</span>
+</footer>
+
+<aside class="nudge" data-nudge="irrigation" hidden>
+  <button class="nudge-close" type="button" aria-label="Dismiss">
+    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M3 3l8 8M11 3l-8 8" stroke-linecap="round"/></svg>
+  </button>
+  <span class="kick">Planning a system?</span>
+  <b>Size your drip line</b>
+  <p>Plot size and crop give you tape length, emitter count, daily water demand and a parts budget.</p>
+  <a class="btn" href="/acrejournal/irrigation/drip-calculator/">Open the calculator</a>
+</aside>
+
+<div class="palette-dock" hidden>
+  <b>Palette</b>
+  <div class="palette-list">
+    <button type="button" data-palette-pick="clay"><i style="--a:#B4571A;--g:#F5F3EF"></i>Clay</button>
+    <button type="button" data-palette-pick="paper"><i style="--a:#1F7A4C;--g:#FFFFFF"></i>Paper</button>
+    <button type="button" data-palette-pick="field"><i style="--a:#2E7D32;--g:#F7F9F5"></i>Field</button>
+    <button type="button" data-palette-pick="journal"><i style="--a:#17507A;--g:#FBFBFC"></i>Journal</button>
+  </div>
+</div>
+
+<script src="/acrejournal/js/app.js?v=1b2739c8" defer></script>
+</body>
+</html>

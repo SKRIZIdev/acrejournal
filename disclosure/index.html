@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script>
+(function () {
+  var d = document.documentElement;
+  d.className += ' js';
+  try {
+    var th = localStorage.getItem('aj-theme');
+    d.setAttribute('data-theme', th === 'dark' ? 'dark' : 'light');
+    var pal = localStorage.getItem('aj-palette');
+    if (pal) d.setAttribute('data-palette', pal);
+  } catch (e) {}
+  if (location.hash && location.hash.length > 1) d.classList.add('anchor-landing');
+})();
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
+<meta name="x-apple-disable-message-reformatting">
+<title>Affiliate disclosure — Acre Journal</title>
+<meta name="description" content="How Acre Journal earns from links, what that changes about our recommendations, and what it does not.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://acrejournal.com/disclosure/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Affiliate disclosure">
+<meta property="og:description" content="How Acre Journal earns from links, what that changes about our recommendations, and what it does not.">
+<meta property="og:url" content="https://acrejournal.com/disclosure/">
+<meta property="og:site_name" content="Acre Journal">
+<link rel="icon" href="/acrejournal/favicon.svg?v=40b724f3" type="image/svg+xml">
+<link rel="stylesheet" href="/acrejournal/css/site.css?v=b44cc107"><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "CollectionPage", "name": "Affiliate disclosure", "description": "How Acre Journal earns from links, what that changes about our recommendations, and what it does not.", "url": "https://acrejournal.com/disclosure/"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://acrejournal.com/"}, {"@type": "ListItem", "position": 2, "name": "Affiliate disclosure", "item": "https://acrejournal.com/disclosure/"}]}]}</script>
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="logo" href="/acrejournal/" aria-label="Acre Journal — home">
+      <svg class="mark" width="30" height="30" viewBox="0 0 32 32" aria-hidden="true">
+        <rect width="32" height="32" rx="8" fill="currentColor"></rect>
+        <rect x="7.4" y="7.4" width="17.2" height="17.2" rx="1.6" stroke="var(--ground)" stroke-width="2.6" fill="none"></rect>
+        <path d="M15.4 8.7v14.6M8.7 15.2h14.6" stroke="var(--ground)" stroke-width="1.9"></path>
+        <path d="M16.7 16.5h6.9v6.8h-6.9z" fill="var(--mark-crop)"></path>
+      </svg>
+      <span class="wordmark"><i>Acre</i><i>Journal</i></span>
+    </a>
+    <nav class="site" id="site-nav" aria-label="Main">
+      <a href="/acrejournal/compact-tractors/">Compact tractors</a>
+      <a href="/acrejournal/used-tractors/">Used</a>
+      <a href="/acrejournal/irrigation/">Irrigation</a>
+      <a href="/acrejournal/greenhouses/">Greenhouses</a>
+
+      <div class="more">
+        <button class="more-toggle" type="button" aria-expanded="false" aria-controls="nav-more"
+>
+          More
+          <svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <path d="M2.5 4.5 6 8l3.5-3.5" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <div class="more-sheet" id="nav-more">
+          <span class="more-cap">Sections</span>
+          <a href="/acrejournal/parts/">Parts</a>
+          <a href="/acrejournal/attachments/">Attachments &amp; PTO</a>
+          <a href="/acrejournal/lawn-mowers/">Mowing</a>
+          <a href="/acrejournal/hydroponics/">Hydroponics</a>
+          <span class="more-cap">Read</span>
+          <a href="/acrejournal/reviews/">Owner reports</a>
+          <a href="/acrejournal/learn/">Learn</a>
+          <a href="/acrejournal/glossary/">Glossary</a>
+          <a href="/acrejournal/compare/">Compare</a>
+          <a href="/acrejournal/faq/">FAQ</a>
+        </div>
+      </div>
+
+      <a class="btn cta in-drawer" href="/acrejournal/reviews/">Owner reports</a>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Switch theme" title="Theme: system">
+      <svg class="i-sun" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+        <circle cx="10" cy="10" r="4"></circle>
+        <path d="M10 1.5v2M10 16.5v2M1.5 10h2M16.5 10h2M4 4l1.4 1.4M14.6 14.6L16 16M16 4l-1.4 1.4M5.4 14.6L4 16" stroke-linecap="round"></path>
+      </svg>
+      <svg class="i-moon" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+        <path d="M16.5 12.4A7 7 0 0 1 7.6 3.5a7 7 0 1 0 8.9 8.9z" stroke-linejoin="round"></path>
+      </svg>
+      <svg class="i-auto" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+        <circle cx="10" cy="10" r="7"></circle>
+        <path d="M10 3v14a7 7 0 0 0 0-14z" fill="currentColor" stroke="none"></path>
+      </svg>
+    </button>
+    <a class="btn cta on-bar" href="/acrejournal/reviews/">Owner reports</a>
+    <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="nav-scrim" hidden></div>
+
+<main id="main">
+
+<div class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb">
+<a href="/acrejournal/">Home</a> / <span aria-current="page">Affiliate disclosure</span></nav>
+
+  <div class="layout">
+    <article class="prose reveal">
+      <h1>Affiliate disclosure</h1>
+<div class="meta"><span>Updated 16 Aug 2026</span></div>      
+      <p>Some links on this site earn us money. This page explains exactly which ones, how the
+arrangement works, and what it does and does not affect. If you would rather not read the
+whole thing: it costs you nothing, and it does not decide what we recommend.</p>
+<h2>What earns us money</h2>
+<p><strong>Links to sellers.</strong> Where we point at a product, that link may carry a tracking
+parameter. If you buy after following it, the seller pays us a share of the sale or a
+fixed fee. The price you pay is the same either way — commission comes out of the seller's
+margin, not out of your pocket.</p>
+<p><strong>Links to financing.</strong> Enquiry forms for equipment financing pay a fixed amount per
+qualified application rather than a percentage of anything. That means we are paid the
+same whether you borrow <span translate="no">$5,000 </span>or <span translate="no">$50,000, </span>and whether the loan completes or not.</p>
+<p>Every link of either kind is marked in the page source with <code>rel="sponsored nofollow"</code>,
+and the block it sits in carries a disclosure line next to it — not buried in this page
+alone.</p>
+<h2>What does not earn us money</h2>
+<ul>
+<li><strong>No paid placement.</strong> No manufacturer, dealer or seller has paid to appear on this
+  site, to be recommended, or to be described favourably. Nobody has been offered that
+  option.</li>
+<li><strong>No sponsored articles.</strong> Nothing here was written for a fee by or for a company in
+  this industry.</li>
+<li><strong>No display advertising.</strong> There are no ad networks on this site.</li>
+<li><strong>No paid reviews.</strong> We do not accept payment for coverage of a product.</li>
+</ul>
+<h2>What this changes about our recommendations</h2>
+<p>Nothing, and there is a structural reason rather than only a promise.</p>
+<p>The products we can earn from are a small subset of what this site covers. Tractors — the
+core of the site — have no affiliate programmes at all: the industry sells through dealers
+and quotes. Greenhouse manufacturers largely have none either. If commission decided our
+coverage, we would write about grow lights and <a class="glossary-link" href="/acrejournal/glossary/#drip-tape" title="Thin-walled tubing with built-in emitters, laid along a crop row.">drip tape</a> and nothing else, because that is
+where the programmes are.</p>
+<p>Where we do link to a seller, we say what the product is for and who should not buy it.
+Several product notes on this site advise readers to buy the cheaper option, or to hire
+rather than buy, or to skip an item entirely. Those notes cost us money and stay in.</p>
+<h2>Prices</h2>
+<p>Prices shown on this site were read from the seller on the date printed next to them.
+They change without notice and they exclude shipping and tax unless stated. Always check
+the current price at the seller before deciding anything — a figure from last month is
+context, not a quote.</p>
+<h2>Reviews and owner reports</h2>
+<p>We do not publish first-person reviews of equipment we have not used. Where a page
+aggregates what owners report, it says how many reports were reviewed, over what period,
+and where they came from — and it does not reproduce the text of other people's posts.</p>
+<p>Aggregate ratings appear in our page markup only when we have both a rating and a sample
+size of our own. We do not pass off other sites' review scores as ours.</p>
+<h2>Questions</h2>
+<p>If something on this site looks like it was written for a commission rather than for you,
+that is worth telling us about — the <a href="/acrejournal/about/">about page</a> explains how we work and how to
+raise it.</p>
+    </article>
+    <aside class="rail">
+      <div class="toc toc-related">
+        <b>Legal</b>
+        <ul>
+          <li><a href="/acrejournal/about/">About us</a></li>
+          <li><a href="/acrejournal/disclosure/">Affiliate disclosure</a></li>
+          <li><a href="/acrejournal/privacy/">Privacy policy</a></li>
+        </ul>
+      </div>
+    </aside>
+  </div>
+</div>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="footer-logo" href="/acrejournal/" aria-label="Acre Journal — home">
+          <svg class="mark" width="38" height="38" viewBox="0 0 32 32" aria-hidden="true">
+            <rect width="32" height="32" rx="8" fill="currentColor"></rect>
+            <rect x="7.4" y="7.4" width="17.2" height="17.2" rx="1.6" stroke="var(--dark)" stroke-width="2.6" fill="none"></rect>
+            <path d="M15.4 8.7v14.6M8.7 15.2h14.6" stroke="var(--dark)" stroke-width="1.9"></path>
+            <path d="M16.7 16.5h6.9v6.8h-6.9z" fill="var(--accent)"></path>
+          </svg>
+          <span class="wordmark"><i>Acre</i><i>Journal</i></span>
+        </a>
+        <p class="footer-about">Independent coverage of compact tractors, used equipment, irrigation and greenhouses. Every figure on the site carries a source, and a place in a shortlist is never for sale.
+</p>
+      </div>
+
+      <div class="cols">
+        <div>
+          <b>Sections</b>
+<a href="/acrejournal/compact-tractors/">Compact tractors</a><a href="/acrejournal/used-tractors/">Used equipment</a><a href="/acrejournal/irrigation/">Irrigation</a><a href="/acrejournal/greenhouses/">Greenhouses</a><a href="/acrejournal/parts/">Parts</a><a href="/acrejournal/attachments/">Attachments &amp; PTO</a>        </div>
+        <div>
+          <b>Read</b>
+<a href="/acrejournal/reviews/">Owner reports</a><a href="/acrejournal/compare/">Comparisons</a><a href="/acrejournal/learn/">Learn</a><a href="/acrejournal/glossary/">Glossary</a><a href="/acrejournal/faq/">FAQ</a>        </div>
+        <div>
+          <b>About</b>
+<a href="/acrejournal/about/#method">How we check</a><a href="/acrejournal/about/">About us</a><a href="/acrejournal/disclosure/">Affiliate disclosure</a><a href="/acrejournal/privacy/">Privacy policy</a>        </div>
+      </div>
+    </div>
+
+    <div class="fine">
+      <p>We only cover gear we have researched, and our reports are built on documented owner experience, not on brand copy — the method is stated on every report page. Links to sellers are plain links: we are not in their affiliate programmes yet, and nothing on this site is paid placement.
+</p>
+      <p>&copy; 2026 Acre Journal. Figures carry their source and check date. Photography is illustrative.</p>
+    </div>
+  </div>
+  <span class="footer-word" aria-hidden="true">ACRE JOURNAL</span>
+</footer>
+
+<div class="palette-dock" hidden>
+  <b>Palette</b>
+  <div class="palette-list">
+    <button type="button" data-palette-pick="clay"><i style="--a:#B4571A;--g:#F5F3EF"></i>Clay</button>
+    <button type="button" data-palette-pick="paper"><i style="--a:#1F7A4C;--g:#FFFFFF"></i>Paper</button>
+    <button type="button" data-palette-pick="field"><i style="--a:#2E7D32;--g:#F7F9F5"></i>Field</button>
+    <button type="button" data-palette-pick="journal"><i style="--a:#17507A;--g:#FBFBFC"></i>Journal</button>
+  </div>
+</div>
+
+<script src="/acrejournal/js/app.js?v=1b2739c8" defer></script>
+</body>
+</html>

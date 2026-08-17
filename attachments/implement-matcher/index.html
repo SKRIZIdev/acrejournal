@@ -1,0 +1,400 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script>
+(function () {
+  var d = document.documentElement;
+  d.className += ' js';
+  try {
+    var th = localStorage.getItem('aj-theme');
+    d.setAttribute('data-theme', th === 'dark' ? 'dark' : 'light');
+    var pal = localStorage.getItem('aj-palette');
+    if (pal) d.setAttribute('data-palette', pal);
+  } catch (e) {}
+  if (location.hash && location.hash.length > 1) d.classList.add('anchor-landing');
+})();
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
+<meta name="x-apple-disable-message-reformatting">
+<title>Will this implement run on my PTO? — Acre Journal</title>
+<meta name="description" content="Enter the PTO horsepower and hitch category your tractor actually has, and see which implements it runs comfortably, which it runs with no margin, and which it cannot.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://acrejournal.com/attachments/implement-matcher/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Will this implement run on my PTO?">
+<meta property="og:description" content="Enter the PTO horsepower and hitch category your tractor actually has, and see which implements it runs comfortably, which it runs with no margin, and which it cannot.">
+<meta property="og:url" content="https://acrejournal.com/attachments/implement-matcher/">
+<meta property="og:site_name" content="Acre Journal">
+<link rel="icon" href="/acrejournal/favicon.svg?v=40b724f3" type="image/svg+xml">
+<link rel="stylesheet" href="/acrejournal/css/site.css?v=b44cc107"><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "CollectionPage", "name": "Will this implement run on my PTO?", "description": "Enter the PTO horsepower and hitch category your tractor actually has, and see which implements it runs comfortably, which it runs with no margin, and which it cannot.", "url": "https://acrejournal.com/attachments/implement-matcher/"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://acrejournal.com/"}, {"@type": "ListItem", "position": 2, "name": "Attachments & PTO", "item": "https://acrejournal.com/attachments/"}, {"@type": "ListItem", "position": 3, "name": "Will this implement run on my PTO?", "item": "https://acrejournal.com/attachments/implement-matcher/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Why does the tool ask for PTO horsepower instead of engine horsepower?", "acceptedAnswer": {"@type": "Answer", "text": "Because that is the power the implement actually receives. The gap between the two is typically noticeable, and sizing an implement against the engine number is the most common way people end up with a machine that stalls in wet grass."}}, {"@type": "Question", "name": "My tractor is Category 1 but the implement says Category 2. Can I adapt it?", "acceptedAnswer": {"@type": "Answer", "text": "Adapter bushings exist for pins, but they do not change the lift capacity or the geometry. If the implement is heavier than the hitch was designed to lift, the adapter solves the wrong problem."}}, {"@type": "Question", "name": "What if my implement is not listed?", "acceptedAnswer": {"@type": "Answer", "text": "The list covers the common sizes behind sub-compact through utility tractors. Match yours to the nearest working width and treat the horsepower band as the answer."}}]}]}</script>
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="logo" href="/acrejournal/" aria-label="Acre Journal — home">
+      <svg class="mark" width="30" height="30" viewBox="0 0 32 32" aria-hidden="true">
+        <rect width="32" height="32" rx="8" fill="currentColor"></rect>
+        <rect x="7.4" y="7.4" width="17.2" height="17.2" rx="1.6" stroke="var(--ground)" stroke-width="2.6" fill="none"></rect>
+        <path d="M15.4 8.7v14.6M8.7 15.2h14.6" stroke="var(--ground)" stroke-width="1.9"></path>
+        <path d="M16.7 16.5h6.9v6.8h-6.9z" fill="var(--mark-crop)"></path>
+      </svg>
+      <span class="wordmark"><i>Acre</i><i>Journal</i></span>
+    </a>
+    <nav class="site" id="site-nav" aria-label="Main">
+      <a href="/acrejournal/compact-tractors/">Compact tractors</a>
+      <a href="/acrejournal/used-tractors/">Used</a>
+      <a href="/acrejournal/irrigation/">Irrigation</a>
+      <a href="/acrejournal/greenhouses/">Greenhouses</a>
+
+      <div class="more">
+        <button class="more-toggle" type="button" aria-expanded="false" aria-controls="nav-more"
+data-active="true">
+          More
+          <svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <path d="M2.5 4.5 6 8l3.5-3.5" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <div class="more-sheet" id="nav-more">
+          <span class="more-cap">Sections</span>
+          <a href="/acrejournal/parts/">Parts</a>
+          <a href="/acrejournal/attachments/" aria-current="page">Attachments &amp; PTO</a>
+          <a href="/acrejournal/lawn-mowers/">Mowing</a>
+          <a href="/acrejournal/hydroponics/">Hydroponics</a>
+          <span class="more-cap">Read</span>
+          <a href="/acrejournal/reviews/">Owner reports</a>
+          <a href="/acrejournal/learn/">Learn</a>
+          <a href="/acrejournal/glossary/">Glossary</a>
+          <a href="/acrejournal/compare/">Compare</a>
+          <a href="/acrejournal/faq/">FAQ</a>
+        </div>
+      </div>
+
+      <a class="btn cta in-drawer" href="/acrejournal/reviews/">Owner reports</a>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Switch theme" title="Theme: system">
+      <svg class="i-sun" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+        <circle cx="10" cy="10" r="4"></circle>
+        <path d="M10 1.5v2M10 16.5v2M1.5 10h2M16.5 10h2M4 4l1.4 1.4M14.6 14.6L16 16M16 4l-1.4 1.4M5.4 14.6L4 16" stroke-linecap="round"></path>
+      </svg>
+      <svg class="i-moon" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+        <path d="M16.5 12.4A7 7 0 0 1 7.6 3.5a7 7 0 1 0 8.9 8.9z" stroke-linejoin="round"></path>
+      </svg>
+      <svg class="i-auto" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+        <circle cx="10" cy="10" r="7"></circle>
+        <path d="M10 3v14a7 7 0 0 0 0-14z" fill="currentColor" stroke="none"></path>
+      </svg>
+    </button>
+    <a class="btn cta on-bar" href="/acrejournal/reviews/">Owner reports</a>
+    <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="nav-scrim" hidden></div>
+
+<main id="main">
+
+<div class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb">
+<a href="/acrejournal/">Home</a> / <a href="/acrejournal/attachments/">Attachments &amp; PTO</a> / <span aria-current="page">Will this implement run on my PTO?</span></nav>
+
+  <div class="hero-top">
+    <h1 class="rise-lines">
+      <span class="line"><span>WILL IT RUN</span></span>
+      <span class="line dim"><span>ON MY PTO?</span></span>
+    </h1>
+    <div class="hero-aside">
+      <span class="pill reveal" data-delay="200">Interactive</span>
+      <p class="lede reveal" data-delay="280">Enter the PTO horsepower and hitch category your tractor actually has, and see which implements it runs comfortably, which it runs with no margin, and which it cannot.</p>
+    </div>
+  </div>
+</div>
+
+<section>
+  <div class="wrap">
+    <div class="tool reveal" data-tool="implement">
+      <script type="application/json" id="implement-data">{"implements": [{"id": "rotary-cutter-4", "label": "Rotary cutter, 4 ft", "job": "mowing", "pto_min": 18, "pto_ok": 22, "cat": [1], "weight": 420, "note": "Brush and pasture work behind a sub-compact."}, {"id": "rotary-cutter-5", "label": "Rotary cutter, 5 ft", "job": "mowing", "pto_min": 25, "pto_ok": 30, "cat": [1], "weight": 540, "note": "The common size behind a compact tractor."}, {"id": "rotary-cutter-6", "label": "Rotary cutter, 6 ft", "job": "mowing", "pto_min": 35, "pto_ok": 45, "cat": [1, 2], "weight": 720, "note": "Needs a utility tractor to carry and to turn."}, {"id": "finish-mower-5", "label": "Finish mower, 5 ft", "job": "mowing", "pto_min": 20, "pto_ok": 25, "cat": [1], "weight": 400, "note": "Lawn finish rather than brush."}, {"id": "tiller-48", "label": "Rotary tiller, 48 in", "job": "ground", "pto_min": 20, "pto_ok": 25, "cat": [1], "weight": 460, "note": "Garden beds and seedbed prep."}, {"id": "tiller-60", "label": "Rotary tiller, 60 in", "job": "ground", "pto_min": 30, "pto_ok": 38, "cat": [1, 2], "weight": 620, "note": "Tilling wide enough to clear the wheel tracks."}, {"id": "box-blade-5", "label": "Box blade, 5 ft", "job": "ground", "pto_min": 0, "pto_ok": 0, "cat": [1], "weight": 380, "note": "Drawbar work — no PTO involved, weight is the limit."}, {"id": "post-hole-9", "label": "Post hole digger, 9 in auger", "job": "ground", "pto_min": 18, "pto_ok": 22, "cat": [1], "weight": 300, "note": "Fence lines and footings."}, {"id": "snow-blower-54", "label": "Snow blower, 54 in", "job": "snow", "pto_min": 22, "pto_ok": 28, "cat": [1], "weight": 480, "note": "Rear-mounted, driveway width."}, {"id": "snow-blower-72", "label": "Snow blower, 72 in", "job": "snow", "pto_min": 40, "pto_ok": 50, "cat": [1, 2], "weight": 780, "note": "Long drives and heavy snowfall."}, {"id": "hay-mower-disc", "label": "Disc mower, 6 ft", "job": "hay", "pto_min": 35, "pto_ok": 45, "cat": [1, 2], "weight": 900, "note": "First machine in a hay chain."}, {"id": "round-baler-4x4", "label": "Round baler, 4x4", "job": "hay", "pto_min": 45, "pto_ok": 55, "cat": [2], "weight": 3400, "note": "Weight and hydraulics matter as much as the PTO."}, {"id": "chipper-6", "label": "Wood chipper, 6 in", "job": "wood", "pto_min": 25, "pto_ok": 35, "cat": [1], "weight": 560, "note": "Limb clearing after storms."}, {"id": "log-splitter", "label": "Log splitter, 3-point", "job": "wood", "pto_min": 16, "pto_ok": 20, "cat": [1], "weight": 420, "note": "Runs off the pump, not off the shaft speed."}, {"id": "seeder-5", "label": "Seeder, 5 ft", "job": "ground", "pto_min": 25, "pto_ok": 32, "cat": [1], "weight": 700, "note": "Food plots and pasture reseeding."}], "jobs": [{"id": "mowing", "label": "Mowing and brush"}, {"id": "ground", "label": "Ground work"}, {"id": "snow", "label": "Snow"}, {"id": "hay", "label": "Hay"}, {"id": "wood", "label": "Wood"}], "hitch": [{"id": "0", "label": "Category 0 — under 20 hp"}, {"id": "1", "label": "Category 1 — 20 to 45 hp"}, {"id": "2", "label": "Category 2 — 40 hp and up"}], "outlets": [{"label": "Implements by hitch category", "note": "Filter by PTO horsepower", "url": "#"}, {"label": "PTO shafts and shear bolts", "note": "Wear parts for the driveline", "url": "#"}, {"label": "Equipment financing", "note": "For implements bought with the tractor", "url": "#"}], "disclosure": "We only cover gear we have researched, and our reports are built on documented owner experience, not on brand copy — the method is stated on every report page. Links to sellers are plain links: we are not in their affiliate programmes yet, and nothing on this site is paid placement."}</script>
+
+      <form class="tool-form">
+        <label class="field">
+          <span class="field-label">PTO horsepower</span>
+          <input type="number" name="pto" value="20" min="8" max="120" step="1" inputmode="decimal">
+<span class="field-hint">The PTO figure from your manual, not the engine figure — it is the lower of the two.</span>        </label>
+        <label class="field">
+          <span class="field-label">Hitch category</span>
+          <select name="cat">
+<option value="0">Category 0 — under 20 hp</option><option value="1" selected>Category 1 — 20 to 45 hp</option><option value="2">Category 2 — 40 hp and up</option>          </select>
+<span class="field-hint">Category 1 covers most compact tractors; check the pin diameter if you are unsure.</span>        </label>
+        <label class="field field-wide">
+          <span class="field-label">What you need it for</span>
+          <span class="checks">
+            <label class="check">
+              <input type="checkbox" name="jobs" value="mowing" checked>
+              <span>Mowing and brush</span>
+            </label>
+            <label class="check">
+              <input type="checkbox" name="jobs" value="ground" checked>
+              <span>Ground work</span>
+            </label>
+            <label class="check">
+              <input type="checkbox" name="jobs" value="snow">
+              <span>Snow</span>
+            </label>
+            <label class="check">
+              <input type="checkbox" name="jobs" value="hay">
+              <span>Hay</span>
+            </label>
+            <label class="check">
+              <input type="checkbox" name="jobs" value="wood">
+              <span>Wood</span>
+            </label>
+          </span>
+        </label>
+
+        <div class="tool-actions">
+          <button class="btn" type="submit">Match implements</button>
+          <button class="btn ghost" type="reset">Reset</button>
+        </div>
+      </form>
+
+      <div class="tool-result" data-result hidden></div>
+    </div>
+  </div>
+</section>
+
+<section class="pt-0">
+  <div class="wrap">
+    <div class="layout">
+      <article class="prose reveal">
+        <p>The number on the hood is engine horsepower. The number an implement cares about is what reaches
+the <a class="glossary-link" href="/acrejournal/glossary/#pto" title="Splined shaft that sends engine power to an implement instead of the wheels.">PTO</a> shaft after the drivetrain takes its share — always the lower of the two, and the one
+printed in the implement manual.</p>
+<figure class="scheme"><svg class="scheme-svg" viewBox="0 0 760 300" role="img"
+     aria-labelledby="pto-flow-title pto-flow-desc">
+  <title id="pto-flow-title">Power path from the engine to an implement</title>
+  <desc id="pto-flow-desc">The engine drives a PTO clutch, which turns the splined stub at the rear
+    of the tractor. A guarded driveline carries that rotation to the implement gearbox. The stub
+    turns at 540 or 1000 rpm and its spline profile differs by speed so the wrong implement cannot
+    be connected.</desc>
+
+  <g class="s-box">
+    <rect x="16" y="100" width="136" height="86" rx="14"/>
+    <rect x="196" y="100" width="150" height="86" rx="14"/>
+    <rect x="604" y="100" width="140" height="86" rx="14"/>
+  </g>
+
+  <g class="s-label">
+    <text x="84" y="136" text-anchor="middle">Engine</text>
+    <text x="84" y="158" text-anchor="middle" class="s-sub">crankshaft</text>
+    <text x="271" y="136" text-anchor="middle">PTO clutch</text>
+    <text x="271" y="158" text-anchor="middle" class="s-sub">engages the shaft</text>
+    <text x="674" y="136" text-anchor="middle">Implement</text>
+    <text x="674" y="158" text-anchor="middle" class="s-sub">gearbox</text>
+  </g>
+
+  
+  <path class="s-flow" d="M152 143h32"/>
+  <path class="s-arrow" d="M182 136l12 7-12 7z"/>
+
+  
+  <g class="s-stub">
+    <circle cx="400" cy="143" r="30" class="s-stub-body"/>
+    <circle cx="400" cy="143" r="21.5" class="s-stub-core"/>
+    <path class="s-splines" d="M421.3 148.7L429.0 150.8M405.7 164.3L407.8 172.0M384.4 158.6L378.8 164.2M378.7 137.3L371.0 135.2M394.3 121.7L392.2 114.0M415.6 127.4L421.2 121.8"/>
+  </g>
+  <path class="s-flow" d="M346 143h20"/>
+
+  <text x="400" y="212" text-anchor="middle" class="s-label">Splined stub</text>
+  <text x="400" y="232" text-anchor="middle" class="s-sub">540 rpm · 6 splines &#8194;|&#8194; 1000 rpm · 21 splines</text>
+
+  
+  <g class="s-shaft">
+    <rect x="440" y="132" width="164" height="22" rx="11" class="s-guard"/>
+    <path class="s-shaft-line" d="M446 143h152"/>
+    <path class="s-shaft-tick" d="M498 132v22M546 132v22"/>
+  </g>
+  <path class="s-arrow" d="M592 136l12 7-12 7z"/>
+  <text x="522" y="113" text-anchor="middle" class="s-sub">Guarded driveline</text>
+
+  
+  <g class="s-spin">
+    <path class="s-spin-arc" d="M361.0 118.6A46 46 0 0 1 432.2 110.2"/>
+    <path class="s-spin-head" d="M438.1 116.6L425.2 110.7L433.6 103.2z"/>
+  </g>
+  <text x="400" y="84" text-anchor="middle" class="s-sub">9 turns per second at 540 rpm</text>
+
+  
+  <g class="s-note">
+    <path class="s-note-line" d="M271 186v66M522 154v98"/>
+    <text x="271" y="272" text-anchor="middle" class="s-sub">Master shield stays on the tractor</text>
+    <text x="522" y="272" text-anchor="middle" class="s-sub">Guard turns freely on the shaft</text>
+  </g>
+</svg><figcaption>Where PTO horsepower is measured: after the clutch, at the splined stub. Implement ratings refer to this point, not to the engine.</figcaption></figure>
+<h2 id="verdicts">How to read the verdicts</h2>
+<p><strong>Runs it</strong> means the tractor is at or above the comfortable rating: the implement works at full
+width in normal conditions without pulling the engine down.</p>
+<p><strong>Tight</strong> means you are between the minimum and the comfortable figure. The implement will turn,
+but in wet grass, heavy soil or deep snow you will be dropping engine speed and taking narrower
+bites. Plenty of people work like this on purpose — just know that is the deal.</p>
+<p><strong>Too much</strong> means either the power is short by a real margin, or the hitch category does not
+match. Category mismatch is the harder of the two: pin sizes and link spacing differ, and an
+adapter does not add <a class="glossary-link" href="/acrejournal/glossary/#three-point-lift" title="Weight the rear hitch raises — the number that limits which implements you can run.">lift capacity</a>.</p>
+
+        <section class="facts reveal" aria-labelledby="facts-heading">
+  <div class="facts-top">
+    <span class="kick">Method</span>
+    <h2 id="facts-heading">What this tool assumes</h2>
+  </div>
+  <div class="table-wrap">
+    <table class="facts-table" role="table">
+      <thead role="rowgroup">
+        <tr role="row">
+          <th scope="col" role="columnheader">What</th>
+          <th scope="col" role="columnheader">Figure</th>
+          <th scope="col" role="columnheader">Source</th>
+        </tr>
+      </thead>
+      <tbody role="rowgroup">
+        <tr role="row">
+          <th scope="row" role="rowheader">Input that matters</th>
+          <td role="cell">
+            <span class="facts-value">PTO horsepower</span>
+<span class="facts-hint">Engine horsepower is always higher; implements are rated against the PTO figure</span>          </td><td class="facts-src" role="cell"><a href="/acrejournal/about/" rel="nofollow noopener">Acre Journal method</a></td>
+        </tr>
+        <tr role="row">
+          <th scope="row" role="rowheader">Verdict thresholds</th>
+          <td role="cell">
+            <span class="facts-value">Minimum and comfortable</span>
+<span class="facts-hint">Between the two the implement works, but with no margin in heavy going</span>          </td><td class="facts-src" role="cell"><a class="facts-same" href="/acrejournal/about/" rel="nofollow noopener"
+                 title="Acre Journal method">same source</a></td>
+        </tr>
+        <tr role="row">
+          <th scope="row" role="rowheader">Hitch match</th>
+          <td role="cell">
+            <span class="facts-value">Checked before power</span>
+<span class="facts-hint">A category mismatch is a hard no regardless of horsepower</span>          </td><td class="facts-src" role="cell"><a class="facts-same" href="/acrejournal/about/" rel="nofollow noopener"
+                 title="Acre Journal method">same source</a></td>
+        </tr>
+        <tr role="row">
+          <th scope="row" role="rowheader">Rotary tiller, pro series</th>
+          <td role="cell">
+            <span class="facts-value">25-65 hp at the PTO</span>
+<span class="facts-hint">Seller&#39;s stated requirement — above what most of the compact class delivers</span>          </td><td class="facts-src" role="cell"><a href="https://palletforks.com/products/pro-series-3-point-rotary-tiller" rel="nofollow noopener">Titan Attachments product page</a></td>
+        </tr>
+        <tr role="row">
+          <th scope="row" role="rowheader">What an L2502 actually delivers</th>
+          <td role="cell">
+            <span class="facts-value">19.8 hp gear / 18.4 HST</span>
+<span class="facts-hint">From a 23.3 hp engine — which is why the tiller above does not fit it</span>          </td><td class="facts-src" role="cell"><a href="https://www.kubotausa.com/equipment-series/standard-l-series" rel="nofollow noopener">Kubota USA, Standard L Series</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+<p class="facts-foot">Implement ratings vary by make and by how hard the ground is. Treat a tight verdict as a warning, not a ban — and a comfortable verdict as the size to buy if you plan to work all day.</p></section>
+
+        <div class="disclosure">We only cover gear we have researched, and our reports are built on documented owner experience, not on brand copy — the method is stated on every report page. Links to sellers are plain links: we are not in their affiliate programmes yet, and nothing on this site is paid placement.
+</div>
+        <a class="next-read" href="">
+  <span class="kick">Related</span>
+  <b></b>
+  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M4 9h10M9.5 4.5 14 9l-4.5 4.5" stroke-linecap="square"/></svg>
+</a>
+
+      </article>
+      <aside class="rail reveal" data-delay="140">
+        <div class="toc toc-related">
+          <b>Related</b>
+          <ul>
+          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<script src="/acrejournal/js/tool-implement.js?v=93c74823" defer></script>
+
+<section class="faq-band">
+  <div class="wrap">
+    <section class="faq" aria-label="Questions and answers">
+  <div class="faq-side">
+    <span class="pill">FAQ</span>
+<h2 id="faq">Questions &amp; Answers</h2>    <p class="faq-lede">Answered from the same sources as the tables above — each figure is
+      linked on the page it comes from.</p>
+  </div>
+  <div class="faq-list">
+    <details open>
+      <summary><h3 class="faq-q">Why does the tool ask for PTO horsepower instead of engine horsepower?</h3></summary>
+      <div class="faq-a"><div class="faq-a-in"><p>Because that is the power the implement actually receives. The gap between the two is typically noticeable, and sizing an implement against the engine number is the most common way people end up with a machine that stalls in wet grass.</p></div></div>
+    </details>
+    <details>
+      <summary><h3 class="faq-q">My tractor is Category 1 but the implement says Category 2. Can I adapt it?</h3></summary>
+      <div class="faq-a"><div class="faq-a-in"><p>Adapter bushings exist for pins, but they do not change the lift capacity or the geometry. If the implement is heavier than the hitch was designed to lift, the adapter solves the wrong problem.</p></div></div>
+    </details>
+    <details>
+      <summary><h3 class="faq-q">What if my implement is not listed?</h3></summary>
+      <div class="faq-a"><div class="faq-a-in"><p>The list covers the common sizes behind sub-compact through utility tractors. Match yours to the nearest working width and treat the horsepower band as the answer.</p></div></div>
+    </details>
+  </div>
+</section>
+
+  </div>
+</section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="footer-logo" href="/acrejournal/" aria-label="Acre Journal — home">
+          <svg class="mark" width="38" height="38" viewBox="0 0 32 32" aria-hidden="true">
+            <rect width="32" height="32" rx="8" fill="currentColor"></rect>
+            <rect x="7.4" y="7.4" width="17.2" height="17.2" rx="1.6" stroke="var(--dark)" stroke-width="2.6" fill="none"></rect>
+            <path d="M15.4 8.7v14.6M8.7 15.2h14.6" stroke="var(--dark)" stroke-width="1.9"></path>
+            <path d="M16.7 16.5h6.9v6.8h-6.9z" fill="var(--accent)"></path>
+          </svg>
+          <span class="wordmark"><i>Acre</i><i>Journal</i></span>
+        </a>
+        <p class="footer-about">Independent coverage of compact tractors, used equipment, irrigation and greenhouses. Every figure on the site carries a source, and a place in a shortlist is never for sale.
+</p>
+      </div>
+
+      <div class="cols">
+        <div>
+          <b>Sections</b>
+<a href="/acrejournal/compact-tractors/">Compact tractors</a><a href="/acrejournal/used-tractors/">Used equipment</a><a href="/acrejournal/irrigation/">Irrigation</a><a href="/acrejournal/greenhouses/">Greenhouses</a><a href="/acrejournal/parts/">Parts</a><a href="/acrejournal/attachments/">Attachments &amp; PTO</a>        </div>
+        <div>
+          <b>Read</b>
+<a href="/acrejournal/reviews/">Owner reports</a><a href="/acrejournal/compare/">Comparisons</a><a href="/acrejournal/learn/">Learn</a><a href="/acrejournal/glossary/">Glossary</a><a href="/acrejournal/faq/">FAQ</a>        </div>
+        <div>
+          <b>About</b>
+<a href="/acrejournal/about/#method">How we check</a><a href="/acrejournal/about/">About us</a><a href="/acrejournal/disclosure/">Affiliate disclosure</a><a href="/acrejournal/privacy/">Privacy policy</a>        </div>
+      </div>
+    </div>
+
+    <div class="fine">
+      <p>We only cover gear we have researched, and our reports are built on documented owner experience, not on brand copy — the method is stated on every report page. Links to sellers are plain links: we are not in their affiliate programmes yet, and nothing on this site is paid placement.
+</p>
+      <p>&copy; 2026 Acre Journal. Figures carry their source and check date. Photography is illustrative.</p>
+    </div>
+  </div>
+  <span class="footer-word" aria-hidden="true">ACRE JOURNAL</span>
+</footer>
+
+<div class="palette-dock" hidden>
+  <b>Palette</b>
+  <div class="palette-list">
+    <button type="button" data-palette-pick="clay"><i style="--a:#B4571A;--g:#F5F3EF"></i>Clay</button>
+    <button type="button" data-palette-pick="paper"><i style="--a:#1F7A4C;--g:#FFFFFF"></i>Paper</button>
+    <button type="button" data-palette-pick="field"><i style="--a:#2E7D32;--g:#F7F9F5"></i>Field</button>
+    <button type="button" data-palette-pick="journal"><i style="--a:#17507A;--g:#FBFBFC"></i>Journal</button>
+  </div>
+</div>
+
+<script src="/acrejournal/js/app.js?v=1b2739c8" defer></script>
+</body>
+</html>

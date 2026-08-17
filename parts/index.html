@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script>
+(function () {
+  var d = document.documentElement;
+  d.className += ' js';
+  try {
+    var th = localStorage.getItem('aj-theme');
+    d.setAttribute('data-theme', th === 'dark' ? 'dark' : 'light');
+    var pal = localStorage.getItem('aj-palette');
+    if (pal) d.setAttribute('data-palette', pal);
+  } catch (e) {}
+  if (location.hash && location.hash.length > 1) d.classList.add('anchor-landing');
+})();
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
+<meta name="x-apple-disable-message-reformatting">
+<title>Parts — Acre Journal</title>
+<meta name="description" content="Wear parts, filters and fitment — plus what the July 2026 FTC settlement with John Deere actually changed about who is allowed to repair a tractor.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://acrejournal.com/parts/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Parts">
+<meta property="og:description" content="Wear parts, filters and fitment — plus what the July 2026 FTC settlement with John Deere actually changed about who is allowed to repair a tractor.">
+<meta property="og:url" content="https://acrejournal.com/parts/">
+<meta property="og:site_name" content="Acre Journal">
+<link rel="icon" href="/acrejournal/favicon.svg?v=40b724f3" type="image/svg+xml">
+<link rel="stylesheet" href="/acrejournal/css/site.css?v=b44cc107"><link rel="preload" as="image" href="/acrejournal/img/parts-1.webp" imagesrcset="/img/parts-1-s.webp 800w, /img/parts-1.webp 1600w" imagesizes="(max-width: 900px) 100vw, 1640px" fetchpriority="high"><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "CollectionPage", "name": "Parts", "description": "Wear parts, filters and fitment — plus what the July 2026 FTC settlement with John Deere actually changed about who is allowed to repair a tractor.", "url": "https://acrejournal.com/parts/"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://acrejournal.com/"}, {"@type": "ListItem", "position": 2, "name": "Parts", "item": "https://acrejournal.com/parts/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Am I allowed to repair my own tractor now?", "acceptedAnswer": {"@type": "Answer", "text": "For John Deere equipment in the US, the position changed on 8 July 2026. The FTC and five state attorneys general secured a proposed settlement requiring Deere to give farmers and independent repair providers the same repair resources it gives authorised dealers, including software capabilities. The order runs for ten years. It does not make every repair easy, but it removes the argument that only a dealer may hold the tools."}}, {"@type": "Question", "name": "How do I check whether a part fits?", "acceptedAnswer": {"@type": "Answer", "text": "By serial number, not by model name. Manufacturers change suppliers and revisions mid-run, so two tractors wearing the same badge can take different filters, seals or belts. The serial plate is the only reliable key, and any parts counter will ask for it first."}}, {"@type": "Question", "name": "Are aftermarket filters acceptable?", "acceptedAnswer": {"@type": "Answer", "text": "For most service items on a compact tractor, yes — provided the specification matches, not just the dimensions. Where we would not economise is anything inside the hydraulic circuit or the transmission, because the failure mode is contamination of an expensive system rather than simply replacing the part again."}}, {"@type": "Question", "name": "Why is there no parts catalogue on this site?", "acceptedAnswer": {"@type": "Answer", "text": "Because we will not publish fitment data we cannot verify. Compatibility information sits behind manufacturer systems, and aggregators expose it only through their own search. Publishing guesses about what fits would be worse than publishing nothing — a wrong filter is an engine."}}, {"@type": "Question", "name": "Does the Deere settlement help owners of other brands?", "acceptedAnswer": {"@type": "Answer", "text": "Not directly; the order binds Deere. Its practical effect is broader, because it sets an expectation across the industry and gives regulators a template. Whether Kubota, Kioti and the rest follow voluntarily is an open question."}}]}]}</script>
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="logo" href="/acrejournal/" aria-label="Acre Journal — home">
+      <svg class="mark" width="30" height="30" viewBox="0 0 32 32" aria-hidden="true">
+        <rect width="32" height="32" rx="8" fill="currentColor"></rect>
+        <rect x="7.4" y="7.4" width="17.2" height="17.2" rx="1.6" stroke="var(--ground)" stroke-width="2.6" fill="none"></rect>
+        <path d="M15.4 8.7v14.6M8.7 15.2h14.6" stroke="var(--ground)" stroke-width="1.9"></path>
+        <path d="M16.7 16.5h6.9v6.8h-6.9z" fill="var(--mark-crop)"></path>
+      </svg>
+      <span class="wordmark"><i>Acre</i><i>Journal</i></span>
+    </a>
+    <nav class="site" id="site-nav" aria-label="Main">
+      <a href="/acrejournal/compact-tractors/">Compact tractors</a>
+      <a href="/acrejournal/used-tractors/">Used</a>
+      <a href="/acrejournal/irrigation/">Irrigation</a>
+      <a href="/acrejournal/greenhouses/">Greenhouses</a>
+
+      <div class="more">
+        <button class="more-toggle" type="button" aria-expanded="false" aria-controls="nav-more"
+data-active="true">
+          More
+          <svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <path d="M2.5 4.5 6 8l3.5-3.5" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <div class="more-sheet" id="nav-more">
+          <span class="more-cap">Sections</span>
+          <a href="/acrejournal/parts/" aria-current="page">Parts</a>
+          <a href="/acrejournal/attachments/">Attachments &amp; PTO</a>
+          <a href="/acrejournal/lawn-mowers/">Mowing</a>
+          <a href="/acrejournal/hydroponics/">Hydroponics</a>
+          <span class="more-cap">Read</span>
+          <a href="/acrejournal/reviews/">Owner reports</a>
+          <a href="/acrejournal/learn/">Learn</a>
+          <a href="/acrejournal/glossary/">Glossary</a>
+          <a href="/acrejournal/compare/">Compare</a>
+          <a href="/acrejournal/faq/">FAQ</a>
+        </div>
+      </div>
+
+      <a class="btn cta in-drawer" href="/acrejournal/reviews/">Owner reports</a>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Switch theme" title="Theme: system">
+      <svg class="i-sun" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+        <circle cx="10" cy="10" r="4"></circle>
+        <path d="M10 1.5v2M10 16.5v2M1.5 10h2M16.5 10h2M4 4l1.4 1.4M14.6 14.6L16 16M16 4l-1.4 1.4M5.4 14.6L4 16" stroke-linecap="round"></path>
+      </svg>
+      <svg class="i-moon" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+        <path d="M16.5 12.4A7 7 0 0 1 7.6 3.5a7 7 0 1 0 8.9 8.9z" stroke-linejoin="round"></path>
+      </svg>
+      <svg class="i-auto" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+        <circle cx="10" cy="10" r="7"></circle>
+        <path d="M10 3v14a7 7 0 0 0 0-14z" fill="currentColor" stroke="none"></path>
+      </svg>
+    </button>
+    <a class="btn cta on-bar" href="/acrejournal/reviews/">Owner reports</a>
+    <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="nav-scrim" hidden></div>
+
+<main id="main">
+
+<div class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb">
+<a href="/acrejournal/">Home</a> / <span aria-current="page">Parts</span></nav>
+
+  <div class="hero-top">
+    <h1 class="rise-lines">
+      <span class="line"><span>WHO IS ALLOWED</span></span>
+      <span class="line dim"><span>TO FIX IT</span></span>
+    </h1>
+    <div class="hero-aside">
+      <span class="pill reveal" data-delay="200">Changing fast</span>
+      <p class="lede reveal" data-delay="280">Wear parts, filters and fitment — plus what the July 2026 FTC settlement with John Deere actually changed about who is allowed to repair a tractor.</p>
+    </div>
+  </div>
+
+  <a class="tool-promo reveal" data-delay="240" href="/acrejournal/compact-tractors/tractor-sizing/">
+    <span class="kick">Interactive</span>
+    <b>Tractor sizing calculator</b>
+    <p>Answer four questions about your land and the jobs you do — get the class you actually need and three machines that fit.</p>
+    <span class="btn">Show my match</span>
+  </a>
+
+  <div class="hero-shot reveal zoom" data-delay="160">
+    <div class="gal" data-gal style="--gal-ratio: 21 / 8">
+  <div class="gal-track">    <span class="gal-slide is-on">
+      <img src="/acrejournal/img/parts-1.webp" srcset="/img/parts-1-s.webp 800w, /img/parts-1.webp 1600w" sizes="(max-width: 900px) 100vw, 1640px"           alt="Oil-stained hands holding a machine part" width="900" height="600"loading="eager" fetchpriority="high" decoding="async">
+    </span>
+    <span class="gal-slide">
+      <img data-src="/acrejournal/img/parts-2.webp"           alt="Mechanic working on a tractor in the field" width="900" height="600"loading="lazy" decoding="async">
+    </span>
+    <span class="gal-slide">
+      <img data-src="/acrejournal/img/parts-3.webp"           alt="Technician reaching into an opened engine bay" width="900" height="600"loading="lazy" decoding="async">
+    </span>
+  </div>
+  <button class="gal-nav prev" type="button" aria-label="Previous photo">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 3 5 8l5 5" stroke-linecap="square"/></svg>
+  </button>
+  <button class="gal-nav next" type="button" aria-label="Next photo">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 3l5 5-5 5" stroke-linecap="square"/></svg>
+  </button>
+  <div class="gal-dots" role="tablist" aria-label="Photos">
+    <button class="gal-dot is-on" type="button" role="tab"
+            aria-label="Photo 1" aria-selected="true"></button>
+    <button class="gal-dot" type="button" role="tab"
+            aria-label="Photo 2"></button>
+    <button class="gal-dot" type="button" role="tab"
+            aria-label="Photo 3"></button>
+  </div>
+</div>
+
+  </div>
+</div>
+
+<section class="pb-0">
+  <div class="wrap">
+    <div class="layout">
+      <article class="prose reveal"><p>Parts is the section where this site currently does least, on purpose. There is no
+catalogue here and there will not be one until we have fitment data we can stand behind.</p>
+<p>What we can do is cover the part of this subject that actually changed this summer, and
+the two questions that decide whether a parts order goes right.</p>
+<h2 id="repair">The repair rules changed in July</h2>
+<p>On 8 July 2026 the FTC, together with the attorneys general of Illinois, Arizona,
+Michigan, Minnesota and Wisconsin, announced a proposed settlement with Deere &amp; Company.
+The core of it is simple: Deere must give farmers and independent repair providers the
+same repair resources it gives its own authorised dealers, including the software
+capabilities.</p>
+<p>Three details matter for anyone maintaining a machine.</p>
+<p><strong>It covers diagnostics, not just spanners.</strong> The resources at issue are the electronic
+ones — reading and clearing fault codes, reprogramming components, and getting a machine
+running again after an emissions-related shutdown. That is precisely the category that
+used to force a dealer visit for a fault a competent owner could otherwise clear.</p>
+<p><strong>Future tools are covered automatically.</strong> Once a new repair tool reaches more than 50%
+of Deere's authorised dealer locations in the US, it must be made available to owners and
+independent shops as well. That closes the obvious loophole of simply not releasing new
+capability outside the dealer network.</p>
+<p><strong>It runs for ten years.</strong> This is not a gesture with a short shelf life.</p>
+<p>What it does not do is make repair simple, or extend to other manufacturers. The order
+binds Deere. Whether Kubota, Kioti and the rest match it voluntarily is the question worth
+watching over the next couple of seasons.</p>
+<h2 id="fitment">How to check fitment</h2>
+<p>By serial number. Always.</p>
+<p>Model names are marketing; serial ranges are engineering. Manufacturers change suppliers
+and revisions during a production run, and the components most likely to differ are
+exactly the routine ones — filters, seals, belts, hydraulic fittings. Two tractors with
+the same badge and two years between them can take different parts.</p>
+<p>The serial plate is usually on the frame near the operator platform, with a second number
+on the engine block. Take a photograph of both and keep it in your phone; every parts
+counter and every online catalogue will ask.</p>
+<p>This is also the reason there is no catalogue on this page. Fitment data lives inside
+manufacturer systems, and the aggregators that license it expose it only through their own
+search. We are not going to guess, because the cost of a wrong guess falls on your engine
+rather than on us.</p>
+<h2 id="quality">OEM or aftermarket</h2>
+<p>Sort this question by what happens when the part fails, not by price.</p>
+<p><strong>Where aftermarket is usually fine:</strong> air filters, fuel filters, belts, blades, lights,
+seat parts. If a cheaper item fails you replace it again, and the damage stops there.</p>
+<p><strong>Where we would not economise:</strong> anything inside the hydraulic or transmission circuit.
+A filter that bypasses at the wrong pressure, or media that breaks down and circulates,
+contaminates a system whose repair is measured in thousands. The same logic applies to
+seals in the loader circuit.</p>
+<p><strong>Where "OEM" is not what you think:</strong> many original parts are made by the same suppliers
+who sell into the aftermarket. The question is whether the specification matches, not
+whose logo is on the box. Match the specification, not the packaging.</p>
+<h2 id="next">What is coming to this section</h2>
+<p>Planned: a service-interval reference for the common compacts, a plain guide to reading a
+parts diagram, and a follow-up on whether other manufacturers move after the Deere order.</p>
+        <section class="facts reveal" aria-labelledby="facts-heading">
+  <div class="facts-top">
+    <span class="kick">At a glance</span>
+    <h2 id="facts-heading">What changed in July 2026</h2>
+  </div>
+  <div class="table-wrap">
+    <table class="facts-table" role="table">
+      <thead role="rowgroup">
+        <tr role="row">
+          <th scope="col" role="columnheader">What</th>
+          <th scope="col" role="columnheader">Figure</th>
+          <th scope="col" role="columnheader">Source</th>
+        </tr>
+      </thead>
+      <tbody role="rowgroup">
+        <tr role="row">
+          <th scope="row" role="rowheader">Settlement announced</th>
+          <td role="cell">
+            <span class="facts-value">8 July 2026</span>
+<span class="facts-hint">FTC with the attorneys general of Illinois, Arizona, Michigan, Minnesota and Wisconsin</span>          </td><td class="facts-src" role="cell"><a href="https://www.freshfields.com/en/our-thinking/blogs/a-fresh-take/ftcs-john-deere-settlement-signals-scrutiny-of-aftermarket-repair-restrictions-102nbqo" rel="nofollow noopener">Freshfields analysis of the settlement</a></td>
+        </tr>
+        <tr role="row">
+          <th scope="row" role="rowheader">What Deere must provide</th>
+          <td role="cell">
+            <span class="facts-value">the same resources as its dealers</span>
+<span class="facts-hint">Including applicable software capabilities, to farmers and independent repairers</span>          </td><td class="facts-src" role="cell"><a class="facts-same" href="https://www.freshfields.com/en/our-thinking/blogs/a-fresh-take/ftcs-john-deere-settlement-signals-scrutiny-of-aftermarket-repair-restrictions-102nbqo" rel="nofollow noopener"
+                 title="Freshfields analysis of the settlement">same source</a></td>
+        </tr>
+        <tr role="row">
+          <th scope="row" role="rowheader">Trigger for future tools</th>
+          <td role="cell">
+            <span class="facts-value">50% of US dealer locations</span>
+<span class="facts-hint">Once a tool reaches that share of dealers, it must be offered to owners too</span>          </td><td class="facts-src" role="cell"><a class="facts-same" href="https://www.freshfields.com/en/our-thinking/blogs/a-fresh-take/ftcs-john-deere-settlement-signals-scrutiny-of-aftermarket-repair-restrictions-102nbqo" rel="nofollow noopener"
+                 title="Freshfields analysis of the settlement">same source</a></td>
+        </tr>
+        <tr role="row">
+          <th scope="row" role="rowheader">How long the order runs</th>
+          <td role="cell">
+            <span class="facts-value">ten years</span>
+<span class="facts-hint">Proposed order duration</span>          </td><td class="facts-src" role="cell"><a class="facts-same" href="https://www.freshfields.com/en/our-thinking/blogs/a-fresh-take/ftcs-john-deere-settlement-signals-scrutiny-of-aftermarket-repair-restrictions-102nbqo" rel="nofollow noopener"
+                 title="Freshfields analysis of the settlement">same source</a></td>
+        </tr>
+        <tr role="row">
+          <th scope="row" role="rowheader">Official announcement</th>
+          <td role="cell">
+            <span class="facts-value">FTC press release</span>
+<span class="facts-hint">The primary source for the settlement terms</span>          </td><td class="facts-src" role="cell"><a href="https://www.ftc.gov/news-events/news/press-releases/2026/07/ftc-states-secure-settlement-deere-company-advancing-farmers-right-repair" rel="nofollow noopener">Federal Trade Commission</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+<p class="facts-foot">This section deliberately has no parts catalogue — see the FAQ for why.</p></section>
+</article>
+      <aside class="rail">
+        <div class="toc toc-page reveal" data-delay="120">
+          <b>In this section</b>
+          <ul>
+<li><a href="#repair">The rules just changed</a></li><li><a href="#fitment">How to check fitment</a></li><li><a href="#quality">OEM or aftermarket</a></li>          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="pill">Topics</span>
+      <h2>What this section <span class="dim">covers.</span></h2>
+    </div>
+
+    <div class="mt-block">
+      <div class="row reveal is-live" id="repair">
+        <div class="side">
+          <h3>
+<a href="#repair">The rules just changed</a>          </h3>
+          <p class="lede" style="font-size:15px">A ten-year FTC order now requires Deere to give owners and independent shops the same repair tools its dealers get. Here is what that covers.</p>
+          <a class="btn" href="#repair">Read more</a>
+        </div>
+        <div class="gal" data-gal style="--gal-ratio: 16 / 7">
+  <div class="gal-track">    <span class="gal-slide is-on">
+      <img src="/acrejournal/img/parts-2.webp" srcset="/img/parts-2-s.webp 800w, /img/parts-2.webp 1600w" sizes="(max-width: 900px) 100vw, 1640px"           alt="Mechanic working on a tractor in the field" width="900" height="600"loading="lazy" decoding="async">
+    </span>
+    <span class="gal-slide">
+      <img data-src="/acrejournal/img/parts-3.webp"           alt="Technician reaching into an opened engine bay" width="900" height="600"loading="lazy" decoding="async">
+    </span>
+    <span class="gal-slide">
+      <img data-src="/acrejournal/img/parts-4.webp"           alt="Two people servicing a tractor&#39;s control panel" width="900" height="600"loading="lazy" decoding="async">
+    </span>
+  </div>
+  <button class="gal-nav prev" type="button" aria-label="Previous photo">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 3 5 8l5 5" stroke-linecap="square"/></svg>
+  </button>
+  <button class="gal-nav next" type="button" aria-label="Next photo">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 3l5 5-5 5" stroke-linecap="square"/></svg>
+  </button>
+  <div class="gal-dots" role="tablist" aria-label="Photos">
+    <button class="gal-dot is-on" type="button" role="tab"
+            aria-label="Photo 1" aria-selected="true"></button>
+    <button class="gal-dot" type="button" role="tab"
+            aria-label="Photo 2"></button>
+    <button class="gal-dot" type="button" role="tab"
+            aria-label="Photo 3"></button>
+  </div>
+</div>
+
+      </div>
+      <div class="row reveal is-live" id="fitment">
+        <div class="side">
+          <h3>
+<a href="#fitment">How to check fitment</a>          </h3>
+          <p class="lede" style="font-size:15px">Serial number, not model name. The same badge covers several builds, and the parts that differ are the ones you will order wrong.</p>
+          <a class="btn" href="#fitment">Read more</a>
+        </div>
+        <div class="gal" data-gal style="--gal-ratio: 16 / 7">
+  <div class="gal-track">    <span class="gal-slide is-on">
+      <img src="/acrejournal/img/parts-3.webp" srcset="/img/parts-3-s.webp 800w, /img/parts-3.webp 1600w" sizes="(max-width: 900px) 100vw, 1640px"           alt="Technician reaching into an opened engine bay" width="900" height="600"loading="lazy" decoding="async">
+    </span>
+    <span class="gal-slide">
+      <img data-src="/acrejournal/img/parts-4.webp"           alt="Two people servicing a tractor&#39;s control panel" width="900" height="600"loading="lazy" decoding="async">
+    </span>
+    <span class="gal-slide">
+      <img data-src="/acrejournal/img/parts-1.webp"           alt="Oil-stained hands holding a machine part" width="900" height="600"loading="lazy" decoding="async">
+    </span>
+  </div>
+  <button class="gal-nav prev" type="button" aria-label="Previous photo">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 3 5 8l5 5" stroke-linecap="square"/></svg>
+  </button>
+  <button class="gal-nav next" type="button" aria-label="Next photo">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 3l5 5-5 5" stroke-linecap="square"/></svg>
+  </button>
+  <div class="gal-dots" role="tablist" aria-label="Photos">
+    <button class="gal-dot is-on" type="button" role="tab"
+            aria-label="Photo 1" aria-selected="true"></button>
+    <button class="gal-dot" type="button" role="tab"
+            aria-label="Photo 2"></button>
+    <button class="gal-dot" type="button" role="tab"
+            aria-label="Photo 3"></button>
+  </div>
+</div>
+
+      </div>
+      <div class="row reveal is-live" id="quality">
+        <div class="side">
+          <h3>
+<a href="#quality">OEM or aftermarket</a>          </h3>
+          <p class="lede" style="font-size:15px">Where the cheaper part is genuinely fine and where it is a false economy, sorted by what happens when it fails.</p>
+          <a class="btn" href="#quality">Read more</a>
+        </div>
+        <div class="gal" data-gal style="--gal-ratio: 16 / 7">
+  <div class="gal-track">    <span class="gal-slide is-on">
+      <img src="/acrejournal/img/parts-4.webp" srcset="/img/parts-4-s.webp 800w, /img/parts-4.webp 1600w" sizes="(max-width: 900px) 100vw, 1640px"           alt="Two people servicing a tractor&#39;s control panel" width="900" height="600"loading="lazy" decoding="async">
+    </span>
+    <span class="gal-slide">
+      <img data-src="/acrejournal/img/parts-1.webp"           alt="Oil-stained hands holding a machine part" width="900" height="600"loading="lazy" decoding="async">
+    </span>
+    <span class="gal-slide">
+      <img data-src="/acrejournal/img/parts-2.webp"           alt="Mechanic working on a tractor in the field" width="900" height="600"loading="lazy" decoding="async">
+    </span>
+  </div>
+  <button class="gal-nav prev" type="button" aria-label="Previous photo">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 3 5 8l5 5" stroke-linecap="square"/></svg>
+  </button>
+  <button class="gal-nav next" type="button" aria-label="Next photo">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 3l5 5-5 5" stroke-linecap="square"/></svg>
+  </button>
+  <div class="gal-dots" role="tablist" aria-label="Photos">
+    <button class="gal-dot is-on" type="button" role="tab"
+            aria-label="Photo 1" aria-selected="true"></button>
+    <button class="gal-dot" type="button" role="tab"
+            aria-label="Photo 2"></button>
+    <button class="gal-dot" type="button" role="tab"
+            aria-label="Photo 3"></button>
+  </div>
+</div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq-band">
+  <div class="wrap">
+    <section class="faq" aria-label="Questions and answers">
+  <div class="faq-side">
+    <span class="pill">FAQ</span>
+<h2 id="faq">Questions &amp; Answers</h2>    <p class="faq-lede">Answered from the same sources as the tables above — each figure is
+      linked on the page it comes from.</p>
+  </div>
+  <div class="faq-list">
+    <details open>
+      <summary><h3 class="faq-q">Am I allowed to repair my own tractor now?</h3></summary>
+      <div class="faq-a"><div class="faq-a-in"><p>For John Deere equipment in the US, the position changed on 8 July 2026. The FTC and five state attorneys general secured a proposed settlement requiring Deere to give farmers and independent repair providers the same repair resources it gives authorised dealers, including software capabilities. The order runs for ten years. It does not make every repair easy, but it removes the argument that only a dealer may hold the tools.</p></div></div>
+    </details>
+    <details>
+      <summary><h3 class="faq-q">How do I check whether a part fits?</h3></summary>
+      <div class="faq-a"><div class="faq-a-in"><p>By serial number, not by model name. Manufacturers change suppliers and revisions mid-run, so two tractors wearing the same badge can take different filters, seals or belts. The serial plate is the only reliable key, and any parts counter will ask for it first.</p></div></div>
+    </details>
+    <details>
+      <summary><h3 class="faq-q">Are aftermarket filters acceptable?</h3></summary>
+      <div class="faq-a"><div class="faq-a-in"><p>For most service items on a compact tractor, yes — provided the specification matches, not just the dimensions. Where we would not economise is anything inside the hydraulic circuit or the transmission, because the failure mode is contamination of an expensive system rather than simply replacing the part again.</p></div></div>
+    </details>
+    <details>
+      <summary><h3 class="faq-q">Why is there no parts catalogue on this site?</h3></summary>
+      <div class="faq-a"><div class="faq-a-in"><p>Because we will not publish fitment data we cannot verify. Compatibility information sits behind manufacturer systems, and aggregators expose it only through their own search. Publishing guesses about what fits would be worse than publishing nothing — a wrong filter is an engine.</p></div></div>
+    </details>
+    <details>
+      <summary><h3 class="faq-q">Does the Deere settlement help owners of other brands?</h3></summary>
+      <div class="faq-a"><div class="faq-a-in"><p>Not directly; the order binds Deere. Its practical effect is broader, because it sets an expectation across the industry and gives regulators a template. Whether Kubota, Kioti and the rest follow voluntarily is an open question.</p></div></div>
+    </details>
+  </div>
+</section>
+
+  </div>
+</section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="footer-logo" href="/acrejournal/" aria-label="Acre Journal — home">
+          <svg class="mark" width="38" height="38" viewBox="0 0 32 32" aria-hidden="true">
+            <rect width="32" height="32" rx="8" fill="currentColor"></rect>
+            <rect x="7.4" y="7.4" width="17.2" height="17.2" rx="1.6" stroke="var(--dark)" stroke-width="2.6" fill="none"></rect>
+            <path d="M15.4 8.7v14.6M8.7 15.2h14.6" stroke="var(--dark)" stroke-width="1.9"></path>
+            <path d="M16.7 16.5h6.9v6.8h-6.9z" fill="var(--accent)"></path>
+          </svg>
+          <span class="wordmark"><i>Acre</i><i>Journal</i></span>
+        </a>
+        <p class="footer-about">Independent coverage of compact tractors, used equipment, irrigation and greenhouses. Every figure on the site carries a source, and a place in a shortlist is never for sale.
+</p>
+      </div>
+
+      <div class="cols">
+        <div>
+          <b>Sections</b>
+<a href="/acrejournal/compact-tractors/">Compact tractors</a><a href="/acrejournal/used-tractors/">Used equipment</a><a href="/acrejournal/irrigation/">Irrigation</a><a href="/acrejournal/greenhouses/">Greenhouses</a><a href="/acrejournal/parts/">Parts</a><a href="/acrejournal/attachments/">Attachments &amp; PTO</a>        </div>
+        <div>
+          <b>Read</b>
+<a href="/acrejournal/reviews/">Owner reports</a><a href="/acrejournal/compare/">Comparisons</a><a href="/acrejournal/learn/">Learn</a><a href="/acrejournal/glossary/">Glossary</a><a href="/acrejournal/faq/">FAQ</a>        </div>
+        <div>
+          <b>About</b>
+<a href="/acrejournal/about/#method">How we check</a><a href="/acrejournal/about/">About us</a><a href="/acrejournal/disclosure/">Affiliate disclosure</a><a href="/acrejournal/privacy/">Privacy policy</a>        </div>
+      </div>
+    </div>
+
+    <div class="fine">
+      <p>We only cover gear we have researched, and our reports are built on documented owner experience, not on brand copy — the method is stated on every report page. Links to sellers are plain links: we are not in their affiliate programmes yet, and nothing on this site is paid placement.
+</p>
+      <p>&copy; 2026 Acre Journal. Figures carry their source and check date. Photography is illustrative.</p>
+    </div>
+  </div>
+  <span class="footer-word" aria-hidden="true">ACRE JOURNAL</span>
+</footer>
+
+<div class="palette-dock" hidden>
+  <b>Palette</b>
+  <div class="palette-list">
+    <button type="button" data-palette-pick="clay"><i style="--a:#B4571A;--g:#F5F3EF"></i>Clay</button>
+    <button type="button" data-palette-pick="paper"><i style="--a:#1F7A4C;--g:#FFFFFF"></i>Paper</button>
+    <button type="button" data-palette-pick="field"><i style="--a:#2E7D32;--g:#F7F9F5"></i>Field</button>
+    <button type="button" data-palette-pick="journal"><i style="--a:#17507A;--g:#FBFBFC"></i>Journal</button>
+  </div>
+</div>
+
+<script src="/acrejournal/js/app.js?v=1b2739c8" defer></script>
+</body>
+</html>

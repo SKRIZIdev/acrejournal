@@ -1,0 +1,475 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script>
+(function () {
+  var d = document.documentElement;
+  d.className += ' js';
+  try {
+    var th = localStorage.getItem('aj-theme');
+    d.setAttribute('data-theme', th === 'dark' ? 'dark' : 'light');
+    var pal = localStorage.getItem('aj-palette');
+    if (pal) d.setAttribute('data-palette', pal);
+  } catch (e) {}
+  if (location.hash && location.hash.length > 1) d.classList.add('anchor-landing');
+})();
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
+<meta name="x-apple-disable-message-reformatting">
+<title>Kubota L2502 — Acre Journal</title>
+<meta name="description" content="The 23.3 hp compact that sits just under the emissions threshold — full specification, what it lifts, what it lists at, and where it stops being enough.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://acrejournal.com/compact-tractors/kubota-l2502/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Kubota L2502">
+<meta property="og:description" content="The 23.3 hp compact that sits just under the emissions threshold — full specification, what it lifts, what it lists at, and where it stops being enough.">
+<meta property="og:url" content="https://acrejournal.com/compact-tractors/kubota-l2502/">
+<meta property="og:site_name" content="Acre Journal">
+<link rel="icon" href="/acrejournal/favicon.svg?v=40b724f3" type="image/svg+xml">
+<link rel="stylesheet" href="/acrejournal/css/site.css?v=b44cc107"><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "Article", "headline": "Kubota L2502", "description": "The 23.3 hp compact that sits just under the emissions threshold — full specification, what it lifts, what it lists at, and where it stops being enough.", "url": "https://acrejournal.com/compact-tractors/kubota-l2502/", "dateModified": "2026-08-16", "publisher": {"@type": "Organization", "name": "Acre Journal"}}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://acrejournal.com/"}, {"@type": "ListItem", "position": 2, "name": "Compact tractors", "item": "https://acrejournal.com/compact-tractors/"}, {"@type": "ListItem", "position": 3, "name": "Kubota L2502", "item": "https://acrejournal.com/compact-tractors/kubota-l2502/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Why is this model 23.3 horsepower and not 26?", "acceptedAnswer": {"@type": "Answer", "text": "To stay under the US EPA nonroad threshold at 19 kW, which is 25 hp. Below that line the particulate limit is 0.4 g/kWh; at or above it the limit is 0.03 g/kWh, thirteen times stricter, and the machine needs aftertreatment hardware to meet it. Kubota keeps the whole L02 entry model under the line, which is why the next step up in the family jumps straight to 33 hp."}}, {"@type": "Question", "name": "What does the L2502 replace?", "acceptedAnswer": {"@type": "Answer", "text": "The L2501. The L02 generation superseded the L01 range, and dealers were running clearance offers on L02 stock through the 2026 season. If you are reading a review or a forum thread about an L2501, the specifications are close but not identical, and the parts numbers are not interchangeable across the board."}}, {"@type": "Question", "name": "DT or HST — which transmission?", "acceptedAnswer": {"@type": "Answer", "text": "The gear version (DT, 8 forward and 8 reverse) gives 19.8 hp at the PTO; the hydrostatic gives 18.4. Gear drive is the choice for steady work in a field, where you set a speed and stay there. HST wins wherever you change direction constantly — loader cycles, yard work, snow — at the cost of about 1.4 hp and a slightly higher price."}}, {"@type": "Question", "name": "Is 5.2 GPM of hydraulic flow enough?", "acceptedAnswer": {"@type": "Answer", "text": "For a loader and a rear implement, yes. For anything with a hydraulic motor running continuously — a grapple used hard, a hydraulic-drive attachment — it is on the low side. An LX2620 moves 8.7 GPM for comparison, and that difference is more noticeable in daily use than the horsepower figures suggest."}}, {"@type": "Question", "name": "What does it actually cost to put one in the yard?", "acceptedAnswer": {"@type": "Answer", "text": "The $17,449 list price is the base machine, before tax, dealer fees, delivery and the loader. Dealers in this class rarely publish a delivered price at all — they publish a configurator. Budget well above list once a loader and a mid-mount deck are on it."}}]}]}</script>
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="logo" href="/acrejournal/" aria-label="Acre Journal — home">
+      <svg class="mark" width="30" height="30" viewBox="0 0 32 32" aria-hidden="true">
+        <rect width="32" height="32" rx="8" fill="currentColor"></rect>
+        <rect x="7.4" y="7.4" width="17.2" height="17.2" rx="1.6" stroke="var(--ground)" stroke-width="2.6" fill="none"></rect>
+        <path d="M15.4 8.7v14.6M8.7 15.2h14.6" stroke="var(--ground)" stroke-width="1.9"></path>
+        <path d="M16.7 16.5h6.9v6.8h-6.9z" fill="var(--mark-crop)"></path>
+      </svg>
+      <span class="wordmark"><i>Acre</i><i>Journal</i></span>
+    </a>
+    <nav class="site" id="site-nav" aria-label="Main">
+      <a href="/acrejournal/compact-tractors/" aria-current="page">Compact tractors</a>
+      <a href="/acrejournal/used-tractors/">Used</a>
+      <a href="/acrejournal/irrigation/">Irrigation</a>
+      <a href="/acrejournal/greenhouses/">Greenhouses</a>
+
+      <div class="more">
+        <button class="more-toggle" type="button" aria-expanded="false" aria-controls="nav-more"
+>
+          More
+          <svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <path d="M2.5 4.5 6 8l3.5-3.5" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <div class="more-sheet" id="nav-more">
+          <span class="more-cap">Sections</span>
+          <a href="/acrejournal/parts/">Parts</a>
+          <a href="/acrejournal/attachments/">Attachments &amp; PTO</a>
+          <a href="/acrejournal/lawn-mowers/">Mowing</a>
+          <a href="/acrejournal/hydroponics/">Hydroponics</a>
+          <span class="more-cap">Read</span>
+          <a href="/acrejournal/reviews/">Owner reports</a>
+          <a href="/acrejournal/learn/">Learn</a>
+          <a href="/acrejournal/glossary/">Glossary</a>
+          <a href="/acrejournal/compare/">Compare</a>
+          <a href="/acrejournal/faq/">FAQ</a>
+        </div>
+      </div>
+
+      <a class="btn cta in-drawer" href="/acrejournal/reviews/">Owner reports</a>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Switch theme" title="Theme: system">
+      <svg class="i-sun" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+        <circle cx="10" cy="10" r="4"></circle>
+        <path d="M10 1.5v2M10 16.5v2M1.5 10h2M16.5 10h2M4 4l1.4 1.4M14.6 14.6L16 16M16 4l-1.4 1.4M5.4 14.6L4 16" stroke-linecap="round"></path>
+      </svg>
+      <svg class="i-moon" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+        <path d="M16.5 12.4A7 7 0 0 1 7.6 3.5a7 7 0 1 0 8.9 8.9z" stroke-linejoin="round"></path>
+      </svg>
+      <svg class="i-auto" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+        <circle cx="10" cy="10" r="7"></circle>
+        <path d="M10 3v14a7 7 0 0 0 0-14z" fill="currentColor" stroke="none"></path>
+      </svg>
+    </button>
+    <a class="btn cta on-bar" href="/acrejournal/reviews/">Owner reports</a>
+    <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="nav-scrim" hidden></div>
+
+<main id="main">
+
+<div class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb">
+<a href="/acrejournal/">Home</a> / <a href="/acrejournal/compact-tractors/">Compact tractors</a> / <span aria-current="page">Kubota L2502</span></nav>
+
+  <div class="hero-top">
+    <h1 class="rise-lines">
+      <span class="line"><span>KUBOTA</span></span>
+      <span class="line dim"><span>L2502</span></span>
+    </h1>
+    <div class="hero-aside">
+      <span class="pill reveal" data-delay="200">Model page</span>
+      <p class="lede reveal" data-delay="280">The 23.3 hp compact that sits just under the emissions threshold — full specification, what it lifts, what it lists at, and where it stops being enough.</p>
+    </div>
+  </div>
+
+  <div class="hero-shot reveal zoom" data-delay="160">
+    <div class="gal" data-gal style="--gal-ratio: 21 / 8">
+  <div class="gal-track">    <span class="gal-slide is-on">
+      <img src="/acrejournal/img/compact-tractors-1.webp" srcset="/img/compact-tractors-1-s.webp 800w, /img/compact-tractors-1.webp 1600w" sizes="(max-width: 900px) 100vw, 1640px"           alt="Orange compact tractor fitted with a front-end loader" width="900" height="506"loading="lazy" decoding="async">
+    </span>
+    <span class="gal-slide">
+      <img data-src="/acrejournal/img/compact-tractors-2.webp"           alt="Farmer driving a compact tractor across a field at dusk" width="900" height="506"loading="lazy" decoding="async">
+    </span>
+    <span class="gal-slide">
+      <img data-src="/acrejournal/img/compact-tractors-3.webp"           alt="Compact tractor working in a dusty field" width="900" height="600"loading="lazy" decoding="async">
+    </span>
+  </div>
+  <button class="gal-nav prev" type="button" aria-label="Previous photo">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 3 5 8l5 5" stroke-linecap="square"/></svg>
+  </button>
+  <button class="gal-nav next" type="button" aria-label="Next photo">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 3l5 5-5 5" stroke-linecap="square"/></svg>
+  </button>
+  <div class="gal-dots" role="tablist" aria-label="Photos">
+    <button class="gal-dot is-on" type="button" role="tab"
+            aria-label="Photo 1" aria-selected="true"></button>
+    <button class="gal-dot" type="button" role="tab"
+            aria-label="Photo 2"></button>
+    <button class="gal-dot" type="button" role="tab"
+            aria-label="Photo 3"></button>
+  </div>
+</div>
+
+  </div>
+</div>
+
+<section class="pb-0">
+  <div class="wrap">
+    <div class="specs stagger">
+      <div class="spec reveal">
+        <span class="cap">ENGINE</span>
+        <b>23.3<i> hp</i></b>
+      </div>
+      <div class="spec reveal">
+        <span class="cap">PTO POWER</span>
+        <b>19.8<i> hp</i></b>
+      </div>
+      <div class="spec reveal">
+        <span class="cap">THREE-POINT LIFT</span>
+        <b>1 389<i> lb</i></b>
+      </div>
+      <div class="spec reveal">
+        <span class="cap">MSRP FROM</span>
+        <b><span translate="no">$17,449</span><i></i></b>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="layout">
+      <article class="prose reveal">
+        <section class="rating is-pending" aria-label="Owner rating">
+  <div class="rating-body">
+    <b>No owner rating yet</b>
+    <p>This model page gets an owner rating once the report behind it covers enough machines. Until then the specifications above are what the page stands on.</p>
+  </div>
+</section>
+
+        <section class="facts reveal" aria-labelledby="facts-heading">
+  <div class="facts-top">
+    <span class="kick">Checkable</span>
+    <h2 id="facts-heading">Specifications</h2>
+  </div>
+  <div class="table-wrap">
+    <table class="facts-table" role="table">
+      <thead role="rowgroup">
+        <tr role="row">
+          <th scope="col" role="columnheader">What</th>
+          <th scope="col" role="columnheader">Figure</th>
+          <th scope="col" role="columnheader">Source</th>
+        </tr>
+      </thead>
+      <tbody role="rowgroup">
+        <tr role="row">
+          <th scope="row" role="rowheader">Gross engine horsepower</th>
+          <td role="cell">
+            <span class="facts-value">23.3 hp</span>
+<span class="facts-hint">Just under the 25 hp emissions threshold</span>          </td><td class="facts-src" role="cell"><a href="https://www.kubotausa.com/equipment-series/standard-l-series" rel="nofollow noopener">Kubota USA, Standard L Series</a></td>
+        </tr>
+        <tr role="row">
+          <th scope="row" role="rowheader">PTO horsepower</th>
+          <td role="cell">
+            <span class="facts-value">19.8 DT / 18.4 HST</span>
+<span class="facts-hint">Gear drive delivers more to the implement than hydrostatic</span>          </td><td class="facts-src" role="cell"><a class="facts-same" href="https://www.kubotausa.com/equipment-series/standard-l-series" rel="nofollow noopener"
+                 title="Kubota USA, Standard L Series">same source</a></td>
+        </tr>
+        <tr role="row">
+          <th scope="row" role="rowheader">Three-point lift, 24 in behind</th>
+          <td role="cell">
+            <span class="facts-value">1 389 lb</span>
+<span class="facts-hint">Category I hitch</span>          </td><td class="facts-src" role="cell"><a class="facts-same" href="https://www.kubotausa.com/equipment-series/standard-l-series" rel="nofollow noopener"
+                 title="Kubota USA, Standard L Series">same source</a></td>
+        </tr>
+        <tr role="row">
+          <th scope="row" role="rowheader">Hydraulic flow</th>
+          <td role="cell">
+            <span class="facts-value">5.2 GPM</span>
+<span class="facts-hint">An LX2620 moves 8.7 GPM for comparison</span>          </td><td class="facts-src" role="cell"><a class="facts-same" href="https://www.kubotausa.com/equipment-series/standard-l-series" rel="nofollow noopener"
+                 title="Kubota USA, Standard L Series">same source</a></td>
+        </tr>
+        <tr role="row">
+          <th scope="row" role="rowheader">MSRP from</th>
+          <td role="cell">
+            <span class="facts-value"><span translate="no">$17,449</span></span>
+<span class="facts-hint">Base configuration, before tax and dealer fees</span>          </td><td class="facts-src" role="cell"><a class="facts-same" href="https://www.kubotausa.com/equipment-series/standard-l-series" rel="nofollow noopener"
+                 title="Kubota USA, Standard L Series">same source</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+<p class="facts-foot">Manufacturer figures for the base configuration, taken from the Kubota USA series page on 16 August 2026. MSRP excludes tax, dealer fees and optional equipment.</p></section>
+
+        <p>The L2502 is the machine most people mean when they say "<a class="glossary-link" href="/acrejournal/glossary/#compact-tractor" title="Roughly 20 to 45 hp with a category one hitch — the core class of this site.">compact tractor</a>" without knowing
+it. It sits at the point where the class stops being a large mower and starts being a
+tractor — a Category I hitch that lifts 1,389 lb, a live <a class="glossary-link" href="/acrejournal/glossary/#pto" title="Splined shaft that sends engine power to an implement instead of the wheels.">PTO</a>, and a frame that will take a
+loader without complaint.</p>
+<p>It is also the cheapest way into that capability from a major brand. At <span translate="no">$17,449 </span>list it
+undercuts Kubota's own B2601 <a class="glossary-link" href="/acrejournal/glossary/#sub-compact" title="Smallest class, roughly under 25 hp, sized for lawns and small acreage.">sub-compact</a> by <span translate="no">$2,500 </span>while lifting more.</p>
+<h2 id="purpose">What this machine is for</h2>
+<p>Loader work, land clearing, moving material, running a <a class="glossary-link" href="/acrejournal/glossary/#rotary-cutter" title="Heavy mower for tall grass and brush, driven from the PTO.">rotary cutter</a> or a tiller on a few
+acres. It is a working machine rather than a groundskeeping one: there is no mid-mount
+mower deck in the usual configuration, and if mowing a lawn is the main job, this is the
+wrong tractor.</p>
+<p>Where it stops being enough is continuous hydraulic work and heavy tillage. At 5.2 GPM the
+pump is sized for a loader and a hitch, not for an attachment with a hydraulic motor
+running all day. And 19.8 hp at the PTO sets a hard ceiling on implement width — a
+six-foot tiller in heavy soil will find the limit quickly.</p>
+<h2 id="specs">Kubota L2502 specs in full</h2>
+<div class="table-wrap"><table>
+<thead>
+<tr>
+<th>Specification</th>
+<th>Figure</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Gross engine horsepower</td>
+<td>23.3 hp</td>
+</tr>
+<tr>
+<td>PTO horsepower</td>
+<td>19.8 (DT) / 18.4 (HST)</td>
+</tr>
+<tr>
+<td>Transmission</td>
+<td>8F/8R gear or 3-range <a class="glossary-link" href="/acrejournal/glossary/#hydrostatic" title="Fluid drive with no clutch pedal — easier for loader work, slightly less efficient.">hydrostatic</a></td>
+</tr>
+<tr>
+<td><a class="glossary-link" href="/acrejournal/glossary/#hydraulic-flow" title="Gallons per minute available to attachments — decides how fast a loader cycles.">Hydraulic flow</a></td>
+<td>5.2 GPM</td>
+</tr>
+<tr>
+<td><a class="glossary-link" href="/acrejournal/glossary/#three-point-hitch" title="The standard mounting linkage at the rear of a tractor, sized by category.">Three-point hitch</a></td>
+<td>Category I</td>
+</tr>
+<tr>
+<td>Lift at 24 in behind hitch</td>
+<td>1,389 lb</td>
+</tr>
+<tr>
+<td>Operator platform</td>
+<td><a class="glossary-link" href="/acrejournal/glossary/#rops" title="Rollover protective structure — the frame that keeps the operator alive in a tip.">ROPS</a></td>
+</tr>
+<tr>
+<td>MSRP from</td>
+<td><span translate="no">$17,449</span></td>
+</tr>
+</tbody>
+</table></div>
+<h2 id="transmission">The transmission decision</h2>
+<p>This is the one choice on the order form that you cannot change later, and the horsepower
+figures point the wrong way if you read them alone.</p>
+<p>Gear drive gives you 19.8 hp at the PTO against 18.4 for hydrostatic. On paper, gear wins.
+In practice the question is how often you change direction. Loader work is a cycle of
+forward, stop, reverse, stop, repeated hundreds of times an hour; doing that on a clutch
+and a shift lever is exhausting. Field work with an implement is the opposite — one
+direction, one speed, for hours.</p>
+<p>The rule owners repeat, and it holds up: if the loader is the reason you are buying the
+tractor, take the hydrostatic and accept the 1.4 hp. If the tractor is for the field, take
+the gears.</p>
+<h2 id="alternatives">Where it sits against the alternatives</h2>
+<p>Against Kubota's own range, the L2502 is the value point. The LX2620 has the same 23.3 hp
+engine but a stronger hitch (1,676 lb) and considerably more hydraulic flow (8.7 GPM) for
+about <span translate="no">$2,900 </span>more. If your implement list is growing, that is money well spent; if it is a
+loader and a cutter, it is not.</p>
+<p>The B2601 sub-compact costs more and lifts less, and makes sense only if the machine has
+to fit somewhere the L2502 will not.</p>
+<p>The direct cross-brand comparison people ask about is the John Deere 3025E. We have not
+verified Deere's current specification ourselves — their site blocks our checks — so the
+comparison page carries manufacturer figures we could not confirm, and says so.</p>
+<h2 id="owners">What owners report</h2>
+<p>Owner reporting for this model is aggregated in the
+<a href="/acrejournal/reviews/kubota-l2501-owner-report/">owner report</a>, which covers the L2501 generation
+that immediately precedes this one. The method, the sample and what we could not verify
+are set out there rather than summarised here.</p>
+<section class="offers reveal" aria-labelledby="off-financing-h">
+  <div class="offers-top">
+    <span class="kick">What to buy</span>
+    <h2 id="off-financing-h">Equipment financing</h2>
+<p class="offers-lede">Dealers rarely list tractor prices online — the industry sells through a quote, not a cart. Financing is the one part of that purchase you can arrange before you walk in.</p>  </div>
+  <ul class="offers-list">
+    <li class="buy-card">
+      <div class="buy-head">
+        <h3>Equipment financing enquiry</h3>
+        <span class="buy-price mono">no fee to apply</span>
+      </div>
+<p class="buy-note">Worth doing before you shortlist machines: knowing your monthly payment changes which class of tractor is actually on the table.</p>      <a class="btn buy-btn" href="https://vipcapitalfunding.com/equipment-financing/"
+         rel="sponsored nofollow noopener" target="_blank"
+         aria-label="Equipment financing enquiry at VIP Capital Funding (opens in a new tab)">
+See the Equipment financing        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M3.5 8h8M8 4.5 11.5 8 8 11.5" stroke-linecap="square"/></svg>
+      </a>
+    </li>
+  </ul>
+  <p class="offers-foot">
+    Prices are the seller's list on 2026-08-16, before shipping and tax, and
+    they move. Links go to VIP Capital Funding.    We are not in VIP Capital Funding's affiliate programme, so these are plain
+    links and nothing here is paid placement.  </p>
+</section>
+
+        <div class="offer">
+          <span class="ph has-img"><img src="/acrejournal/img/compact-tractors-3.webp" srcset="/img/compact-tractors-3-s.webp 800w, /img/compact-tractors-3.webp 1600w" sizes="(max-width: 900px) 100vw, 1640px" alt="Compact tractor working in a dusty field" width="900" height="600" loading="lazy" decoding="async"></span>
+          <div class="offer-body">
+            <h3>Financing before shortlisting</h3>
+            <p>Knowing the monthly payment changes which class of machine is actually on the table.</p>
+            <a class="btn" rel="sponsored nofollow" href="#">Check equipment financing</a>
+          </div>
+        </div>
+
+          <div class="disclosure">We only cover gear we have researched, and our reports are built on documented owner experience, not on brand copy — the method is stated on every report page. Links to sellers are plain links: we are not in their affiliate programmes yet, and nothing on this site is paid placement.
+</div>
+        <a class="next-read" href="/acrejournal/compact-tractors/john-deere-1025r/">
+  <span class="kick">Model</span>
+  <b>John Deere 1025R</b>
+  <svg width="18" height="18" viewBox="0 0 18 18" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M4 9h10M9.5 4.5 14 9l-4.5 4.5" stroke-linecap="square"/></svg>
+</a>
+
+      </article>
+
+      <aside class="rail reveal" data-delay="140">
+        <div class="toc toc-page">
+          <b>On this page</b>
+          <ul>
+<li><a href="#purpose">What this machine is for</a></li><li><a href="#specs">Kubota L2502 specs in full</a></li><li><a href="#transmission">The transmission decision</a></li><li><a href="#alternatives">Where it sits against the alternatives</a></li><li><a href="#owners">What owners report</a></li><li><a href="#faq">FAQ</a></li>          </ul>
+        </div>
+        <div class="toc toc-related">
+          <b>Related</b>
+          <ul>
+<li><a href="/acrejournal/compact-tractors/">Compact tractors</a></li><li><a href="/acrejournal/compact-tractors/tractor-sizing/">Tractor sizing calculator</a></li><li><a href="/acrejournal/reviews/kubota-l2501-owner-report/">Kubota L2501 owner report</a></li><li><a href="/acrejournal/compact-tractors/john-deere-1025r/">John Deere 1025R</a></li>          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="faq-band">
+  <div class="wrap">
+    <section class="faq" aria-label="Questions and answers">
+  <div class="faq-side">
+    <span class="pill">FAQ</span>
+<h2 id="faq">Questions &amp; Answers</h2>    <p class="faq-lede">Answered from the same sources as the tables above — each figure is
+      linked on the page it comes from.</p>
+  </div>
+  <div class="faq-list">
+    <details open>
+      <summary><h3 class="faq-q">Why is this model 23.3 horsepower and not 26?</h3></summary>
+      <div class="faq-a"><div class="faq-a-in"><p>To stay under the US EPA nonroad threshold at 19 kW, which is 25 hp. Below that line the particulate limit is 0.4 g/kWh; at or above it the limit is 0.03 g/kWh, thirteen times stricter, and the machine needs aftertreatment hardware to meet it. Kubota keeps the whole L02 entry model under the line, which is why the next step up in the family jumps straight to 33 hp.</p></div></div>
+    </details>
+    <details>
+      <summary><h3 class="faq-q">What does the L2502 replace?</h3></summary>
+      <div class="faq-a"><div class="faq-a-in"><p>The L2501. The L02 generation superseded the L01 range, and dealers were running clearance offers on L02 stock through the 2026 season. If you are reading a review or a forum thread about an L2501, the specifications are close but not identical, and the parts numbers are not interchangeable across the board.</p></div></div>
+    </details>
+    <details>
+      <summary><h3 class="faq-q">DT or HST — which transmission?</h3></summary>
+      <div class="faq-a"><div class="faq-a-in"><p>The gear version (DT, 8 forward and 8 reverse) gives 19.8 hp at the PTO; the hydrostatic gives 18.4. Gear drive is the choice for steady work in a field, where you set a speed and stay there. HST wins wherever you change direction constantly — loader cycles, yard work, snow — at the cost of about 1.4 hp and a slightly higher price.</p></div></div>
+    </details>
+    <details>
+      <summary><h3 class="faq-q">Is 5.2 GPM of hydraulic flow enough?</h3></summary>
+      <div class="faq-a"><div class="faq-a-in"><p>For a loader and a rear implement, yes. For anything with a hydraulic motor running continuously — a grapple used hard, a hydraulic-drive attachment — it is on the low side. An LX2620 moves 8.7 GPM for comparison, and that difference is more noticeable in daily use than the horsepower figures suggest.</p></div></div>
+    </details>
+    <details>
+      <summary><h3 class="faq-q">What does it actually cost to put one in the yard?</h3></summary>
+      <div class="faq-a"><div class="faq-a-in"><p>The <span translate="no">$17,449 </span>list price is the base machine, before tax, dealer fees, delivery and the loader. Dealers in this class rarely publish a delivered price at all — they publish a configurator. Budget well above list once a loader and a mid-mount deck are on it.</p></div></div>
+    </details>
+  </div>
+</section>
+
+  </div>
+</section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="footer-logo" href="/acrejournal/" aria-label="Acre Journal — home">
+          <svg class="mark" width="38" height="38" viewBox="0 0 32 32" aria-hidden="true">
+            <rect width="32" height="32" rx="8" fill="currentColor"></rect>
+            <rect x="7.4" y="7.4" width="17.2" height="17.2" rx="1.6" stroke="var(--dark)" stroke-width="2.6" fill="none"></rect>
+            <path d="M15.4 8.7v14.6M8.7 15.2h14.6" stroke="var(--dark)" stroke-width="1.9"></path>
+            <path d="M16.7 16.5h6.9v6.8h-6.9z" fill="var(--accent)"></path>
+          </svg>
+          <span class="wordmark"><i>Acre</i><i>Journal</i></span>
+        </a>
+        <p class="footer-about">Independent coverage of compact tractors, used equipment, irrigation and greenhouses. Every figure on the site carries a source, and a place in a shortlist is never for sale.
+</p>
+      </div>
+
+      <div class="cols">
+        <div>
+          <b>Sections</b>
+<a href="/acrejournal/compact-tractors/">Compact tractors</a><a href="/acrejournal/used-tractors/">Used equipment</a><a href="/acrejournal/irrigation/">Irrigation</a><a href="/acrejournal/greenhouses/">Greenhouses</a><a href="/acrejournal/parts/">Parts</a><a href="/acrejournal/attachments/">Attachments &amp; PTO</a>        </div>
+        <div>
+          <b>Read</b>
+<a href="/acrejournal/reviews/">Owner reports</a><a href="/acrejournal/compare/">Comparisons</a><a href="/acrejournal/learn/">Learn</a><a href="/acrejournal/glossary/">Glossary</a><a href="/acrejournal/faq/">FAQ</a>        </div>
+        <div>
+          <b>About</b>
+<a href="/acrejournal/about/#method">How we check</a><a href="/acrejournal/about/">About us</a><a href="/acrejournal/disclosure/">Affiliate disclosure</a><a href="/acrejournal/privacy/">Privacy policy</a>        </div>
+      </div>
+    </div>
+
+    <div class="fine">
+      <p>We only cover gear we have researched, and our reports are built on documented owner experience, not on brand copy — the method is stated on every report page. Links to sellers are plain links: we are not in their affiliate programmes yet, and nothing on this site is paid placement.
+</p>
+      <p>&copy; 2026 Acre Journal. Figures carry their source and check date. Photography is illustrative.</p>
+    </div>
+  </div>
+  <span class="footer-word" aria-hidden="true">ACRE JOURNAL</span>
+</footer>
+
+<aside class="nudge" data-nudge="compact-tractors" hidden>
+  <button class="nudge-close" type="button" aria-label="Dismiss">
+    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M3 3l8 8M11 3l-8 8" stroke-linecap="round"/></svg>
+  </button>
+  <span class="kick">Not sure about size?</span>
+  <b>Find your tractor in 30 seconds</b>
+  <p>Answer four questions about your land and jobs — get the class you need and three machines that fit.</p>
+  <a class="btn" href="/acrejournal/compact-tractors/tractor-sizing/">Open the calculator</a>
+</aside>
+
+<div class="palette-dock" hidden>
+  <b>Palette</b>
+  <div class="palette-list">
+    <button type="button" data-palette-pick="clay"><i style="--a:#B4571A;--g:#F5F3EF"></i>Clay</button>
+    <button type="button" data-palette-pick="paper"><i style="--a:#1F7A4C;--g:#FFFFFF"></i>Paper</button>
+    <button type="button" data-palette-pick="field"><i style="--a:#2E7D32;--g:#F7F9F5"></i>Field</button>
+    <button type="button" data-palette-pick="journal"><i style="--a:#17507A;--g:#FBFBFC"></i>Journal</button>
+  </div>
+</div>
+
+<script src="/acrejournal/js/app.js?v=1b2739c8" defer></script>
+</body>
+</html>

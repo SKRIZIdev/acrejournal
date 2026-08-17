@@ -1,0 +1,672 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script>
+(function () {
+  var d = document.documentElement;
+  d.className += ' js';
+  try {
+    var th = localStorage.getItem('aj-theme');
+    d.setAttribute('data-theme', th === 'dark' ? 'dark' : 'light');
+    var pal = localStorage.getItem('aj-palette');
+    if (pal) d.setAttribute('data-palette', pal);
+  } catch (e) {}
+  if (location.hash && location.hash.length > 1) d.classList.add('anchor-landing');
+})();
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
+<meta name="x-apple-disable-message-reformatting">
+<title>Hydroponics — Acre Journal</title>
+<meta name="description" content="Indoor growing sized honestly — how much light a crop actually needs, what a complete system costs, and why watts are the wrong number to shop by.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://acrejournal.com/hydroponics/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Hydroponics">
+<meta property="og:description" content="Indoor growing sized honestly — how much light a crop actually needs, what a complete system costs, and why watts are the wrong number to shop by.">
+<meta property="og:url" content="https://acrejournal.com/hydroponics/">
+<meta property="og:site_name" content="Acre Journal">
+<link rel="icon" href="/acrejournal/favicon.svg?v=40b724f3" type="image/svg+xml">
+<link rel="stylesheet" href="/acrejournal/css/site.css?v=b44cc107"><link rel="preload" as="image" href="/acrejournal/img/hydroponics-1.webp" imagesrcset="/img/hydroponics-1-s.webp 800w, /img/hydroponics-1.webp 1600w" imagesizes="(max-width: 900px) 100vw, 1640px" fetchpriority="high"><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "CollectionPage", "name": "Hydroponics", "description": "Indoor growing sized honestly — how much light a crop actually needs, what a complete system costs, and why watts are the wrong number to shop by.", "url": "https://acrejournal.com/hydroponics/"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://acrejournal.com/"}, {"@type": "ListItem", "position": 2, "name": "Hydroponics", "item": "https://acrejournal.com/hydroponics/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "How much light do leafy greens need?", "acceptedAnswer": {"@type": "Answer", "text": "Lettuce and most greens do well at a daily light integral of roughly 12–17 mol per square meter per day; fruiting crops such as tomatoes want more than double that. DLI combines intensity and hours, which is why a modest fixture running eighteen hours can beat a powerful one running eight."}}, {"@type": "Question", "name": "Why not just shop by watts?", "acceptedAnswer": {"@type": "Answer", "text": "Because watts measure what you pay the utility, not what the plant receives. Two 400 W fixtures can differ substantially in usable light depending on diodes and driver efficiency. Size by DLI for the crop and the photoperiod, then check that the wattage fits your circuit."}}, {"@type": "Question", "name": "What does a starter setup cost?", "acceptedAnswer": {"@type": "Answer", "text": "A complete 2x2 system with integrated controls starts around $499, and a 4x4 around $999 at current AC Infinity list prices. Buying separately can come in lower, but the saving disappears the first time a fan is mismatched to the tent and you buy twice."}}, {"@type": "Question", "name": "Do I need a controller?", "acceptedAnswer": {"@type": "Answer", "text": "For one tent, not strictly — a timer and a thermometer will do. Controllers earn their place when fans, lights and humidity have to respond to each other, which is where most grows go wrong in week three rather than week one."}}, {"@type": "Question", "name": "How much electricity will it use?", "acceptedAnswer": {"@type": "Answer", "text": "Multiply the fixture wattage by hours per day and divide by 1,000 to get kilowatt hours, then apply your rate. A 200 W light on eighteen hours is 3.6 kWh a day — roughly 108 kWh a month before fans and dehumidification, which typically add a third again."}}]}]}</script>
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="logo" href="/acrejournal/" aria-label="Acre Journal — home">
+      <svg class="mark" width="30" height="30" viewBox="0 0 32 32" aria-hidden="true">
+        <rect width="32" height="32" rx="8" fill="currentColor"></rect>
+        <rect x="7.4" y="7.4" width="17.2" height="17.2" rx="1.6" stroke="var(--ground)" stroke-width="2.6" fill="none"></rect>
+        <path d="M15.4 8.7v14.6M8.7 15.2h14.6" stroke="var(--ground)" stroke-width="1.9"></path>
+        <path d="M16.7 16.5h6.9v6.8h-6.9z" fill="var(--mark-crop)"></path>
+      </svg>
+      <span class="wordmark"><i>Acre</i><i>Journal</i></span>
+    </a>
+    <nav class="site" id="site-nav" aria-label="Main">
+      <a href="/acrejournal/compact-tractors/">Compact tractors</a>
+      <a href="/acrejournal/used-tractors/">Used</a>
+      <a href="/acrejournal/irrigation/">Irrigation</a>
+      <a href="/acrejournal/greenhouses/">Greenhouses</a>
+
+      <div class="more">
+        <button class="more-toggle" type="button" aria-expanded="false" aria-controls="nav-more"
+data-active="true">
+          More
+          <svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <path d="M2.5 4.5 6 8l3.5-3.5" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <div class="more-sheet" id="nav-more">
+          <span class="more-cap">Sections</span>
+          <a href="/acrejournal/parts/">Parts</a>
+          <a href="/acrejournal/attachments/">Attachments &amp; PTO</a>
+          <a href="/acrejournal/lawn-mowers/">Mowing</a>
+          <a href="/acrejournal/hydroponics/" aria-current="page">Hydroponics</a>
+          <span class="more-cap">Read</span>
+          <a href="/acrejournal/reviews/">Owner reports</a>
+          <a href="/acrejournal/learn/">Learn</a>
+          <a href="/acrejournal/glossary/">Glossary</a>
+          <a href="/acrejournal/compare/">Compare</a>
+          <a href="/acrejournal/faq/">FAQ</a>
+        </div>
+      </div>
+
+      <a class="btn cta in-drawer" href="/acrejournal/reviews/">Owner reports</a>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Switch theme" title="Theme: system">
+      <svg class="i-sun" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+        <circle cx="10" cy="10" r="4"></circle>
+        <path d="M10 1.5v2M10 16.5v2M1.5 10h2M16.5 10h2M4 4l1.4 1.4M14.6 14.6L16 16M16 4l-1.4 1.4M5.4 14.6L4 16" stroke-linecap="round"></path>
+      </svg>
+      <svg class="i-moon" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+        <path d="M16.5 12.4A7 7 0 0 1 7.6 3.5a7 7 0 1 0 8.9 8.9z" stroke-linejoin="round"></path>
+      </svg>
+      <svg class="i-auto" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+        <circle cx="10" cy="10" r="7"></circle>
+        <path d="M10 3v14a7 7 0 0 0 0-14z" fill="currentColor" stroke="none"></path>
+      </svg>
+    </button>
+    <a class="btn cta on-bar" href="/acrejournal/reviews/">Owner reports</a>
+    <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="nav-scrim" hidden></div>
+
+<main id="main">
+
+<div class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb">
+<a href="/acrejournal/">Home</a> / <span aria-current="page">Hydroponics</span></nav>
+
+  <div class="hero-top">
+    <h1 class="rise-lines">
+      <span class="line"><span>LIGHT IS THE BUDGET</span></span>
+      <span class="line dim"><span>WATTS ARE THE BILL</span></span>
+    </h1>
+    <div class="hero-aside">
+      <span class="pill reveal" data-delay="200">Smallest section</span>
+      <p class="lede reveal" data-delay="280">Indoor growing sized honestly — how much light a crop actually needs, what a complete system costs, and why watts are the wrong number to shop by.</p>
+    </div>
+  </div>
+
+  <a class="tool-promo reveal" data-delay="240" href="/acrejournal/hydroponics/light-calculator/">
+    <span class="kick">Interactive</span>
+    <b>Grow light calculator</b>
+    <p>How much light your grow actually needs, worked from the daily light integral rather than watts per square foot — and what it costs to run each month.</p>
+    <span class="btn">Work out my lighting</span>
+  </a>
+
+  <div class="hero-shot reveal zoom" data-delay="160">
+    <div class="gal" data-gal style="--gal-ratio: 21 / 8">
+  <div class="gal-track">    <span class="gal-slide is-on">
+      <img src="/acrejournal/img/hydroponics-1.webp" srcset="/img/hydroponics-1-s.webp 800w, /img/hydroponics-1.webp 1600w" sizes="(max-width: 900px) 100vw, 1640px"           alt="Grower tending lettuce varieties in shallow trays" width="900" height="600"loading="eager" fetchpriority="high" decoding="async">
+    </span>
+    <span class="gal-slide">
+      <img data-src="/acrejournal/img/hydroponics-2.webp"           alt="Interior of a production greenhouse with planted rows" width="900" height="663"loading="lazy" decoding="async">
+    </span>
+    <span class="gal-slide">
+      <img data-src="/acrejournal/img/hydroponics-3.webp"           alt="Seedlings fed by small drip tubes" width="900" height="600"loading="lazy" decoding="async">
+    </span>
+  </div>
+  <button class="gal-nav prev" type="button" aria-label="Previous photo">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 3 5 8l5 5" stroke-linecap="square"/></svg>
+  </button>
+  <button class="gal-nav next" type="button" aria-label="Next photo">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 3l5 5-5 5" stroke-linecap="square"/></svg>
+  </button>
+  <div class="gal-dots" role="tablist" aria-label="Photos">
+    <button class="gal-dot is-on" type="button" role="tab"
+            aria-label="Photo 1" aria-selected="true"></button>
+    <button class="gal-dot" type="button" role="tab"
+            aria-label="Photo 2"></button>
+    <button class="gal-dot" type="button" role="tab"
+            aria-label="Photo 3"></button>
+  </div>
+</div>
+
+  </div>
+</div>
+
+<section class="pb-0">
+  <div class="wrap">
+    <div class="layout">
+      <article class="prose reveal"><p>This is the smallest section on the site, and that is a decision rather than an oversight.
+Indoor growing carries a fraction of the search demand of tractors or greenhouses, and the
+part of it we can write about honestly is smaller still.</p>
+<p>What we can do here is fix the one mistake that costs beginners the most money: buying
+light by wattage.</p>
+<h2 id="light">Light is a quantity, not a power rating</h2>
+<p>Plants do not respond to watts. They respond to how many photons land on a square meter
+over a day — the daily light integral, measured in moles per square meter per day.</p>
+<p>That distinction has a practical consequence. A fixture's wattage tells you what the meter
+will register; DLI tells you whether the crop will actually produce. Leafy greens are
+content at roughly 12–17 mol/m²/day, and fruiting crops want more than double. A modest
+fixture running eighteen hours can deliver more usable light than a powerful one running
+eight, at lower cost.</p>
+<p>Our <a href="/acrejournal/hydroponics/light-calculator/">grow light calculator</a> works from the target DLI for
+your crop and photoperiod, converts it to the light you need over your footprint, and
+warns you when the fixture you are considering substantially overshoots. Overshoot is not
+harmless — it is money spent on electricity and heat you then have to remove.</p>
+<h2 id="kit">Complete system or piece by piece</h2>
+<p>Buying separately is cheaper on paper and works if you already know what you are doing.
+The failure it invites is mismatch: a fan that cannot move the air the light heats, a tent
+that does not take the fixture's mounting, a controller that speaks to neither.</p>
+<p>A matched system removes that class of problem, and for a first grow that is worth the
+premium. The step up in size costs less than people expect — a 2x4 at <span translate="no">$679 </span>against a 2x2
+at <span translate="no">$499 </span>— and the extra footprint is usually the thing you wish you had bought.</p>
+<section class="offers reveal" aria-labelledby="off-hydro-tent-kits-h">
+  <div class="offers-top">
+    <span class="kick">What to buy</span>
+    <h2 id="off-hydro-tent-kits-h">Grow tent systems, complete</h2>
+<p class="offers-lede">A complete system removes the main beginner failure — mismatched fan, light and tent. Sizes below are footprint in feet.</p>  </div>
+  <ul class="offers-list">
+    <li class="buy-card">
+      <div class="buy-head">
+        <h3>AI grow tent system, compact 2x2</h3>
+        <span class="buy-price mono"><span translate="no">$499.00</span></span>
+      </div>
+<p class="buy-note">The smallest sensible footprint: one plant, a closet, controls built in. Buy this to learn the process, not to grow volume.</p>      <a class="btn buy-btn" href="https://acinfinity.com/ai-grow-tent-system-compact-2x2-integrated-controls-with-dynamic-ai-1-plant-kit/"
+         rel="sponsored nofollow noopener" target="_blank"
+         aria-label="AI grow tent system, compact 2x2 at AC Infinity (opens in a new tab)">
+See the AI tent system 2x2        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M3.5 8h8M8 4.5 11.5 8 8 11.5" stroke-linecap="square"/></svg>
+      </a>
+    </li>
+    <li class="buy-card">
+      <div class="buy-head">
+        <h3>AI grow tent system 2x4</h3>
+        <span class="buy-price mono"><span translate="no">$679.00</span></span>
+      </div>
+<p class="buy-note">Two plants along a wall. The shape suits a shelf run better than a square tent of the same area.</p>      <a class="btn buy-btn" href="https://acinfinity.com/ai-grow-tent-system-2x4-integrated-controls-with-dynamic-ai-2-plant-kit/"
+         rel="sponsored nofollow noopener" target="_blank"
+         aria-label="AI grow tent system 2x4 at AC Infinity (opens in a new tab)">
+See the AI grow tent system 2x4        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M3.5 8h8M8 4.5 11.5 8 8 11.5" stroke-linecap="square"/></svg>
+      </a>
+    </li>
+    <li class="buy-card">
+      <div class="buy-head">
+        <h3>AI grow tent system 3x3</h3>
+        <span class="buy-price mono"><span translate="no">$699.00</span></span>
+      </div>
+<p class="buy-note">Square footprint, three plants. Easier to light evenly than a 2x4.</p>      <a class="btn buy-btn" href="https://acinfinity.com/ai-grow-tent-system-3x3-integrated-controls-with-dynamic-ai-3-plant-kit/"
+         rel="sponsored nofollow noopener" target="_blank"
+         aria-label="AI grow tent system 3x3 at AC Infinity (opens in a new tab)">
+See the AI grow tent system 3x3        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M3.5 8h8M8 4.5 11.5 8 8 11.5" stroke-linecap="square"/></svg>
+      </a>
+    </li>
+    <li class="buy-card">
+      <div class="buy-head">
+        <h3>AI grow tent system 4x4</h3>
+        <span class="buy-price mono"><span translate="no">$999.00</span></span>
+      </div>
+<p class="buy-note">The point where you should check your circuit before your cart: light plus fans plus dehumidifier on one breaker is how people trip it.</p>      <a class="btn buy-btn" href="https://acinfinity.com/ai-grow-tent-system-4x4-integrated-controls-with-dynamic-ai-4-plant-kit/"
+         rel="sponsored nofollow noopener" target="_blank"
+         aria-label="AI grow tent system 4x4 at AC Infinity (opens in a new tab)">
+See the AI grow tent system 4x4        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M3.5 8h8M8 4.5 11.5 8 8 11.5" stroke-linecap="square"/></svg>
+      </a>
+    </li>
+  </ul>
+  <p class="offers-foot">
+    Prices are the seller's list on 2026-08-16, before shipping and tax, and
+    they move. Links go to AC Infinity.    We are not in AC Infinity's affiliate programme, so these are plain
+    links and nothing here is paid placement.  </p>
+</section>
+
+<p>Two constraints that decide size before your ambition does. <strong>Circuit capacity</strong>: a 4x4
+with a 400 W light, fans and a dehumidifier can approach the limit of a domestic breaker.
+<strong>Air</strong>: eight feet of canopy moves a lot of moist air, and extraction has to be planned
+before the light, not after.</p>
+<h2 id="lights">Lights on their own</h2>
+<p>If you already have a tent and are replacing the fixture, size by DLI first and then check
+the physical fit and hanging height. Bar-style fixtures spread light more evenly than a
+single panel, and that becomes visible once the canopy is wider than about three feet.</p>
+<section class="offers reveal" aria-labelledby="off-hydro-lights-h">
+  <div class="offers-top">
+    <span class="kick">What to buy</span>
+    <h2 id="off-hydro-lights-h">LED grow lights by wattage</h2>
+<p class="offers-lede">Watts are what you pay the utility, not what the plant receives. Size a light by target DLI for the crop and the hours you run it — our calculator does that conversion.</p>  </div>
+  <ul class="offers-list">
+    <li class="buy-card">
+      <div class="buy-head">
+        <h3>AC Infinity Ionboard S22, 115 W</h3>
+        <span class="buy-price mono"><span translate="no">$119.00</span></span>
+      </div>
+<p class="buy-note">Enough for a 2x2 of leafy greens. Underpowered for fruiting crops in the same footprint.</p>      <a class="btn buy-btn" href="https://growace.com/products/ac-infinity-115w-ionboard-s22-full-spectrum-led-grow-light"
+         rel="sponsored nofollow noopener" target="_blank"
+         aria-label="AC Infinity Ionboard S22, 115 W at GrowAce (opens in a new tab)">
+See the AC Infinity Ionboard S22        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M3.5 8h8M8 4.5 11.5 8 8 11.5" stroke-linecap="square"/></svg>
+      </a>
+    </li>
+    <li class="buy-card">
+      <div class="buy-head">
+        <h3>AC Infinity Ionboard S24, 200 W</h3>
+        <span class="buy-price mono"><span translate="no">$239.00</span></span>
+      </div>
+<p class="buy-note">The common step up. Covers a 2x4 for greens or a 2x2 for fruiting.</p>      <a class="btn buy-btn" href="https://growace.com/products/ac-infinity-200w-ionboard-s24-full-spectrum-led-grow-light"
+         rel="sponsored nofollow noopener" target="_blank"
+         aria-label="AC Infinity Ionboard S24, 200 W at GrowAce (opens in a new tab)">
+See the AC Infinity Ionboard S24        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M3.5 8h8M8 4.5 11.5 8 8 11.5" stroke-linecap="square"/></svg>
+      </a>
+    </li>
+    <li class="buy-card">
+      <div class="buy-head">
+        <h3>Advance Spectrum 680 W, 6-bar</h3>
+        <span class="buy-price mono"><span translate="no">$604.47</span></span>
+      </div>
+<p class="buy-note">Bar-style fixtures spread light more evenly than a single panel, which matters once the canopy is wider than about three feet.</p>      <a class="btn buy-btn" href="https://growace.com/products/advance-spectrum-680w-sun-series-8-bar-full-spectrum-led-grow-light"
+         rel="sponsored nofollow noopener" target="_blank"
+         aria-label="Advance Spectrum 680 W, 6-bar at GrowAce (opens in a new tab)">
+See the Advance Spectrum 680 W        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M3.5 8h8M8 4.5 11.5 8 8 11.5" stroke-linecap="square"/></svg>
+      </a>
+    </li>
+    <li class="buy-card">
+      <div class="buy-head">
+        <h3>Advance Spectrum 900 W, 8-bar</h3>
+        <span class="buy-price mono"><span translate="no">$649.97</span></span>
+      </div>
+<p class="buy-note">For a 4x4 of fruiting crop. At this wattage, heat and humidity control stop being optional.</p>      <a class="btn buy-btn" href="https://growace.com/products/advance-spectrum-900w-sun-series-8-bar-full-spectrum-led-grow-light"
+         rel="sponsored nofollow noopener" target="_blank"
+         aria-label="Advance Spectrum 900 W, 8-bar at GrowAce (opens in a new tab)">
+See the Advance Spectrum 900 W        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M3.5 8h8M8 4.5 11.5 8 8 11.5" stroke-linecap="square"/></svg>
+      </a>
+    </li>
+    <li class="buy-card">
+      <div class="buy-head">
+        <h3>Advance Spectrum 400 W Sun Series, 4-bar</h3>
+        <span class="buy-price mono"><span translate="no">$499.95</span></span>
+      </div>
+<p class="buy-note">Priced above higher-wattage models here — a reminder that price tracks the driver and diodes, not the number on the box. Sold out at the seller on 17 August 2026; the listing is still the place to watch for it.</p>      <a class="btn buy-btn" href="https://growace.com/products/advance-spectrum-400w-sun-series-4-bar-full-spectrum-led-grow-light"
+         rel="sponsored nofollow noopener" target="_blank"
+         aria-label="Advance Spectrum 400 W Sun Series, 4-bar at GrowAce (opens in a new tab)">
+See the Advance Spectrum 400 W        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M3.5 8h8M8 4.5 11.5 8 8 11.5" stroke-linecap="square"/></svg>
+      </a>
+    </li>
+  </ul>
+  <p class="offers-foot">
+    Prices are the seller's list on 2026-08-17, before shipping and tax, and
+    they move. Links go to GrowAce.    We are not in GrowAce's affiliate programme, so these are plain
+    links and nothing here is paid placement.  </p>
+</section>
+
+<p>Worth noting from the current price list: a 400 W bar fixture lists above an 900 W one in
+the same range. Price tracks the driver and diode grade, not the number on the box — which
+is another reason wattage is a poor shopping filter.</p>
+<h2 id="cost">What it costs to run</h2>
+<p>The purchase price is the small number. Running cost is fixture wattage times hours,
+divided by 1,000, times your electricity rate — and then add roughly a third again for
+fans and dehumidification.</p>
+<p>A 200 W light on an eighteen-hour photoperiod is about 108 kWh a month before the
+supporting gear. At typical US residential rates that is a real monthly line item, and it
+is why sizing by DLI rather than by "more is better" pays back every month rather than
+once.</p>
+<section class="offers reveal" aria-labelledby="off-hydro-complete-h">
+  <div class="offers-top">
+    <span class="kick">What to buy</span>
+    <h2 id="off-hydro-complete-h">Complete grow systems</h2>
+<p class="offers-lede">Tent, light, fan, controller and medium in one order. The premium over buying separately is the price of not debugging a mismatch. On the day we checked, only the 8 x 4 ft builds were in stock — the smaller footprints are listed here for the price ladder, and the seller&#39;s page will say whether they are back.</p>  </div>
+  <ul class="offers-list">
+    <li class="buy-card">
+      <div class="buy-head">
+        <h3>2x4 ft LED hydro complete system</h3>
+        <span class="buy-price mono"><span translate="no">$1,199.95</span></span>
+      </div>
+<p class="buy-note">Water culture in the smaller footprint. Hydro needs more attention than soil, daily rather than weekly.</p>      <a class="btn buy-btn" href="https://growace.com/products/2x4ft-led-hydro-complete-indoor-grow-tent-system"
+         rel="sponsored nofollow noopener" target="_blank"
+         aria-label="2x4 ft LED hydro complete system at GrowAce (opens in a new tab)">
+See the 2x4 ft LED hydro        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M3.5 8h8M8 4.5 11.5 8 8 11.5" stroke-linecap="square"/></svg>
+      </a>
+    </li>
+    <li class="buy-card">
+      <div class="buy-head">
+        <h3>2x4 ft LED soil complete system</h3>
+        <span class="buy-price mono"><span translate="no">$1,305.95</span></span>
+      </div>
+<p class="buy-note">Same footprint in soil — more forgiving of a missed day, slower to correct when something is wrong.</p>      <a class="btn buy-btn" href="https://growace.com/products/2x4ft-led-soil-complete-indoor-grow-tent-system"
+         rel="sponsored nofollow noopener" target="_blank"
+         aria-label="2x4 ft LED soil complete system at GrowAce (opens in a new tab)">
+See the 2x4 ft LED soil complete        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M3.5 8h8M8 4.5 11.5 8 8 11.5" stroke-linecap="square"/></svg>
+      </a>
+    </li>
+    <li class="buy-card">
+      <div class="buy-head">
+        <h3>4x4 ft LED soil complete system</h3>
+        <span class="buy-price mono"><span translate="no">$1,969.95</span></span>
+      </div>
+<p class="buy-note">Four times the area of a 2x2 and roughly four times the running cost.</p>      <a class="btn buy-btn" href="https://growace.com/products/4x4ft-led-soil-complete-indoor-grow-tent-system"
+         rel="sponsored nofollow noopener" target="_blank"
+         aria-label="4x4 ft LED soil complete system at GrowAce (opens in a new tab)">
+See the 4x4 ft LED soil complete        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M3.5 8h8M8 4.5 11.5 8 8 11.5" stroke-linecap="square"/></svg>
+      </a>
+    </li>
+    <li class="buy-card">
+      <div class="buy-head">
+        <h3>4x4 ft LED hydro complete system</h3>
+        <span class="buy-price mono"><span translate="no">$2,499.95</span></span>
+      </div>
+<p class="buy-note">The largest size most people can run in a spare room without rewiring.</p>      <a class="btn buy-btn" href="https://growace.com/products/4x4ft-led-hydro-complete-indoor-grow-tent-system"
+         rel="sponsored nofollow noopener" target="_blank"
+         aria-label="4x4 ft LED hydro complete system at GrowAce (opens in a new tab)">
+See the 4x4 ft LED hydro        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M3.5 8h8M8 4.5 11.5 8 8 11.5" stroke-linecap="square"/></svg>
+      </a>
+    </li>
+    <li class="buy-card">
+      <div class="buy-head">
+        <h3>8x4 ft LED soil complete system</h3>
+        <span class="buy-price mono"><span translate="no">$2,699.95</span></span>
+      </div>
+<p class="buy-note">Two 4x4 zones in a row. Plan the extraction before the light: eight feet of canopy moves a lot of moist air.</p>      <a class="btn buy-btn" href="https://growace.com/products/8x4-led-soil-complete-indoor-grow-tent-system"
+         rel="sponsored nofollow noopener" target="_blank"
+         aria-label="8x4 ft LED soil complete system at GrowAce (opens in a new tab)">
+See the 8x4 ft LED soil complete        <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M3.5 8h8M8 4.5 11.5 8 8 11.5" stroke-linecap="square"/></svg>
+      </a>
+    </li>
+  </ul>
+  <p class="offers-foot">
+    Prices are the seller's list on 2026-08-17, before shipping and tax, and
+    they move. Links go to GrowAce.    We are not in GrowAce's affiliate programme, so these are plain
+    links and nothing here is paid placement.  </p>
+</section>
+
+<h2 id="scope">What this section will not do</h2>
+<p>We are not going to publish a strain-by-strain grow guide or a nutrient recipe library.
+That content exists in volume elsewhere, it is written by people who grow full time, and
+adding a thinner version of it would not help anyone.</p>
+        <section class="facts reveal" aria-labelledby="facts-heading">
+  <div class="facts-top">
+    <span class="kick">At a glance</span>
+    <h2 id="facts-heading">Scope of this section</h2>
+  </div>
+  <div class="table-wrap">
+    <table class="facts-table" role="table">
+      <thead role="rowgroup">
+        <tr role="row">
+          <th scope="col" role="columnheader">What</th>
+          <th scope="col" role="columnheader">Figure</th>
+          <th scope="col" role="columnheader">Source</th>
+        </tr>
+      </thead>
+      <tbody role="rowgroup">
+        <tr role="row">
+          <th scope="row" role="rowheader">Complete 2x2 system with controls</th>
+          <td role="cell">
+            <span class="facts-value"><span translate="no">$499.00</span></span>
+<span class="facts-hint">One plant, closet footprint — the size to learn on</span>          </td><td class="facts-src" role="cell"><a href="https://acinfinity.com/ai-grow-tent-system-compact-2x2-integrated-controls-with-dynamic-ai-1-plant-kit/" rel="nofollow noopener">AC Infinity, 2x2 kit</a></td>
+        </tr>
+        <tr role="row">
+          <th scope="row" role="rowheader">Complete 4x4 system with controls</th>
+          <td role="cell">
+            <span class="facts-value"><span translate="no">$999.00</span></span>
+<span class="facts-hint">The point where you check the breaker before the cart</span>          </td><td class="facts-src" role="cell"><a href="https://acinfinity.com/ai-grow-tent-system-4x4-integrated-controls-with-dynamic-ai-4-plant-kit/" rel="nofollow noopener">AC Infinity, 4x4 kit</a></td>
+        </tr>
+        <tr role="row">
+          <th scope="row" role="rowheader">Entry LED fixture, 115 W</th>
+          <td role="cell">
+            <span class="facts-value"><span translate="no">$119.00</span></span>
+<span class="facts-hint">Enough for a 2x2 of greens; short for fruiting crops</span>          </td><td class="facts-src" role="cell"><a href="https://growace.com/products/ac-infinity-115w-ionboard-s22-full-spectrum-led-grow-light" rel="nofollow noopener">GrowAce, Ionboard S22</a></td>
+        </tr>
+        <tr role="row">
+          <th scope="row" role="rowheader">Mid LED fixture, 200 W</th>
+          <td role="cell">
+            <span class="facts-value"><span translate="no">$239.00</span></span>
+<span class="facts-hint">Covers a 2x4 of greens or a 2x2 of fruiting crop</span>          </td><td class="facts-src" role="cell"><a href="https://growace.com/products/ac-infinity-200w-ionboard-s24-full-spectrum-led-grow-light" rel="nofollow noopener">GrowAce, Ionboard S24</a></td>
+        </tr>
+        <tr role="row">
+          <th scope="row" role="rowheader">Complete 4x4 hydro system</th>
+          <td role="cell">
+            <span class="facts-value"><span translate="no">$2,499.95</span></span>
+<span class="facts-hint">Tent, light, fan, controller and water culture in one order</span>          </td><td class="facts-src" role="cell"><a href="https://growace.com/products/4x4ft-led-hydro-complete-indoor-grow-tent-system" rel="nofollow noopener">GrowAce, 4x4 hydro kit</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+<p class="facts-foot">Prices are seller list prices on 17 August 2026 and exclude shipping and tax. This is the smallest section on the site by search demand and stays that way deliberately.</p></section>
+</article>
+      <aside class="rail">
+        <div class="toc toc-page reveal" data-delay="120">
+          <b>In this section</b>
+          <ul>
+<li><a href="#light">How much light</a></li><li><a href="#kit">Complete or piece by piece</a></li><li><a href="#cost">What it costs to run</a></li>          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="pill">Topics</span>
+      <h2>What this section <span class="dim">covers.</span></h2>
+    </div>
+
+    <div class="mt-block">
+      <div class="row reveal is-live" id="light">
+        <div class="side">
+          <h3>
+<a href="/acrejournal/hydroponics/light-calculator/">How much light</a>          </h3>
+          <p class="lede" style="font-size:15px">Crops are sized by daily light integral, not by wattage. Our calculator converts one into the other and tells you when a fixture overshoots.</p>
+          <a class="btn" href="/acrejournal/hydroponics/light-calculator/">Work out my lighting</a>
+        </div>
+        <div class="gal" data-gal style="--gal-ratio: 16 / 7">
+  <div class="gal-track">    <span class="gal-slide is-on">
+      <img src="/acrejournal/img/hydroponics-2.webp" srcset="/img/hydroponics-2-s.webp 800w, /img/hydroponics-2.webp 1600w" sizes="(max-width: 900px) 100vw, 1640px"           alt="Interior of a production greenhouse with planted rows" width="900" height="663"loading="lazy" decoding="async">
+    </span>
+    <span class="gal-slide">
+      <img data-src="/acrejournal/img/hydroponics-3.webp"           alt="Seedlings fed by small drip tubes" width="900" height="600"loading="lazy" decoding="async">
+    </span>
+    <span class="gal-slide">
+      <img data-src="/acrejournal/img/hydroponics-4.webp"           alt="Pumps and pipework of a growing system" width="900" height="660"loading="lazy" decoding="async">
+    </span>
+  </div>
+  <button class="gal-nav prev" type="button" aria-label="Previous photo">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 3 5 8l5 5" stroke-linecap="square"/></svg>
+  </button>
+  <button class="gal-nav next" type="button" aria-label="Next photo">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 3l5 5-5 5" stroke-linecap="square"/></svg>
+  </button>
+  <div class="gal-dots" role="tablist" aria-label="Photos">
+    <button class="gal-dot is-on" type="button" role="tab"
+            aria-label="Photo 1" aria-selected="true"></button>
+    <button class="gal-dot" type="button" role="tab"
+            aria-label="Photo 2"></button>
+    <button class="gal-dot" type="button" role="tab"
+            aria-label="Photo 3"></button>
+  </div>
+</div>
+
+      </div>
+      <div class="row reveal is-live" id="kit">
+        <div class="side">
+          <h3>
+<a href="#kit">Complete or piece by piece</a>          </h3>
+          <p class="lede" style="font-size:15px">A matched system costs more than the sum of its parts and removes the failure that ruins first grows — a fan, light and tent that do not suit each other.</p>
+          <a class="btn" href="#kit">Read more</a>
+        </div>
+        <div class="gal" data-gal style="--gal-ratio: 16 / 7">
+  <div class="gal-track">    <span class="gal-slide is-on">
+      <img src="/acrejournal/img/hydroponics-3.webp" srcset="/img/hydroponics-3-s.webp 800w, /img/hydroponics-3.webp 1600w" sizes="(max-width: 900px) 100vw, 1640px"           alt="Seedlings fed by small drip tubes" width="900" height="600"loading="lazy" decoding="async">
+    </span>
+    <span class="gal-slide">
+      <img data-src="/acrejournal/img/hydroponics-4.webp"           alt="Pumps and pipework of a growing system" width="900" height="660"loading="lazy" decoding="async">
+    </span>
+    <span class="gal-slide">
+      <img data-src="/acrejournal/img/hydroponics-1.webp"           alt="Grower tending lettuce varieties in shallow trays" width="900" height="600"loading="lazy" decoding="async">
+    </span>
+  </div>
+  <button class="gal-nav prev" type="button" aria-label="Previous photo">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 3 5 8l5 5" stroke-linecap="square"/></svg>
+  </button>
+  <button class="gal-nav next" type="button" aria-label="Next photo">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 3l5 5-5 5" stroke-linecap="square"/></svg>
+  </button>
+  <div class="gal-dots" role="tablist" aria-label="Photos">
+    <button class="gal-dot is-on" type="button" role="tab"
+            aria-label="Photo 1" aria-selected="true"></button>
+    <button class="gal-dot" type="button" role="tab"
+            aria-label="Photo 2"></button>
+    <button class="gal-dot" type="button" role="tab"
+            aria-label="Photo 3"></button>
+  </div>
+</div>
+
+      </div>
+      <div class="row reveal is-live" id="cost">
+        <div class="side">
+          <h3>
+<a href="#cost">What it costs to run</a>          </h3>
+          <p class="lede" style="font-size:15px">The purchase is the small number. Electricity, replacement media and nutrients are the ones that repeat.</p>
+          <a class="btn" href="#cost">Read more</a>
+        </div>
+        <div class="gal" data-gal style="--gal-ratio: 16 / 7">
+  <div class="gal-track">    <span class="gal-slide is-on">
+      <img src="/acrejournal/img/hydroponics-4.webp" srcset="/img/hydroponics-4-s.webp 800w, /img/hydroponics-4.webp 1600w" sizes="(max-width: 900px) 100vw, 1640px"           alt="Pumps and pipework of a growing system" width="900" height="660"loading="lazy" decoding="async">
+    </span>
+    <span class="gal-slide">
+      <img data-src="/acrejournal/img/hydroponics-1.webp"           alt="Grower tending lettuce varieties in shallow trays" width="900" height="600"loading="lazy" decoding="async">
+    </span>
+    <span class="gal-slide">
+      <img data-src="/acrejournal/img/hydroponics-2.webp"           alt="Interior of a production greenhouse with planted rows" width="900" height="663"loading="lazy" decoding="async">
+    </span>
+  </div>
+  <button class="gal-nav prev" type="button" aria-label="Previous photo">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 3 5 8l5 5" stroke-linecap="square"/></svg>
+  </button>
+  <button class="gal-nav next" type="button" aria-label="Next photo">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 3l5 5-5 5" stroke-linecap="square"/></svg>
+  </button>
+  <div class="gal-dots" role="tablist" aria-label="Photos">
+    <button class="gal-dot is-on" type="button" role="tab"
+            aria-label="Photo 1" aria-selected="true"></button>
+    <button class="gal-dot" type="button" role="tab"
+            aria-label="Photo 2"></button>
+    <button class="gal-dot" type="button" role="tab"
+            aria-label="Photo 3"></button>
+  </div>
+</div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="faq-band">
+  <div class="wrap">
+    <section class="faq" aria-label="Questions and answers">
+  <div class="faq-side">
+    <span class="pill">FAQ</span>
+<h2 id="faq">Questions &amp; Answers</h2>    <p class="faq-lede">Answered from the same sources as the tables above — each figure is
+      linked on the page it comes from.</p>
+  </div>
+  <div class="faq-list">
+    <details open>
+      <summary><h3 class="faq-q">How much light do leafy greens need?</h3></summary>
+      <div class="faq-a"><div class="faq-a-in"><p>Lettuce and most greens do well at a daily light integral of roughly 12–17 mol per square meter per day; fruiting crops such as tomatoes want more than double that. DLI combines intensity and hours, which is why a modest fixture running eighteen hours can beat a powerful one running eight.</p></div></div>
+    </details>
+    <details>
+      <summary><h3 class="faq-q">Why not just shop by watts?</h3></summary>
+      <div class="faq-a"><div class="faq-a-in"><p>Because watts measure what you pay the utility, not what the plant receives. Two 400 W fixtures can differ substantially in usable light depending on diodes and driver efficiency. Size by DLI for the crop and the photoperiod, then check that the wattage fits your circuit.</p></div></div>
+    </details>
+    <details>
+      <summary><h3 class="faq-q">What does a starter setup cost?</h3></summary>
+      <div class="faq-a"><div class="faq-a-in"><p>A complete 2x2 system with integrated controls starts around <span translate="no">$499, </span>and a 4x4 around <span translate="no">$999 </span>at current AC Infinity list prices. Buying separately can come in lower, but the saving disappears the first time a fan is mismatched to the tent and you buy twice.</p></div></div>
+    </details>
+    <details>
+      <summary><h3 class="faq-q">Do I need a controller?</h3></summary>
+      <div class="faq-a"><div class="faq-a-in"><p>For one tent, not strictly — a timer and a thermometer will do. Controllers earn their place when fans, lights and humidity have to respond to each other, which is where most grows go wrong in week three rather than week one.</p></div></div>
+    </details>
+    <details>
+      <summary><h3 class="faq-q">How much electricity will it use?</h3></summary>
+      <div class="faq-a"><div class="faq-a-in"><p>Multiply the fixture wattage by hours per day and divide by 1,000 to get kilowatt hours, then apply your rate. A 200 W light on eighteen hours is 3.6 kWh a day — roughly 108 kWh a month before fans and dehumidification, which typically add a third again.</p></div></div>
+    </details>
+  </div>
+</section>
+
+  </div>
+</section>
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="footer-logo" href="/acrejournal/" aria-label="Acre Journal — home">
+          <svg class="mark" width="38" height="38" viewBox="0 0 32 32" aria-hidden="true">
+            <rect width="32" height="32" rx="8" fill="currentColor"></rect>
+            <rect x="7.4" y="7.4" width="17.2" height="17.2" rx="1.6" stroke="var(--dark)" stroke-width="2.6" fill="none"></rect>
+            <path d="M15.4 8.7v14.6M8.7 15.2h14.6" stroke="var(--dark)" stroke-width="1.9"></path>
+            <path d="M16.7 16.5h6.9v6.8h-6.9z" fill="var(--accent)"></path>
+          </svg>
+          <span class="wordmark"><i>Acre</i><i>Journal</i></span>
+        </a>
+        <p class="footer-about">Independent coverage of compact tractors, used equipment, irrigation and greenhouses. Every figure on the site carries a source, and a place in a shortlist is never for sale.
+</p>
+      </div>
+
+      <div class="cols">
+        <div>
+          <b>Sections</b>
+<a href="/acrejournal/compact-tractors/">Compact tractors</a><a href="/acrejournal/used-tractors/">Used equipment</a><a href="/acrejournal/irrigation/">Irrigation</a><a href="/acrejournal/greenhouses/">Greenhouses</a><a href="/acrejournal/parts/">Parts</a><a href="/acrejournal/attachments/">Attachments &amp; PTO</a>        </div>
+        <div>
+          <b>Read</b>
+<a href="/acrejournal/reviews/">Owner reports</a><a href="/acrejournal/compare/">Comparisons</a><a href="/acrejournal/learn/">Learn</a><a href="/acrejournal/glossary/">Glossary</a><a href="/acrejournal/faq/">FAQ</a>        </div>
+        <div>
+          <b>About</b>
+<a href="/acrejournal/about/#method">How we check</a><a href="/acrejournal/about/">About us</a><a href="/acrejournal/disclosure/">Affiliate disclosure</a><a href="/acrejournal/privacy/">Privacy policy</a>        </div>
+      </div>
+    </div>
+
+    <div class="fine">
+      <p>We only cover gear we have researched, and our reports are built on documented owner experience, not on brand copy — the method is stated on every report page. Links to sellers are plain links: we are not in their affiliate programmes yet, and nothing on this site is paid placement.
+</p>
+      <p>&copy; 2026 Acre Journal. Figures carry their source and check date. Photography is illustrative.</p>
+    </div>
+  </div>
+  <span class="footer-word" aria-hidden="true">ACRE JOURNAL</span>
+</footer>
+
+<aside class="nudge" data-nudge="hydroponics" hidden>
+  <button class="nudge-close" type="button" aria-label="Dismiss">
+    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M3 3l8 8M11 3l-8 8" stroke-linecap="round"/></svg>
+  </button>
+  <span class="kick">Growing under cover?</span>
+  <b>Size the structure first</b>
+  <p>The greenhouse calculator gives covering, truss spacing and a materials budget.</p>
+  <a class="btn" href="/acrejournal/greenhouses/greenhouse-calculator/">Open the calculator</a>
+</aside>
+
+<div class="palette-dock" hidden>
+  <b>Palette</b>
+  <div class="palette-list">
+    <button type="button" data-palette-pick="clay"><i style="--a:#B4571A;--g:#F5F3EF"></i>Clay</button>
+    <button type="button" data-palette-pick="paper"><i style="--a:#1F7A4C;--g:#FFFFFF"></i>Paper</button>
+    <button type="button" data-palette-pick="field"><i style="--a:#2E7D32;--g:#F7F9F5"></i>Field</button>
+    <button type="button" data-palette-pick="journal"><i style="--a:#17507A;--g:#FBFBFC"></i>Journal</button>
+  </div>
+</div>
+
+<script src="/acrejournal/js/app.js?v=1b2739c8" defer></script>
+</body>
+</html>

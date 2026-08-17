@@ -1,0 +1,342 @@
+<!doctype html>
+<html lang="en">
+<head>
+<script>
+(function () {
+  var d = document.documentElement;
+  d.className += ' js';
+  try {
+    var th = localStorage.getItem('aj-theme');
+    d.setAttribute('data-theme', th === 'dark' ? 'dark' : 'light');
+    var pal = localStorage.getItem('aj-palette');
+    if (pal) d.setAttribute('data-palette', pal);
+  } catch (e) {}
+  if (location.hash && location.hash.length > 1) d.classList.add('anchor-landing');
+})();
+</script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="format-detection" content="telephone=no, date=no, address=no, email=no">
+<meta name="x-apple-disable-message-reformatting">
+<title>Owner reports — Acre Journal</title>
+<meta name="description" content="Reports built by counting what owners actually discuss, with the sample size, the period and the source links printed on every page — and no borrowed star ratings.">
+<meta name="robots" content="noindex, nofollow">
+<link rel="canonical" href="https://acrejournal.com/reviews/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Owner reports">
+<meta property="og:description" content="Reports built by counting what owners actually discuss, with the sample size, the period and the source links printed on every page — and no borrowed star ratings.">
+<meta property="og:url" content="https://acrejournal.com/reviews/">
+<meta property="og:site_name" content="Acre Journal">
+<link rel="icon" href="/acrejournal/favicon.svg?v=40b724f3" type="image/svg+xml">
+<link rel="stylesheet" href="/acrejournal/css/site.css?v=b44cc107"><script type="application/ld+json">{"@context": "https://schema.org", "@graph": [{"@type": "CollectionPage", "name": "Owner reports", "description": "Reports built by counting what owners actually discuss, with the sample size, the period and the source links printed on every page — and no borrowed star ratings.", "url": "https://acrejournal.com/reviews/"}, {"@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://acrejournal.com/"}, {"@type": "ListItem", "position": 2, "name": "Owner reports", "item": "https://acrejournal.com/reviews/"}]}, {"@type": "FAQPage", "mainEntity": [{"@type": "Question", "name": "Do you test the machines yourselves?", "acceptedAnswer": {"@type": "Answer", "text": "Not yet, and we will not pretend otherwise. These reports are built from documented owner discussion. Where we do get hands-on time with equipment — which is realistic for greenhouse and hydroponics gear at our scale — the page will say so plainly and show what we actually did."}}, {"@type": "Question", "name": "How many sources go into one report?", "acceptedAnswer": {"@type": "Answer", "text": "However many we read, printed on the page. The Kubota L2501 report is built on 19 discussions out of 83 in the source database, and it says so in the first paragraph rather than in a footnote."}}, {"@type": "Question", "name": "Why are there no star ratings?", "acceptedAnswer": {"@type": "Answer", "text": "Because we do not have our own, and importing someone else's into our markup is against Google's structured data rules as well as being dishonest. When a report is backed by owners we surveyed ourselves, it will carry a rating with the sample size beside it."}}, {"@type": "Question", "name": "Do you reproduce what owners wrote?", "acceptedAnswer": {"@type": "Answer", "text": "No. We count topics and link to the threads. The posts belong to their authors, and the original discussion is more useful to you than our paraphrase of it."}}]}]}</script>
+</head>
+<body>
+
+<header class="bar">
+  <div class="wrap">
+    <a class="logo" href="/acrejournal/" aria-label="Acre Journal — home">
+      <svg class="mark" width="30" height="30" viewBox="0 0 32 32" aria-hidden="true">
+        <rect width="32" height="32" rx="8" fill="currentColor"></rect>
+        <rect x="7.4" y="7.4" width="17.2" height="17.2" rx="1.6" stroke="var(--ground)" stroke-width="2.6" fill="none"></rect>
+        <path d="M15.4 8.7v14.6M8.7 15.2h14.6" stroke="var(--ground)" stroke-width="1.9"></path>
+        <path d="M16.7 16.5h6.9v6.8h-6.9z" fill="var(--mark-crop)"></path>
+      </svg>
+      <span class="wordmark"><i>Acre</i><i>Journal</i></span>
+    </a>
+    <nav class="site" id="site-nav" aria-label="Main">
+      <a href="/acrejournal/compact-tractors/">Compact tractors</a>
+      <a href="/acrejournal/used-tractors/">Used</a>
+      <a href="/acrejournal/irrigation/">Irrigation</a>
+      <a href="/acrejournal/greenhouses/">Greenhouses</a>
+
+      <div class="more">
+        <button class="more-toggle" type="button" aria-expanded="false" aria-controls="nav-more"
+data-active="true">
+          More
+          <svg width="11" height="11" viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <path d="M2.5 4.5 6 8l3.5-3.5" stroke-linecap="round" stroke-linejoin="round"></path>
+          </svg>
+        </button>
+        <div class="more-sheet" id="nav-more">
+          <span class="more-cap">Sections</span>
+          <a href="/acrejournal/parts/">Parts</a>
+          <a href="/acrejournal/attachments/">Attachments &amp; PTO</a>
+          <a href="/acrejournal/lawn-mowers/">Mowing</a>
+          <a href="/acrejournal/hydroponics/">Hydroponics</a>
+          <span class="more-cap">Read</span>
+          <a href="/acrejournal/reviews/" aria-current="page">Owner reports</a>
+          <a href="/acrejournal/learn/">Learn</a>
+          <a href="/acrejournal/glossary/">Glossary</a>
+          <a href="/acrejournal/compare/">Compare</a>
+          <a href="/acrejournal/faq/">FAQ</a>
+        </div>
+      </div>
+
+      <a class="btn cta in-drawer" href="/acrejournal/reviews/">Owner reports</a>
+    </nav>
+    <button class="theme-toggle" type="button" aria-label="Switch theme" title="Theme: system">
+      <svg class="i-sun" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+        <circle cx="10" cy="10" r="4"></circle>
+        <path d="M10 1.5v2M10 16.5v2M1.5 10h2M16.5 10h2M4 4l1.4 1.4M14.6 14.6L16 16M16 4l-1.4 1.4M5.4 14.6L4 16" stroke-linecap="round"></path>
+      </svg>
+      <svg class="i-moon" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+        <path d="M16.5 12.4A7 7 0 0 1 7.6 3.5a7 7 0 1 0 8.9 8.9z" stroke-linejoin="round"></path>
+      </svg>
+      <svg class="i-auto" width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.7" aria-hidden="true">
+        <circle cx="10" cy="10" r="7"></circle>
+        <path d="M10 3v14a7 7 0 0 0 0-14z" fill="currentColor" stroke="none"></path>
+      </svg>
+    </button>
+    <a class="btn cta on-bar" href="/acrejournal/reviews/">Owner reports</a>
+    <button class="burger" type="button" aria-label="Open menu" aria-expanded="false" aria-controls="site-nav">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<div class="nav-scrim" hidden></div>
+
+<main id="main">
+
+<div class="wrap">
+  <nav class="crumbs" aria-label="Breadcrumb">
+<a href="/acrejournal/">Home</a> / <span aria-current="page">Owner reports</span></nav>
+
+  <div class="hero-top">
+    <h1 class="rise-lines">
+        <span class="line"><span>OWNER REPORTS</span></span>
+        <span class="line dim"><span>NOT BORROWED BROCHURES</span></span>
+      </h1>
+    <div class="hero-aside">
+      <span class="pill">The review module</span>
+      <p class="lede">Reports built by counting what owners actually discuss, with the sample size, the period and the source links printed on every page — and no borrowed star ratings.</p>
+    </div>
+  </div>
+
+</div>
+
+<section class="pt-0">
+  <div class="wrap">
+    <div class="layout">
+      <article class="prose reveal"><p>Most equipment "reviews" on the internet are a specification sheet rewritten in the first
+person by someone who has never sat on the machine. This module exists to do something
+narrower and more honest: count what actual owners discuss, show the sample, and link to
+the source.</p>
+<h2 id="format">What a report contains</h2>
+<p><strong>The sample, stated up front.</strong> How many discussions were read, out of how many exist, and
+over what period. If the sample is small, the report says the findings are directional.</p>
+<p><strong>Topic counts, not paraphrased posts.</strong> We record what owners keep returning to — an
+attachment that dominates the conversation, a transmission behavior that comes up
+repeatedly, the competitor set they actually cross-shop. Every thread is linked so you can
+read it at the source.</p>
+<p><strong>What is absent.</strong> In a sample of nineteen discussions with no thread about engine
+failure, that silence is worth reporting too — carefully, because absence of evidence in a
+small sample is not evidence of absence.</p>
+<p><strong>What we cannot tell you.</strong> Every report ends with its own limits. A topic count cannot
+produce a failure rate, and we will not imply one.</p>
+<h2 id="not">What these reports are not</h2>
+<p>They are not first-person tests. They do not carry a star rating borrowed from another
+site. They do not rank machines out of ten.</p>
+<p>That last one is deliberate: a single score hides the trade-off, and the trade-off is the
+only thing worth knowing when two machines in the same class are within a horsepower of
+each other.</p>
+<h2 id="reports">Current reports</h2>
+<p>The <a href="/acrejournal/reviews/kubota-l2501-owner-report/">Kubota L2501 owner report</a> is the first, built on
+19 discussions from the model's own database. It found grapple selection dominating the
+conversation, cross-shopping against Kioti and Mahindra rather than John Deere, and buyers
+explicitly choosing the machine for staying under the emissions threshold.</p>
+<p>More will follow model by model, at the pace we can source them properly.</p>
+        <section class="facts reveal" aria-labelledby="facts-heading">
+  <div class="facts-top">
+    <span class="kick">Method</span>
+    <h2 id="facts-heading">How these reports are built</h2>
+  </div>
+  <div class="table-wrap">
+    <table class="facts-table" role="table">
+      <thead role="rowgroup">
+        <tr role="row">
+          <th scope="col" role="columnheader">What</th>
+          <th scope="col" role="columnheader">Figure</th>
+          <th scope="col" role="columnheader">Source</th>
+        </tr>
+      </thead>
+      <tbody role="rowgroup">
+        <tr role="row">
+          <th scope="row" role="rowheader">Source of evidence</th>
+          <td role="cell">
+            <span class="facts-value">Owner threads and interviews</span>
+<span class="facts-hint">We do not claim to have driven machines we have not driven</span>          </td><td class="facts-src" role="cell"><a href="/acrejournal/about/" rel="nofollow noopener">Acre Journal method</a></td>
+        </tr>
+        <tr role="row">
+          <th scope="row" role="rowheader">Sample size</th>
+          <td role="cell">
+            <span class="facts-value">Stated on every report</span>
+<span class="facts-hint">A report built on four owners says four</span>          </td><td class="facts-src" role="cell"><a class="facts-same" href="/acrejournal/about/" rel="nofollow noopener"
+                 title="Acre Journal method">same source</a></td>
+        </tr>
+        <tr role="row">
+          <th scope="row" role="rowheader">What we skip</th>
+          <td role="cell">
+            <span class="facts-value">Anything we could not verify</span>
+<span class="facts-hint">Listed openly at the end of each report</span>          </td><td class="facts-src" role="cell"><a class="facts-same" href="/acrejournal/about/" rel="nofollow noopener"
+                 title="Acre Journal method">same source</a></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+</article>
+      <aside class="rail">
+        <div class="method reveal" data-delay="120">
+          <b>Standing method</b>
+          <ul>
+<li>Every report states how many owner sources were read and over what period.</li><li>Owners and service technicians are quoted by name where they agreed to it.</li><li>Where we have hands-on experience ourselves, we say so and show the receipt.</li><li>Where we do not, we say that too — no invented first-person testing.</li>          </ul>
+        </div>
+      </aside>
+    </div>
+  </div>
+</section>
+
+<section class="pt-0">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <span class="pill">Reports</span>
+      <h2>What owners actually <span class="dim">report.</span></h2>
+    </div>
+    <div class="cards stagger mt-block">
+      <article class="card-post reveal">
+        <div class="gal" data-gal style="--gal-ratio: 16 / 9">
+  <div class="gal-track">    <span class="gal-slide is-on">
+      <img src="/acrejournal/img/reviews-3.webp" srcset="/img/reviews-3-s.webp 800w, /img/reviews-3.webp 1600w" sizes="(max-width: 900px) 100vw, 1640px"           alt="Tractor driven along a field margin" width="900" height="600"loading="lazy" decoding="async">
+    </span>
+    <span class="gal-slide">
+      <img data-src="/acrejournal/img/reviews-4.webp"           alt="View from the cab of a harvesting machine" width="900" height="600"loading="lazy" decoding="async">
+    </span>
+    <span class="gal-slide">
+      <img data-src="/acrejournal/img/reviews-1.webp"           alt="Farmer standing beside a tractor and rear implement" width="900" height="600"loading="lazy" decoding="async">
+    </span>
+  </div>
+  <button class="gal-nav prev" type="button" aria-label="Previous photo">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 3 5 8l5 5" stroke-linecap="square"/></svg>
+  </button>
+  <button class="gal-nav next" type="button" aria-label="Next photo">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 3l5 5-5 5" stroke-linecap="square"/></svg>
+  </button>
+  <div class="gal-dots" role="tablist" aria-label="Photos">
+    <button class="gal-dot is-on" type="button" role="tab"
+            aria-label="Photo 1" aria-selected="true"></button>
+    <button class="gal-dot" type="button" role="tab"
+            aria-label="Photo 2"></button>
+    <button class="gal-dot" type="button" role="tab"
+            aria-label="Photo 3"></button>
+  </div>
+</div>
+
+        <div class="body">
+          <span class="kick">Owner report</span>
+          <h3><a class="stretch" href="/acrejournal/reviews/kubota-b2601-owner-report/">Kubota B2601: what owners actually discuss</a></h3>
+          <p>What 20 owner discussions from the B2601&#39;s model database reveal — the cross-shopping list is not the one the brochures suggest, loader capacity dominates the attachment talk, and the recurring faults are electrical rather than structural.</p>
+        </div>
+      </article>
+      <article class="card-post reveal">
+        <div class="gal" data-gal style="--gal-ratio: 16 / 9">
+  <div class="gal-track">    <span class="gal-slide is-on">
+      <img src="/acrejournal/img/reviews-4.webp" srcset="/img/reviews-4-s.webp 800w, /img/reviews-4.webp 1600w" sizes="(max-width: 900px) 100vw, 1640px"           alt="View from the cab of a harvesting machine" width="900" height="600"loading="lazy" decoding="async">
+    </span>
+    <span class="gal-slide">
+      <img data-src="/acrejournal/img/reviews-1.webp"           alt="Farmer standing beside a tractor and rear implement" width="900" height="600"loading="lazy" decoding="async">
+    </span>
+    <span class="gal-slide">
+      <img data-src="/acrejournal/img/reviews-2.webp"           alt="Red tractor at work in an open field" width="900" height="600"loading="lazy" decoding="async">
+    </span>
+  </div>
+  <button class="gal-nav prev" type="button" aria-label="Previous photo">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M10 3 5 8l5 5" stroke-linecap="square"/></svg>
+  </button>
+  <button class="gal-nav next" type="button" aria-label="Next photo">
+    <svg width="16" height="16" viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 3l5 5-5 5" stroke-linecap="square"/></svg>
+  </button>
+  <div class="gal-dots" role="tablist" aria-label="Photos">
+    <button class="gal-dot is-on" type="button" role="tab"
+            aria-label="Photo 1" aria-selected="true"></button>
+    <button class="gal-dot" type="button" role="tab"
+            aria-label="Photo 2"></button>
+    <button class="gal-dot" type="button" role="tab"
+            aria-label="Photo 3"></button>
+  </div>
+</div>
+
+        <div class="body">
+          <span class="kick">Owner report</span>
+          <h3><a class="stretch" href="/acrejournal/reviews/kubota-l2501-owner-report/">Kubota L2501: what owners actually discuss</a></h3>
+          <p>What 19 owner discussions from the L2501&#39;s model database reveal about the machine — the attachment that dominates the conversation, the transmission question, and the reason people bought it in the first place.</p>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a class="footer-logo" href="/acrejournal/" aria-label="Acre Journal — home">
+          <svg class="mark" width="38" height="38" viewBox="0 0 32 32" aria-hidden="true">
+            <rect width="32" height="32" rx="8" fill="currentColor"></rect>
+            <rect x="7.4" y="7.4" width="17.2" height="17.2" rx="1.6" stroke="var(--dark)" stroke-width="2.6" fill="none"></rect>
+            <path d="M15.4 8.7v14.6M8.7 15.2h14.6" stroke="var(--dark)" stroke-width="1.9"></path>
+            <path d="M16.7 16.5h6.9v6.8h-6.9z" fill="var(--accent)"></path>
+          </svg>
+          <span class="wordmark"><i>Acre</i><i>Journal</i></span>
+        </a>
+        <p class="footer-about">Independent coverage of compact tractors, used equipment, irrigation and greenhouses. Every figure on the site carries a source, and a place in a shortlist is never for sale.
+</p>
+      </div>
+
+      <div class="cols">
+        <div>
+          <b>Sections</b>
+<a href="/acrejournal/compact-tractors/">Compact tractors</a><a href="/acrejournal/used-tractors/">Used equipment</a><a href="/acrejournal/irrigation/">Irrigation</a><a href="/acrejournal/greenhouses/">Greenhouses</a><a href="/acrejournal/parts/">Parts</a><a href="/acrejournal/attachments/">Attachments &amp; PTO</a>        </div>
+        <div>
+          <b>Read</b>
+<a href="/acrejournal/reviews/">Owner reports</a><a href="/acrejournal/compare/">Comparisons</a><a href="/acrejournal/learn/">Learn</a><a href="/acrejournal/glossary/">Glossary</a><a href="/acrejournal/faq/">FAQ</a>        </div>
+        <div>
+          <b>About</b>
+<a href="/acrejournal/about/#method">How we check</a><a href="/acrejournal/about/">About us</a><a href="/acrejournal/disclosure/">Affiliate disclosure</a><a href="/acrejournal/privacy/">Privacy policy</a>        </div>
+      </div>
+    </div>
+
+    <div class="fine">
+      <p>We only cover gear we have researched, and our reports are built on documented owner experience, not on brand copy — the method is stated on every report page. Links to sellers are plain links: we are not in their affiliate programmes yet, and nothing on this site is paid placement.
+</p>
+      <p>&copy; 2026 Acre Journal. Figures carry their source and check date. Photography is illustrative.</p>
+    </div>
+  </div>
+  <span class="footer-word" aria-hidden="true">ACRE JOURNAL</span>
+</footer>
+
+<aside class="nudge" data-nudge="reviews" hidden>
+  <button class="nudge-close" type="button" aria-label="Dismiss">
+    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M3 3l8 8M11 3l-8 8" stroke-linecap="round"/></svg>
+  </button>
+  <span class="kick">Owner reports</span>
+  <b>See which class fits you</b>
+  <p>Reports tell you what breaks; the calculator tells you what to buy.</p>
+  <a class="btn" href="/acrejournal/compact-tractors/tractor-sizing/">Open the calculator</a>
+</aside>
+
+<div class="palette-dock" hidden>
+  <b>Palette</b>
+  <div class="palette-list">
+    <button type="button" data-palette-pick="clay"><i style="--a:#B4571A;--g:#F5F3EF"></i>Clay</button>
+    <button type="button" data-palette-pick="paper"><i style="--a:#1F7A4C;--g:#FFFFFF"></i>Paper</button>
+    <button type="button" data-palette-pick="field"><i style="--a:#2E7D32;--g:#F7F9F5"></i>Field</button>
+    <button type="button" data-palette-pick="journal"><i style="--a:#17507A;--g:#FBFBFC"></i>Journal</button>
+  </div>
+</div>
+
+<script src="/acrejournal/js/app.js?v=1b2739c8" defer></script>
+</body>
+</html>
